@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-start">
                 <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
-                    <h1 class="bg-text-line">Spardha  Championship</h1>
+                    <h1 class="bg-text-line">Spardha </h1>
                     <p><a href="#" class="btn btn-primary btn-sm rounded-0 py-3 px-5">Read More</a></p>
                 </div>
             </div>
@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-start">
                 <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
-                    <h1 class="bg-text-line">Spardha  Championship</h1>
+                    <h1 class="bg-text-line">Spardha </h1>
                     <p><a href="#" class="btn btn-primary btn-sm rounded-0 py-3 px-5">Read More</a></p>
                 </div>
             </div>
@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-start">
                 <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
-                    <h1 class="bg-text-line">Spardha  Championship</h1>
+                    <h1 class="bg-text-line">Spardha </h1>
                     <p><a href="#" class="btn btn-primary btn-sm rounded-0 py-3 px-5">Read More</a></p>
                 </div>
             </div>

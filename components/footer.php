@@ -62,7 +62,7 @@
           <div class="col-md-6 col-lg-6">
             <ul class="list-unstyled">
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="./rules.php">Rules and Regulations</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Membership</a></li>
             </ul>
@@ -91,7 +91,7 @@
           <div class="block-16">
             <figure>
               <img src="./assets/images/img_1.jpg" alt="Image placeholder" class="img-fluid rounded">
-              <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+              <a href="./assets/images/video.mp4" target="_blank" class="play-button popup-vimeo"><span class="icon-play"></span></a>
             </figure>
           </div>
 
