@@ -51,15 +51,17 @@
 					<div class="card-body">
 						<img src="assets/images/logo-bg.png" width="30%" alt="" class="img-fluid mb-4">
 						<h4 class="mb-3 f-w-400">Sign In</h4>
-						<div class="form-group mb-3">
-							<label class="floating-label" for="Email">Email address</label>
-							<input type="text" name="email" class="form-control" id="Email" placeholder="">
-						</div>
-						<div class="form-group mb-4">
-							<label class="floating-label" for="Password">Password</label>
-							<input type="password" name="pwd" class="form-control" id="Password" placeholder="">
-						</div>
-						<button class="btn btn-block btn-primary mb-4">Signin</button>
+						<form action="./login.php" method="post">
+							<div class="form-group mb-3">
+								<label class="floating-label" for="Email">Email address</label>
+								<input type="text" name="email" class="form-control" id="Email" placeholder="">
+							</div>
+							<div class="form-group mb-4">
+								<label class="floating-label" for="Password">Password</label>
+								<input type="password" name="pwd" class="form-control" id="Password" placeholder="">
+							</div>
+							<input type="submit" name="login" value="Login" class="btn btn-block btn-primary mb-4"></input>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -71,8 +73,8 @@
 <!-- Required Js -->
 <script src="assets/js/vendor-all.min.js"></script>
 <script src="assets/js/plugins/bootstrap.min.js"></script>
-
-
+<script src="assets/js/ripple.js"></script>
+<script src="assets/js/pcoded.min.js"></script>
 
 </body>
 

@@ -1,5 +1,5 @@
 <?php
-if (isset($_SESSION['email'])) {
+if (isset($_SESSION['user_email'])) {
 } else {
 	echo "<meta http-equiv=\"refresh\" content=\"0; url=./helpers/logout.php\">";
 	exit();

@@ -815,6 +815,5 @@ $('#more-details').on('click', function() {
     $('#nav-user-link').slideToggle();
 });
 // more-details end
-$("body").append('<div class="fixed-button active"><a href="https://1.envato.market/qG0m5" target="_blank" class="btn btn-md btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro</a> </div>');
 // var $window=$(window),nav=$(".fixed-button");
 // $window.scroll(function(){$window.scrollTop()>=200?nav.addClass("active"):nav.removeClass("active")});
