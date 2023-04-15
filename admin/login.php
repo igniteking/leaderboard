@@ -1,9 +1,12 @@
+<?php include('./connections/connection.php'); ?>
+<?php include('./connections/global.php'); ?>
+<?php include('./connections/functions.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-	<title>Spardha </title>
+	<title>Spardha || Login </title>
 	<!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 11]>
@@ -18,12 +21,12 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Phoenixcoded" />
 	<!-- Favicon icon -->
-	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/images/logo-bg.png" type="image/x-icon">
 
 	<!-- vendor css -->
 	<link rel="stylesheet" href="assets/css/style.css">
-	
-	
+
+
 
 
 </head>
@@ -32,11 +35,22 @@
 <div class="auth-wrapper">
 	<div class="auth-content">
 		<div class="card">
+			<?php
+			if (@$_GET['status'] == 1) {
+				echo "<div class='row'><div class='col-md-12 btn btn-success mb-4'>You can now login to your account!</div></div>";
+			}
+			$login = @$_POST['login'];
+			if ($login) {
+				$email = @$_POST['email'];
+				$pwd = @$_POST['pwd'];
+				Login($conn, $email, $pwd);
+			}
+			?>
 			<div class="row align-items-center text-center">
 				<div class="col-md-12">
 					<div class="card-body">
-						<img src="assets/images/logo.png" width="30%" alt="" class="img-fluid mb-4">
-						<h4 class="mb-3 f-w-400">Signin</h4>
+						<img src="assets/images/logo-bg.png" width="30%" alt="" class="img-fluid mb-4">
+						<h4 class="mb-3 f-w-400">Sign In</h4>
 						<div class="form-group mb-3">
 							<label class="floating-label" for="Email">Email address</label>
 							<input type="text" name="email" class="form-control" id="Email" placeholder="">
