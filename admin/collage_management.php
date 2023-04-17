@@ -183,16 +183,16 @@
                                 // Looping all files
                                 $length = 10;
                                 $random = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
-                                $folder = mkdir("./core/$random");
-                                $target_dir = "./core/$random/";
+                                $folder = mkdir("./demo/collage_logo/$random");
+                                $target_dir = "./demo/collage_logo/$random/";
 
-                                $collage_logo = $_FILES['collage_logo']['name'][$i];
+                                $collage_logo = $_FILES['collage_logo']['name'];
                                 // Upload file
-                                $array_content = move_uploaded_file($_FILES['collage_logo']['tmp_name'][$i], $target_dir . $collage_logo);
+                                $array_content =  move_uploaded_file(@$_FILES['collage_logo']['tmp_name'], $target_dir . $collage_logo);
 
-                                $path = $target_dir;
+                                $path = $target_dir . $collage_logo;
 
-                                $insert_collage_record = mysqli_query($conn, "INSERT INTO `collage_data`(`collage_id`, `collage_short`, `collage_name`, `collage_description`, `collage_logo`, `created_at`) VALUES (NULL,'$collage_short','$collage_name','$collage_description','$target_dir$path','$created_at')");
+                                $insert_collage_record = mysqli_query($conn, "INSERT INTO `collage_data`(`collage_id`, `collage_short`, `collage_name`, `collage_description`, `collage_logo`, `created_at`) VALUES (NULL,'$collage_short','$collage_name','$collage_description','$path','$created_at')");
                                 if ($insert_collage_record) {
                                     Notifications("success", "Successfully", "Inserted!");
                                 } else {
@@ -200,7 +200,7 @@
                                 }
                             }
                             ?>
-                            <form action="./collage_management.php" method="post">
+                            <form action="./collage_management.php" method="post" enctype="multipart/form-data">
                                 <div class="">
                                     <div class="card-body m-3">
                                         <div class="input-group mb-4">
