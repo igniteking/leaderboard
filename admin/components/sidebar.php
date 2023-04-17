@@ -40,10 +40,22 @@ if (isset($_SESSION['email'])) {
 					</ul>
 				</li> -->
 				<li class="nav-item pcoded-menu-caption">
-					<label>Games</label>
+					<label>User Management</label>
 				</li>
 				<li class="nav-item">
-					<a href="./games_add.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Add Games</span></a>
+					<a href="./user_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">User</span></a>
+				</li>
+				<li class="nav-item pcoded-menu-caption">
+					<label>Games Management</label>
+				</li>
+				<li class="nav-item">
+					<a href="./games_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Game</span></a>
+				</li>
+				<li class="nav-item pcoded-menu-caption">
+					<label>Collage Management</label>
+				</li>
+				<li class="nav-item">
+					<a href="./collage_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Collage</span></a>
 				</li>
 			</ul>
 
