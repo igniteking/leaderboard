@@ -70,6 +70,7 @@
             <li><a href="games.php">Games</a></li>
             <li><a href="team.php">Team</a></li>
             <li><a href="about.php">About</a></li>
+            <li><a href="about.php">About NIMS</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
