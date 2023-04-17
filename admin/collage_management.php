@@ -40,7 +40,7 @@
             <!-- [ Main Content ] start -->
             <div class="row">
                 <!-- prject ,team member start -->
-                <div class="col-xl-5 col-md-12">
+                <div class="col-xl-6 col-md-12">
                     <div class="card table-card">
                         <div class="card-header">
                             <h5>Collage List</h5>
@@ -86,11 +86,11 @@
                                                     <img src="' . $collage_logo . '" alt="user image" class="img-radius wid-40 align-top m-r-15">
                                                     <div class="d-inline-block">
                                                         <h6>' . $collage_short . '</h6>
-                                                        <p class="text-muted m-b-0">' . $collage_name . '</p>
+                                                        <p class="text-muted m-b-0 text-truncate" style="max-width: 150px;">' . $collage_name . '</p>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>' . $collage_description . '</td>
+                                            <td class="text-truncate" style="max-width: 150px;">' . $collage_description . '</td>
                                             <td class="text-right">
                                             <button onclick="deleteCollage(' . $collage_id . ')" class="btn badge badge-light-danger">Delete</button>
                                             </td>
@@ -123,7 +123,7 @@
                 <!-- prject ,team member start -->
 
                 <!-- Latest Customers start -->
-                <div class="col-lg-7 col-md-12">
+                <div class="col-lg-6 col-md-12">
                     <div class="card table-card review-card">
                         <div class="card-header">
                             <h5>Add Collage Data</h5>
