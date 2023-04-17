@@ -25,7 +25,7 @@
         <a href="./matches.php" style="all: unset;">
     <div class="player mb-5">
       <span class="team-number">' . $i . '</span>
-      <img src="./assets/images/img_1_sq.jpg" alt="Image" class="img-fluid image rounded-circle">
+      <img src="./assets/images/games/athletic.jpeg" alt="Image" class="img-fluid image rounded-circle">
       <h2>Game ' . $i + 1 . '</h2>
       <span class="position">Game ' . $i + 1 . '</span>
       </div>

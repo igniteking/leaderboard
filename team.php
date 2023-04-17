@@ -4,8 +4,8 @@
   <div class="container">
     <div class="row align-items-center justify-content-start">
       <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
-        <h1 class="bg-text-line">Our Teams</h1>
-        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime velit nostrum praesentium voluptatem. Mollitia perferendis dolore dolores.</p>
+        <h1 class="bg-text-line ">Our Teams</h1>
+        <p class="mt-4 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime velit nostrum praesentium voluptatem. Mollitia perferendis dolore dolores.</p>
       </div>
     </div>
   </div>
@@ -14,22 +14,20 @@
 <div class="site-section">
   <div class="container">
     <div class="row mb-5">
-      <?php
-      for ($i = 0; $i < 12; $i++) {
-        echo ' <div class="col-md-6 col-lg-4 mb-4">
+      <div class="col-md-6 col-lg-4 mb-4">
         <div class="post-entry">
           <div class="image">
-            <img src="./assets/images/img_1.jpg" alt="Image" class="img-fluid">
+            <center>
+            <img src="./assets/images/team/img 1.png" alt="Image" class="img-fluid">
+            </center>
           </div>
           <div class="text p-4">
-            <h2 class="h5 text-black"><a href="#">Collage ' . $i + 1 . '</a></h2>
-            <span class="text-uppercase date d-block mb-3"><small>By Colorlib &bullet; Sep 25, 2018</small></span>
-            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat beatae doloremque, ex corrupti perspiciatis.</p>
+            <h2 class="h5 text-black"><a href="#"> <center>MBBS</center></a></h2>
+            <span class="text-uppercase date d-block mb-3"><center><small>National Institute of Medical Science & Research</small></center></span>
+            <p class="mb-0 text-justify">The Bachelor of Medicine, Bachelor of Surgery, or MBBS is a professional degree program that trains you in the field of Medical Sciences.</p>
           </div>
         </div>
-      </div>';
-      }
-      ?>
+      </div>
 
     </div>
     <div class="row">

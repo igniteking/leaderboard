@@ -3,8 +3,8 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="mb-5">
-          <h3 class="footer-heading mb-4">About Sportz</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
+          <h3 class="footer-heading mb-4 ">About Spardha</h3>
+          <p class="text-justify">Spardha is an annual inter-college sports tournament of NIMS University Rajasthan, Jaipur. Every year, the students get an opportunity to showcase their sportsmanship and invest all their energy to ensure a win. This event, at the same time, teaches them to cope with the situations where they try their best, yet lose. </p>
         </div>
 
         <div class="mb-5">
@@ -53,17 +53,17 @@
           </div>
           <div class="col-md-6 col-lg-6">
             <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Matches</a></li>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="games.php">Games</a></li>
               <li><a href="#">News</a></li>
-              <li><a href="#">Team</a></li>
+              <li><a href="team.php">Team</a></li>
             </ul>
           </div>
           <div class="col-md-6 col-lg-6">
             <ul class="list-unstyled">
               <li><a href="#">About Us</a></li>
               <li><a href="./rules.php">Rules and Regulations</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="contact.php">Contact Us</a></li>
               <li><a href="#">Membership</a></li>
             </ul>
           </div>
