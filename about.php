@@ -6,7 +6,7 @@
     <div class="row align-items-center justify-content-start">
       <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
         <h1 class="bg-text-line">About Us</h1>
-        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime velit nostrum praesentium voluptatem. Mollitia perferendis dolore dolores.</p>
+        <p class="mt-4">Nims University Rajasthan, Jaipur, One of the Leading Universities in India and a Largest self-financed university in Rajasthan, is structured as a composite model university. </p>
       </div>
     </div>
   </div>
@@ -20,8 +20,8 @@
       </div>
       <div class="col-md-6 pl-md-5">
         <h2 class="text-black">About Spardha</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis inventore eius, doloremque fugiat id laudantium. Delectus quisquam voluptates deleniti incidunt, iusto magni mollitia rerum! Ex perspiciatis incidunt, laborum repellat illo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo maxime eligendi sunt autem consequuntur minima, quidem iure, nisi laboriosam, nam nostrum saepe voluptatibus repellat quam reiciendis. Accusantium omnis facilis eligendi.</p>
+        <p class="lead">NIMS SPARDHA is an annual sports event that the NIMSians wait for throughout the year. NIMS University Rajasthan, Jaipur has not only been a statute of excellence in academics, but also in other fields that determine the overall growth and development of an individual. Spardha is the event that the youngsters are most excited for.  </p>
+            <p>NIMS University Rajasthan, Jaipur celebrates this sports event whole-heartedly every year and keeps alive the sportsman spirit in students in every way. SPARDHA, for NIMS, denotes Sportsmanship, Passion, Action, Radiance, Determination, and Hard work of the participants that finally lead to their Achievement. </p>
       </div>
     </div>
   </div>

@@ -90,8 +90,8 @@
 
           <div class="block-16">
             <figure>
-              <img src="./assets/images/img_1.jpg" alt="Image placeholder" class="img-fluid rounded">
-              <a href="./assets/images/video.mp4" target="_blank" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+              <img src="./assets/images/img_1a.png" alt="Image placeholder" class="img-fluid rounded">
+              <a href="./assets/images/video2.mp4" target="_blank" class="play-button popup-vimeo"><span class="icon-play"></span></a>
             </figure>
           </div>
 

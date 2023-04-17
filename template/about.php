@@ -107,8 +107,8 @@
           </div>
           <div class="col-md-6 pl-md-5">
             <h2 class="text-black">About Sportz</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis inventore eius, doloremque fugiat id laudantium. Delectus quisquam voluptates deleniti incidunt, iusto magni mollitia rerum! Ex perspiciatis incidunt, laborum repellat illo.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo maxime eligendi sunt autem consequuntur minima, quidem iure, nisi laboriosam, nam nostrum saepe voluptatibus repellat quam reiciendis. Accusantium omnis facilis eligendi.</p>
+            <p class="lead">NIMS SPARDHA is an annual sports event that the NIMSians wait for throughout the year. NIMS University Rajasthan, Jaipur has not only been a statute of excellence in academics, but also in other fields that determine the overall growth and development of an individual. Spardha is the event that the youngsters are most excited for.  </p>
+            <p>NIMS University Rajasthan, Jaipur celebrates this sports event whole-heartedly every year and keeps alive the sportsman spirit in students in every way. SPARDHA, for NIMS, denotes Sportsmanship, Passion, Action, Radiance, Determination, and Hard work of the participants that finally lead to their Achievement. </p>
           </div>
         </div>
       </div>
