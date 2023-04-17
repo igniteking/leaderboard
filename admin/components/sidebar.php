@@ -55,7 +55,7 @@ if (isset($_SESSION['email'])) {
 					<label>Collage Management</label>
 				</li>
 				<li class="nav-item">
-					<a href="./collage_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Collage</span></a>
+					<a href="./collage_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Collagegit</span></a>
 				</li>
 			</ul>
 

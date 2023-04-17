@@ -174,7 +174,31 @@
                         </div>
                         <div class="card-body">
                             <form action="./user_management.php" method="post">
-
+                                <div class="">
+                                    <div class="card-body m-3">
+                                        <div class="input-group mb-4">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Admin's Username" name="username" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div><br>
+                                        <div class="input-group mb-4">
+                                            <input type="text" class="form-control" placeholder="Admin's E-mail" name="email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                                            </div>
+                                        </div><br>
+                                        <div class="input-group mb-4">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">+91</span>
+                                            </div>
+                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                        </div><br>
+                                        <div class="input-group">
+                                            <input type="submit" value="Insert Record" name="register" class="btn btn-primary col-md-12">
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>

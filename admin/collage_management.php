@@ -173,8 +173,65 @@
                             <h5>Add Collage</h5>
                         </div>
                         <div class="card-body">
-                            <form action="./collage_management.php" method="post">
+                            <?php
+                            if (@$_POST['inser_collage_record']) {
+                                $collage_short = $_POST['collage_short'];
+                                $collage_name = $_POST['collage_name'];
+                                $collage_description = $_POST['collage_description'];
+                                $created_at = date('Y-m-d H:i:s');
 
+                                // Looping all files
+                                $length = 10;
+                                $random = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
+                                $folder = mkdir("./core/$random");
+                                $target_dir = "./core/$random/";
+
+                                $collage_logo = $_FILES['collage_logo']['name'][$i];
+                                // Upload file
+                                $array_content = move_uploaded_file($_FILES['collage_logo']['tmp_name'][$i], $target_dir . $collage_logo);
+
+                                $path = $target_dir;
+
+                                $insert_collage_record = mysqli_query($conn, "INSERT INTO `collage_data`(`collage_id`, `collage_short`, `collage_name`, `collage_description`, `collage_logo`, `created_at`) VALUES (NULL,'$collage_short','$collage_name','$collage_description','$target_dir$path','$created_at')");
+                                if ($insert_collage_record) {
+                                    Notifications("success", "Successfully", "Inserted!");
+                                } else {
+                                    echo '<button class="btn btn-danger col-md-12 form-control-lg">Error Inserted!</button>';
+                                }
+                            }
+                            ?>
+                            <form action="./collage_management.php" method="post">
+                                <div class="">
+                                    <div class="card-body m-3">
+                                        <div class="input-group mb-4">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Collage's Short Name" name="collage_short" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div><br>
+                                        <div class="input-group mb-4">
+                                            <input type="text" class="form-control" placeholder="Collage's Full Name" name="collage_name" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div><br>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Collage's Description</span>
+                                            </div>
+                                            <textarea class="form-control" name="collage_description" aria-label="With textarea"></textarea>
+                                        </div><br>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Collage's Logo</span>
+                                            </div>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" name="collage_logo" id="inputGroupFile01">
+                                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                            </div>
+                                        </div><br>
+                                        <div class="input-group">
+                                            <input type="submit" value="Insert Record" name="inser_collage_record" class="btn btn-primary col-md-12">
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>

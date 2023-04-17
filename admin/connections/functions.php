@@ -98,15 +98,7 @@ function Logout()
 
 function Notifications($notificationType, $title, $message)
 {
-    echo "<script>
-    $(function() {
-        $(document).Toasts('create', {
-            class: 'bg-$notificationType',
-            title: '$title',
-            body: '$message',
-        });
-    })
-</script>";
+    echo '<button class="btn btn-' . $notificationType . ' col-md-12 form-control-lg">' . $title . ' ' . $message . '!</button>';
 }
 
 // delete all files and sub-folders from a folder
