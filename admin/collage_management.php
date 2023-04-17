@@ -43,7 +43,7 @@
                 <div class="col-xl-5 col-md-12">
                     <div class="card table-card">
                         <div class="card-header">
-                            <h5>Games List</h5>
+                            <h5>Collage List</h5>
                             <div class="card-header-right">
                                 <div class="btn-group card-option">
                                     <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -170,11 +170,11 @@
                 <div class="col-lg-7 col-md-12">
                     <div class="card table-card review-card">
                         <div class="card-header borderless ">
-                            <h5>Add Game</h5>
+                            <h5>Add Collage</h5>
                         </div>
                         <div class="card-body">
-                            <form action="./games_add.php" method="post">
-                                
+                            <form action="./collage_management.php" method="post">
+
                             </form>
                         </div>
                     </div>
