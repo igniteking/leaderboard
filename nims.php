@@ -91,7 +91,7 @@
         <div class="post-entry">
           <div class="image">
             <center>
-            <img src="./assets/images/about/social-responsibility.jpg" alt="Image" class="img-fluid">
+            <img src="./assets/images/about/social_responsibility.jpg" alt="Image" class="img-fluid">
             </center>
           </div>
           <div class="text p-4">

@@ -83,6 +83,7 @@
             </li>
             <li><a href="games.php">Games</a></li>
             <li><a href="team.php">Team</a></li>
+<<<<<<< HEAD
             <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Pages 
@@ -94,6 +95,10 @@
                   </ul>
         </li>
             
+=======
+            <li><a href="about.php">About</a></li>
+            <li><a href="nims.php">About NIMS</a></li>
+>>>>>>> 3ad99a58f8b59ffcbee6ba74026407dc32f32e43
             <li><a href="contact.php">Contact</a></li>
           </ul>
             
