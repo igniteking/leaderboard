@@ -70,11 +70,11 @@
                 <div class="ml-auto pr-4 order-md-2">
                   <div class="h5 text-black text-uppercase text-center text-lg-left">
                     <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/img_1_sq.jpg" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
+                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
                     </div>
                     <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
                     <div class="d-block d-md-inline-block">
-                      <img src="assets/images/img_3_sq.jpg" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
+                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
                     </div>
                   </div>
                 </div>
@@ -90,7 +90,7 @@
                     <div class="text-center text-lg-left">
                       <div class="d-block d-lg-flex align-items-center">
                         <div class="image mx-auto mb-3 mb-lg-0 mr-lg-3">
-                          <img src="assets/images/img_1_sq.jpg" alt="Image" class="img-fluid">
+                          <img src="assets/images/team/img 1.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="text">
                           <h3 class="h5 mb-0 text-black">Sea Hawks</h3>
@@ -112,7 +112,7 @@
                     <div class="">
                       <div class="d-block d-lg-flex align-items-center">
                         <div class="image mx-auto ml-lg-3 mb-3 mb-lg-0 order-2">
-                          <img src="assets/images/img_4_sq.jpg" alt="Image" class="img-fluid">
+                          <img src="assets/images/team/img 2.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="text order-1">
                           <h3 class="h5 mb-0 text-black">Law</h3>
@@ -133,7 +133,7 @@
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small text-center mb-3 mb-lg-0 mr-lg-3">
-                              <img src="assets/images/img_1_sq.jpg" alt="Image" class="img-fluid">
+                              <img src="assets/images/team/img 1.png" alt="Image" class="img-fluid">
                             </div>
                             <div class="text">
                               <h3 class="h5 mb-0 text-black">Patamedical</h3>
@@ -151,7 +151,7 @@
                         <div class="">
                           <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small ml-lg-3 mb-3 mb-lg-0 order-2">
-                              <img src="assets/images/img_4_sq.jpg" alt="Image" class="img-fluid">
+                              <img src="assets/images/team/img 4.png" alt="Image" class="img-fluid">
                             </div>
                             <div class="text order-1 w-100">
                               <h3 class="h5 mb-0 text-black">Law</h3>
@@ -179,11 +179,11 @@
                 <div class="ml-auto pr-4 order-md-2">
                   <div class="h5 text-black text-uppercase text-center text-lg-left">
                     <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/img_1_sq.jpg" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
+                      <img src="assets/images/team/img 1.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
                     </div>
                     <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
                     <div class="d-block d-md-inline-block">
-                      <img src="assets/images/img_3_sq.jpg" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
+                      <img src="assets/images/team/img 3.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
                     </div>
                   </div>
                 </div>
@@ -199,7 +199,7 @@
                     <div class="text-center text-lg-left">
                       <div class="d-block d-lg-flex align-items-center">
                         <div class="image mx-auto mb-3 mb-lg-0 mr-lg-3">
-                          <img src="assets/images/img_1_sq.jpg" alt="Image" class="img-fluid">
+                          <img src="assets/images/team/img 4.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="text">
                           <h3 class="h5 mb-0 text-black">Sea Hawks</h3>
@@ -221,7 +221,7 @@
                     <div class="">
                       <div class="d-block d-lg-flex align-items-center">
                         <div class="image mx-auto ml-lg-3 mb-3 mb-lg-0 order-2">
-                          <img src="assets/images/img_4_sq.jpg" alt="Image" class="img-fluid">
+                          <img src="assets/images/team/img 5.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="text order-1">
                           <h3 class="h5 mb-0 text-black">Law</h3>
@@ -242,7 +242,7 @@
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small text-center mb-3 mb-lg-0 mr-lg-3">
-                              <img src="assets/images/img_1_sq.jpg" alt="Image" class="img-fluid">
+                              <img src="assets/images/team/img 1.png" alt="Image" class="img-fluid">
                             </div>
                             <div class="text">
                               <h3 class="h5 mb-0 text-black">Patamedical</h3>
@@ -260,7 +260,7 @@
                         <div class="">
                           <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small ml-lg-3 mb-3 mb-lg-0 order-2">
-                              <img src="assets/images/img_4_sq.jpg" alt="Image" class="img-fluid">
+                              <img src="assets/images/team/img 5.png" alt="Image" class="img-fluid">
                             </div>
                             <div class="text order-1 w-100">
                               <h3 class="h5 mb-0 text-black">Law</h3>
@@ -288,11 +288,11 @@
                 <div class="ml-auto pr-4 order-md-2">
                   <div class="h5 text-black text-uppercase text-center text-lg-left">
                     <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/img_1_sq.jpg" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
+                      <img src="assets/images/team/img 1.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
                     </div>
                     <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
                     <div class="d-block d-md-inline-block">
-                      <img src="assets/images/img_3_sq.jpg" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
+                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
                     </div>
                   </div>
                 </div>
@@ -308,7 +308,7 @@
                     <div class="text-center text-lg-left">
                       <div class="d-block d-lg-flex align-items-center">
                         <div class="image mx-auto mb-3 mb-lg-0 mr-lg-3">
-                          <img src="assets/images/img_1_sq.jpg" alt="Image" class="img-fluid">
+                          <img src="assets/images/team/img 1.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="text">
                           <h3 class="h5 mb-0 text-black">Sea Hawks</h3>
@@ -330,7 +330,7 @@
                     <div class="">
                       <div class="d-block d-lg-flex align-items-center">
                         <div class="image mx-auto ml-lg-3 mb-3 mb-lg-0 order-2">
-                          <img src="assets/images/img_4_sq.jpg" alt="Image" class="img-fluid">
+                          <img src="assets/images/team/img 3.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="text order-1">
                           <h3 class="h5 mb-0 text-black">Law</h3>
@@ -351,7 +351,7 @@
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small text-center mb-3 mb-lg-0 mr-lg-3">
-                              <img src="assets/images/img_1_sq.jpg" alt="Image" class="img-fluid">
+                              <img src="assets/images/team/img 1.png" alt="Image" class="img-fluid">
                             </div>
                             <div class="text">
                               <h3 class="h5 mb-0 text-black">Patamedical</h3>
@@ -369,7 +369,7 @@
                         <div class="">
                           <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small ml-lg-3 mb-3 mb-lg-0 order-2">
-                              <img src="assets/images/img_4_sq.jpg" alt="Image" class="img-fluid">
+                              <img src="assets/images/team/img 6.png" alt="Image" class="img-fluid">
                             </div>
                             <div class="text order-1 w-100">
                               <h3 class="h5 mb-0 text-black">Law</h3>
