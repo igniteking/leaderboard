@@ -83,8 +83,14 @@
             </li>
             <li><a href="games.php">Games</a></li>
             <li><a href="team.php">Team</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="nims.php">About NIMS</a></li>
+            <li class="has-children">
+              <a href="#">About</a>
+              <ul class="dropdown">
+                <li><a href="about.php">About Spardha</a></li>
+                <li><a href="nims.php">About NIMS</a></li>
+                <li><a href="gallery.php">Our Gallery</a></li>
+              </ul>
+            </li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
 
