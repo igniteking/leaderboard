@@ -59,22 +59,22 @@
       </div>
       <nav class="site-navigation position-relative text-right bg-black text-md-right" role="navigation">
         <div class="container position-relative">
-          <div class="site-logo " style="
-                  
-            
-          ">
-            <a href="index.php"><img src="assets/images/logo-1.png" style=" margin-top: 35px;
-                    margin-right: 180px;
-                    width: 50%;
-                    margin-left: -450px;
+          <div class="site-logo">
+            <style>
+              .main_logo {
+                margin-top: 35px;
+                margin-right: 180px;
+                width: 50%;
+                margin-left: -450px;
 
-                    @media only screen and (min-width: 600px) {
-                      margin-right: 180px;
-                    width: 50%;
-                    margin-top: 35px;
-            }
-
-                    "  alt=""></a>
+                @media only screen and (min-width: 600px) {
+                  margin-right: 180px;
+                  width: 50s%;
+                  margin-top: 35px;
+                }
+              }
+            </style>
+            <a href="index.php"><img class="main_logo" src="assets/images/logo-1.png" alt=""></a>
           </div>
           <div class="d-inline-block d-md-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
           <ul class="site-menu js-clone-nav d-none d-md-block">
@@ -83,26 +83,12 @@
             </li>
             <li><a href="games.php">Games</a></li>
             <li><a href="team.php">Team</a></li>
-<<<<<<< HEAD
-            <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Pages 
-          </a>
-          <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-         <center> <li><a href="about.php"><h5>About</h5></a></li></center>
-         <center> <li><a href="nims.php"><h5>About NIMS</h5></a></li></center>
-         <center> <li><a href="gallery.php"><h5>Gallery</h5></a></li></center>
-                  </ul>
-        </li>
-            
-=======
             <li><a href="about.php">About</a></li>
             <li><a href="nims.php">About NIMS</a></li>
->>>>>>> 3ad99a58f8b59ffcbee6ba74026407dc32f32e43
             <li><a href="contact.php">Contact</a></li>
           </ul>
-            
-</div>
+
+        </div>
       </nav>
-      
+
     </header>
