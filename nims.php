@@ -115,6 +115,93 @@
         </div>
       </div>
 
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="post-entry">
+          <div class="image">
+            <center>
+            <img src="./assets/images/about/functional_transparency.jpg" alt="Image" class="img-fluid">
+            </center>
+          </div>
+          <div class="text p-4">
+            <h2 class="h5 text-black"><a href="#"> <center>Functional Transparency</center></a></h2>
+            <p class="mb-0 text-justify">In order to maximize the involvement and participation of its staff and students in the University's goals and achieving mission NIMS University follows a policy of functional transparency in its operations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="post-entry">
+          <div class="image">
+            <center>
+            <img src="./assets/images/about/education_quality.jpg" alt="Image" class="img-fluid">
+            </center>
+          </div>
+          <div class="text p-4">
+            <h2 class="h5 text-black"><a href="#"> <center>Global and Quality Education</center></a></h2>
+            <p class="mb-0 text-justify">Nims University is determined to spread quality education throughout the world and hence facilitates students from world over, no wonder Students from more than 25 countries study here.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="post-entry">
+          <div class="image">
+            <center>
+            <img src="./assets/images/about/ethics_&_integrity.jpg" alt="Image" class="img-fluid">
+            </center>
+          </div>
+          <div class="text p-4">
+            <h2 class="h5 text-black"><a href="#"> <center>Integrity & Ethics</center></a></h2>
+            <p class="mb-0 text-justify">No society or Nation can progress without integrity of character and high moral ethics. NIMS University therefore pays utmost attention in instilling these two core-values in its students and staff.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="post-entry">
+          <div class="image">
+            <center>
+            <img src="./assets/images/about/health.jpg" alt="Image" class="img-fluid">
+            </center>
+          </div>
+          <div class="text p-4">
+            <h2 class="h5 text-black"><a href="#"> <center>Health for all</center></a></h2>
+            <p class="mb-0 text-justify">The education loses its significance if the society is not in good health. Being a medical University we acknowledge this and therefore work relentlessly to create healthy and educated masses.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="post-entry">
+          <div class="image">
+            <center>
+            <img src="./assets/images/about/environmental_responsibility.jpg" alt="Image" class="img-fluid">
+            </center>
+          </div>
+          <div class="text p-4">
+            <h2 class="h5 text-black"><a href="#"> <center>Environmental Responsibility</center></a></h2>
+            <p class="mb-0 text-justify">To create a cleaner and safer environment for all remains as one of the most important aspects of the core philosophy of NIMS University.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="post-entry">
+          <div class="image">
+            <center>
+            <img src="./assets/images/about/diversity.jpg" alt="Image" class="img-fluid">
+            </center>
+          </div>
+          <div class="text p-4">
+            <h2 class="h5 text-black"><a href="#"> <center>Diversity</center></a></h2>
+            <p class="mb-0 text-justify">Keeping consistent with the diverse cultural background of India, NIMS University facilitates quality education to all sectors of the society.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
     
       
         
