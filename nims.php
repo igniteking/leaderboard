@@ -1,7 +1,7 @@
 <?php include('./components/header.php'); ?>
 
 
-<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/banner-new.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row align-items-center justify-content-start">
       <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
@@ -62,10 +62,10 @@
 </div>
 
 <div class="slide-one-item owl-carousel">
-  <div class="bg-image center overlay" style="background-image: url('./assets/images/hero_bg_1.jpg'); "></div>
-  <div class="bg-image center overlay" style="background-image: url('./assets/images/hero_bg_2.jpg'); "></div>
-  <div class="bg-image center overlay" style="background-image: url('./assets/images/hero_bg_3.jpg'); "></div>
-  <div class="bg-image center overlay" style="background-image: url('./assets/images/hero_bg_4.jpg'); "></div>
+  <div class="bg-image center overlay" style="background-image: url('./assets/images/game.jpg'); "></div>
+  <div class="bg-image center overlay" style="background-image: url('./assets/images/game4.jpg'); "></div>
+  <div class="bg-image center overlay" style="background-image: url('./assets/images/game2.jpg'); "></div>
+  <div class="bg-image center overlay" style="background-image: url('./assets/images/game3.jpg'); "></div>
 </div>
 
 <h2 class="text-black text-center mt-4">Core Values</h2>

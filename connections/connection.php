@@ -1,6 +1,6 @@
 <?php
 $dbServername = "localhost";
-$dbUsername = "pma";
+$dbUsername = "root";
 $dbPassword = "";
 $dbName = "spardha";
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName) or die;

@@ -7,44 +7,6 @@
           <p class="text-justify">Spardha is an annual inter-college sports tournament of NIMS University Rajasthan, Jaipur. Every year, the students get an opportunity to showcase their sportsmanship and invest all their energy to ensure a win. This event, at the same time, teaches them to cope with the situations where they try their best, yet lose. </p>
         </div>
 
-        <div class="mb-5">
-          <h3 class="footer-heading mb-4">Recent Blog</h3>
-          <div class="block-25">
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a href="#" class="d-flex">
-                  <figure class="image mr-4">
-                    <img src="./assets/images/img_1.jpg" alt="" class="img-fluid">
-                  </figure>
-                  <div class="text">
-                    <h3 class="heading font-weight-light">Lorem ipsum dolor sit amet consectetur elit</h3>
-                  </div>
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#" class="d-flex">
-                  <figure class="image mr-4">
-                    <img src="./assets/images/img_1.jpg" alt="" class="img-fluid">
-                  </figure>
-                  <div class="text">
-                    <h3 class="heading font-weight-light">Lorem ipsum dolor sit amet consectetur elit</h3>
-                  </div>
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#" class="d-flex">
-                  <figure class="image mr-4">
-                    <img src="./assets/images/img_1.jpg" alt="" class="img-fluid">
-                  </figure>
-                  <div class="text">
-                    <h3 class="heading font-weight-light">Lorem ipsum dolor sit amet consectetur elit</h3>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
       </div>
       <div class="col-lg-4 mb-5 mb-lg-0">
         <div class="row mb-5">
@@ -72,7 +34,6 @@
         <div class="row">
           <div class="col-md-12">
             <h3 class="footer-heading mb-4">Follow Us</h3>
-
             <div>
               <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
               <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
@@ -81,7 +42,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="col-lg-4 mb-5 mb-lg-0">

@@ -51,8 +51,8 @@
               <a href="#" class="text-secondary px-2"><span class="icon-linkedin"></span></a>
             </div>
             <div class="col-6 col-md-9 text-right">
-              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-envelope mr-3"></span> <span class="d-none d-md-block">youremail@domain.com</span></a></div>
-              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-phone mr-0 mr-md-3"></span> <span class="d-none d-md-block">+1 232 3532 321</span></a></div>
+              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-envelope mr-3"></span> <span class="d-none d-md-block">nims@nims.com</span></a></div>
+              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-phone mr-0 mr-md-3"></span> <span class="d-none d-md-block">+1 234 567</span></a></div>
             </div>
           </div>
         </div>
@@ -88,8 +88,8 @@
               <ul class="dropdown">
                 <li><a href="about.php">About Spardha</a></li>
                 <li><a href="nims.php">About NIMS</a></li>
-                <li><a href="gallery.php">Our Gallery</a></li>
               </ul>
+            <li><a href="gallery.php">Our Gallery</a></li>
             </li>
             <li><a href="contact.php">Contact</a></li>
           </ul>

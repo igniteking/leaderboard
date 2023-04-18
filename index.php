@@ -1,4 +1,5 @@
 <!-- Header Starts -->
+<?php include('./connections/connection.php'); ?>
 <?php include('./components/header.php'); ?>
 <!-- Header Ends -->
 
@@ -6,41 +7,10 @@
 <?php include('./components/carousel.php'); ?>
 <!-- Header Ends -->
 
+<?php include('./components/trio.php'); ?>
 
-<div class="site-section pt-0 feature-blocks-1" data-aos="fade" data-aos-delay="100">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-4">
-        <div class="p-3 p-md-5 feature-block-1 mb-5 mb-lg-0 bg" style="background-image: url('assets/images/img_1.jpg');">
-          <div class="text">
-            <h2 class="h5 text-white">Spardha Championship</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat autem illum nostrum sit distinctio!</p>
-            <p class="mb-0"><a href="#" class="btn btn-primary btn-sm px-4 py-2 rounded-0">Read More</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="p-3 p-md-5 feature-block-1 mb-5 mb-lg-0 bg" style="background-image: url('assets/images/img_2.jpg');">
-          <div class="text">
-            <h2 class="h5 text-white">Spardha Championship</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat autem illum nostrum sit distinctio!</p>
-            <p class="mb-0"><a href="#" class="btn btn-primary btn-sm px-4 py-2 rounded-0">Read More</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="p-3 p-md-5 feature-block-1 mb-5 mb-lg-0 bg" style="background-image: url('assets/images/img_3.jpg');">
-          <div class="text">
-            <h2 class="h5 text-white">Spardha Championship</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat autem illum nostrum sit distinctio!</p>
-            <p class="mb-0"><a href="#" class="btn btn-primary btn-sm px-4 py-2 rounded-0">Read More</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
+<!-- Score Board  -->
 <div class="site-blocks-vs site-section bg-light">
   <div class="container">
     <div class="row">
@@ -82,7 +52,7 @@
 
               </div>
 
-              <div class="bg-image overlay-success rounded mb-5" style="background-image: url('assets/images/hero_bg_1.jpg');" data-stellar-background-ratio="0.5">
+              <div class="bg-image overlay-success rounded mb-5" style="background-image: url('assets/images/game4.jpg');" data-stellar-background-ratio="0.5">
 
                 <div class="row align-items-center">
                   <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
@@ -191,7 +161,7 @@
 
               </div>
 
-              <div class="bg-image overlay-success rounded mb-5" style="background-image: url('assets/images/hero_bg_1.jpg');" data-stellar-background-ratio="0.5">
+              <div class="bg-image overlay-success rounded mb-5" style="background-image: url('assets/images/game2.jpg');" data-stellar-background-ratio="0.5">
 
                 <div class="row align-items-center">
                   <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
@@ -300,7 +270,7 @@
 
               </div>
 
-              <div class="bg-image overlay-success rounded mb-5" style="background-image: url('assets/images/hero_bg_1.jpg');" data-stellar-background-ratio="0.5">
+              <div class="bg-image overlay-success rounded mb-5" style="background-image: url('assets/images/game3.jpg');" data-stellar-background-ratio="0.5">
 
                 <div class="row align-items-center">
                   <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
@@ -393,6 +363,7 @@
   </div>
 </div>
 
+<!-- Chairperson’s Message  -->
 <div class="site-section" data-aos="fade-up">
   <div class="container">
     <div class="row align-items-center">
@@ -413,7 +384,7 @@
 </div>
 
 
-<div class="site-section block-13 bg-primary fixed overlay-primary bg-image" style="background-image: url('assets/images/hero_bg_3.jpg');" data-stellar-background-ratio="0.5">
+<div class="site-section block-13 bg-primary fixed overlay-primary bg-image" style="background-image: url('assets/images/game4.jpg');" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row mb-5">
       <div class="col-md-12 text-center">
@@ -424,18 +395,22 @@
     <div class="row">
       <div class="nonloop-block-13 owl-carousel">
         <?php
-        for ($i = 0; $i < 12; $i++) {
-          echo ' <div class="item">
+        $fetch_collage = mysqli_query($conn, "SELECT * FROM `collage_data`");
+        while ($row = mysqli_fetch_array($fetch_collage)) {
+          $collage_name = $row['collage_name'];
+          $collage_description = $row['collage_description'];
+          $collage_logo = $row['collage_logo'];
+          echo '<div class="item">
             <!-- uses .block-12 -->
             <div class="block-12">
               <figure>
-                <img src="assets/images/img_1.jpg" alt="Image" class="img-fluid">
+                <img src="./admin/' . $collage_logo . '" alt="Image" class="img-fluid">
               </figure>
               <div class="text">
                 <span class="meta">May 20th 2018</span>
                 <div class="text-inner">
-                  <h2 class="heading mb-3"><a href="#" class="text-black"> Collage Name ' . $i . '</a></h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad culpa, consectetur! Eligendi illo, repellat repudiandae cumque fugiat optio!</p>
+                  <h2 class="heading mb-3"><a href="#" class="text-black">' . $collage_name . '</a></h2>
+                  <p>' . $collage_description . '</p>
                 </div>
               </div>
             </div>

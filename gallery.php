@@ -14,15 +14,13 @@
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Gallery</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                <p class="text-center">. </p>
             </div>
             <div class="row photos">
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/team/img 1.png" data-lightbox="photos"><img class="img-fluid" src="assets/images/team/img 1.png"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/team/img 1.png" data-lightbox="photos"><img class="img-fluid" src="assets/images/team/img 1.png"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/team/img 1.png" data-lightbox="photos"><img class="img-fluid" src="assets/images/team/img 1.png"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/team/img 1.png" data-lightbox="photos"><img class="img-fluid" src="assets/images/team/img 1.png"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/team/img 1.png" data-lightbox="photos"><img class="img-fluid" src="assets/images/team/img 1.png"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/team/img 1.png" data-lightbox="photos"><img class="img-fluid" src="assets/images/team/img 1.png"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/game.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/game.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/game2.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/game2.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/game3.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/game3.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/game4.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/game4.jpg"></a></div>
             </div>
         </div>
     </div>

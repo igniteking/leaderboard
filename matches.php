@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="bg-image overlay-success rounded mb-5" style="background-image: url('assets/images/hero_bg_1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="bg-image overlay-success rounded mb-5" style="background-image: url('assets/images/banner-new.jpeg');" data-stellar-background-ratio="0.5">
 
           <div class="row align-items-center">
             <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
