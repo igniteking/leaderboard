@@ -49,7 +49,7 @@ if (isset($_SESSION['email'])) {
 					<label>Games Management</label>
 				</li>
 				<li class="nav-item">
-					<a href="./games_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Game</span></a>
+					<a href="./game_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Game</span></a>
 				</li>
 				<li class="nav-item pcoded-menu-caption">
 					<label>Collage Management</label>
