@@ -81,18 +81,19 @@
             <li class="active">
               <a href="index.php">Home</a>
             </li>
-            <li><a href="games.php">Games</a></li>
-            <li><a href="team.php">Team</a></li>
             <li class="has-children">
               <a href="#">About</a>
               <ul class="dropdown">
                 <li><a href="about.php">About Spardha</a></li>
                 <li><a href="nims.php">About NIMS</a></li>
                 <li><a href="spardha2023.php">Spardha 2023</a></li>
-                <li><a href="previous.php">Previous Events</a></li>
-                <li><a href="./assets/media/Committee Constituted for Spardha-2023 (1).pdf" target="_blank">Committee</a></li>
+                
+                <li><a href="./assets/media/Committee Constituted for Spardha-2023 (1).pdf" target="_blank"> Organising Committee</a></li>
               </ul>
             </li>
+            <li><a href="games.php">Games</a></li>
+            <li><a href="team.php">Team</a></li>
+            <li><a href="previous.php">Previous Events</a></li>
             <li class=" has-children">
               <a href="#">Our Gallery</a>
               <ul class="dropdown">

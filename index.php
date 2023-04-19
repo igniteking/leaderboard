@@ -360,17 +360,25 @@
 <div class="site-section" data-aos="fade-up">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 order-2">
+      <div class="col-md-6 ">
         <img src="./assets/images/main.png" alt="Image" class="img-fluid">
       </div>
-      <div class="col-md-6 pr-md-5">
+      <div class="col-md-6 pr-md-5 order-2">
         <h2 class="text-black">Chairperson’s Message</h2>
         <h5><b>“The will to win is important, but the will to prepare is essential” - Prof. Dr. Balvir S. Tomar</b></h5>
         <p class="lead text-justify">
           To all the participants, I want to remind you that winning isn't everything. It's the spirit of the game that counts, and the joy of participating and pushing yourself beyond limits. So, go out there and give it your all. Play fair, respect your opponents, and most importantly, have fun!
           So, let’s come together, enjoy each other’s company, and make this Sports fest a huge success! I wish all the teams best of luck.
+<<<<<<< HEAD
         </p>
 
+=======
+        </p>  
+        
+        <h5 class="text-black font-weight-bold" style="text-align:end;">-Prof. Dr. balvir S. Tomar</h5>
+        <h5 class="text-black font-weight-bold" style="text-align:end;">Chairperson and Chancellor</h5>
+        <h5 class="text-black font-weight-bold" style="text-align:end;">NIMS University Rajasthan, Jaipur</h5>
+>>>>>>> c60107fa7e774fd67d480c4aab4b0160eb63896b
       </div>
     </div>
   </div>
