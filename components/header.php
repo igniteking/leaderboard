@@ -69,7 +69,7 @@
 
                 @media only screen and (min-width: 600px) {
                   margin-right: 180px;
-                  width: 50s%;
+                  width: 50%;
                   margin-top: 35px;
                 }
               }
