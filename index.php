@@ -1,5 +1,5 @@
 <!-- Connections Starts -->
-<?php include('./connections/connection.php');?>
+<?php include('./connections/connection.php'); ?>
 
 <?php include('./components/header.php'); ?>
 <!-- Header Ends -->
@@ -360,9 +360,6 @@
 <div class="site-section" data-aos="fade-up">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 order-2">
-        <img src="./assets/images/main.png" alt="Image" class="img-fluid">
-      </div>
       <div class="col-md-6 pr-md-5">
         <h2 class="text-black">Chairperson’s Message</h2>
         <p class="lead text-justify">
@@ -370,7 +367,9 @@
           So, let’s come together, enjoy each other’s company, and make this Sports fest a huge success! I wish all the teams best of luck.
         </p>
         <h5><b>“The will to win is important, but the will to prepare is essential” - Prof. Dr. Balvir S. Tomar</b></h5>
-
+      </div>
+      <div class="col-md-6">
+        <img src="./assets/images/main.png" alt="Image" class="img-fluid">
       </div>
     </div>
   </div>
@@ -448,7 +447,7 @@
     }
   }, 1000);
 
-    var deadline_badminton = new Date("Apr 21, 2023 19:37:25:59").getTime();
+  var deadline_badminton = new Date("Apr 21, 2023 19:37:25:59").getTime();
   var x = setInterval(function() {
     var now = new Date().getTime();
     var t = deadline_badminton - now;
@@ -462,7 +461,6 @@
       document.getElementById("demo3").innerHTML = "EXPIRED";
     }
   }, 1000);
-
 </script>
 <!-- Footer -->
 <?php include('./components/footer.php') ?>
