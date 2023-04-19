@@ -1,6 +1,6 @@
 <?php include('./components/header.php'); ?>
 
-<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/banner-new.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/Gallery/019.JPG);" data-aos="fade" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row align-items-center justify-content-start">
       <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
@@ -48,8 +48,27 @@
           </tbody>
         </table>
 
+<<<<<<< HEAD
       </div>
     </div>
   </div>
+=======
+                    <table class="table table-bordered"  >
+  <thead>
+    <tr>
+      <th scope="col">Year</th>
+      <th scope="col">Winner</th>
+      <th scope="col">1st Runner-up</th>
+      <th scope="col">2nd Runner-up</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-info">
+      <th scope="row">2020</th>
+      <td>Medical</td>
+      <td>Dental</td>
+      <td>-</td>
+    </tr>
+>>>>>>> c550534df91ddb4dc1c588c787dfab7e6c4a95e8
 
   <?php include('./components/footer.php') ?>
