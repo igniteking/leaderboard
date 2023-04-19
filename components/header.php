@@ -88,6 +88,9 @@
               <ul class="dropdown">
                 <li><a href="about.php">About Spardha</a></li>
                 <li><a href="nims.php">About NIMS</a></li>
+                <li><a href="spardha2022.php">Spardha 2022</a></li>
+                <li><a href="spardha2023.php">Spardha 2023</a></li>
+                <li><a href="committee.php">Committee</a></li>
               </ul>
             <li><a href="gallery.php">Our Gallery</a></li>
             </li>

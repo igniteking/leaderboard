@@ -1,6 +1,7 @@
 <?php include('./components/header.php'); ?>
 
-<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/banner-new.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+
+<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/banner-1.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row align-items-center justify-content-start">
       <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
