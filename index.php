@@ -1,10 +1,7 @@
-<!-- Header Starts -->
-<<<<<<< HEAD
+<!-- Connections Starts -->
 <?php include('./connections/connection.php');?>
-=======
-<?php include('./connections/connection.php'); ?>
->>>>>>> 418b1ea8cf2a9067850c7633aaa0b65419180fa9
 
+<!-- Header Starts -->
 <?php include('./components/header.php'); ?>
 <!-- Header Ends -->
 
