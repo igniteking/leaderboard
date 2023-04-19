@@ -418,7 +418,7 @@
 
 
 <script>
-  var deadline_football = new Date("Apr 19, 2023 16:37:25:59").getTime();
+  var deadline_football = new Date("Apr 19, 2023 17:37:25:59").getTime();
   var x = setInterval(function() {
     var now = new Date().getTime();
     var t = deadline_football - now;
