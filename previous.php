@@ -1,7 +1,6 @@
 <?php include('./components/header.php'); ?>
 
-<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/Gallery/019.JPG);" data-aos="fade" data-stellar-background-ratio="0.5"></div>
-
+<div class="site-blocks-cover" style="background-image: url(./assets/images/Gallery/019.JPG);" data-aos="fade" data-stellar-background-ratio="0.5"></div>
 <div class="site-section">
   <div class="container">
     <div class="row">
@@ -14,7 +13,6 @@
           <div class="previous-analysis">
             <div class="container">
               <h2>Let’s check out the winners of the last two years of Spardha:</h2>
-
               <table class="table table-bordered">
                 <thead>
                   <tr>
@@ -31,17 +29,14 @@
                     <td>Dental</td>
                     <td>-</td>
                   </tr>
-
                   <tr class="table-primary">
                     <th scope="row">2022</th>
                     <td>NIET</td>
                     <td>Pharmacy</td>
                     <td>Dental</td>
                   </tr>
-
                 </tbody>
               </table>
-
             </div>
           </div>
         </div>

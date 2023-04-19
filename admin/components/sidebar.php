@@ -32,30 +32,26 @@ if (isset($_SESSION['email'])) {
 				<li class="nav-item">
 					<a href="./index.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
 				</li>
-				<!-- <li class="nav-item pcoded-hasmenu">
-					<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Page layouts</span></a>
-					<ul class="pcoded-submenu">
-						<li><a href="layout-vertical.html" target="_blank">Vertical</a></li>
-						<li><a href="layout-horizontal.html" target="_blank">Horizontal</a></li>
-					</ul>
-				</li> -->
-				<li class="nav-item pcoded-menu-caption">
-					<label>User Management</label>
+				<li class="nav-item">
+					<a href="./user_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">User Management</span></a>
 				</li>
 				<li class="nav-item">
-					<a href="./user_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">User</span></a>
-				</li>
-				<li class="nav-item pcoded-menu-caption">
-					<label>Games Management</label>
+					<a href="./game_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Game Management</span></a>
 				</li>
 				<li class="nav-item">
-					<a href="./game_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Game</span></a>
+					<a href="./collage_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Collage Management</span></a>
 				</li>
 				<li class="nav-item pcoded-menu-caption">
-					<label>Collage Management</label>
+					<label>Match Management</label>
 				</li>
 				<li class="nav-item">
-					<a href="./collage_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Collage</span></a>
+					<a href="./match_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Match Management</span></a>
+				</li>
+				<li class="nav-item pcoded-menu-caption">
+					<label>Settings</label>
+				</li>
+				<li class="nav-item active">
+					<a href="./helpers/logout.php" class="nav-link bg-danger"><span class="pcoded-micon"><i class="feather icon-log-out"></i></span><span class="pcoded-mtext">Logout</span></a>
 				</li>
 			</ul>
 
