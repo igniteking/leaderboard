@@ -1,4 +1,5 @@
 <!-- Header Starts -->
+<?php include('./connections/connection.php');?>
 
 <?php include('./components/header.php'); ?>
 <!-- Header Ends -->
