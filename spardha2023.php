@@ -13,15 +13,13 @@
 </div>
 
 <div class="previous-about" style="margin-top: 100px">
-        <div class="container">
-            <div class="intro">
-                <h1 class="text-center">SPARDHA 2023</h1>
+<div class="container">
+  <div class="intro">
+    <h1 class="text-center">Spardha 2023</h1>
+
+  </div>
+  <p class="text-center justify-content">NIMS University Rajasthan, Jaipur has announced SPARDHA 2023 with a bang. The students are back with new energy and improved stamina to fight on the field.</p>
 </div>
-<p>NIMS University Rajasthan, Jaipur has announced SPARDHA 2023 with a bang. The students are back with new energy and improved stamina to fight on the field. </p>
-
-</div>
-
-
 </div>
 
 <?php include('./components/footer.php') ?>
