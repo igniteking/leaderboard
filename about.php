@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <img src="./assets/images/about_1.jpg" alt="Image" class="img-fluid">
+        <img src="./assets/images/about/018.jpg" alt="Image" class="img-fluid">
       </div>
       <div class="col-md-6 pl-md-5">
         <h2 class="text-black">About Spardha</h2>
@@ -20,7 +20,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 order-2">
-        <img src="./assets/images/about_2.jpg" alt="Image" class="img-fluid">
+        <img src="./assets/images/about/021.JPG" alt="Image" class="img-fluid">
       </div>
       <div class="col-md-6 pr-md-5">
         <h2 class="text-black">Celebrating Sportsmanship With SPARDHA</h2>
