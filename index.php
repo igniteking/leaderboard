@@ -1,11 +1,6 @@
 <!-- Connections Starts -->
 <?php include('./connections/connection.php');?>
 
-<<<<<<< HEAD
-<?php include('./connections/connection.php'); ?>
-=======
-<!-- Header Starts -->
->>>>>>> 2888939cba1ea379509e7aba15501f5dc5b112cb
 <?php include('./components/header.php'); ?>
 <!-- Header Ends -->
 

@@ -1,5 +1,14 @@
 <?php include('./components/header.php'); ?>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<div class="site-blocks-cover" style="background-image: url(./assets/images/banner-6.jpg);" data-aos="fade" data-stellar-background-ratio="0.5"></div>
+=======
+<<<<<<< HEAD
+<div class="site-blocks-cover" style="background-image: url(./assets/images/banner-6.jpg);" data-aos="fade" data-stellar-background-ratio="0.5"></div>
+=======
+>>>>>>> d6cc62c1cd19d71707459c3e7806242723c7431e
 <div class="site-blocks-cover overlay" style="background-image: url(./assets/images/gallery/010.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row align-items-center justify-content-start">
@@ -10,6 +19,11 @@
     </div>
   </div>
 </div>
+<<<<<<< HEAD
+=======
+>>>>>>> 9347e1ec06d2f4a49218b3f29783a4e8d2bb8f1b
+>>>>>>> f4c773abd7db61188473ecb6b13891df2b3a7490
+>>>>>>> d6cc62c1cd19d71707459c3e7806242723c7431e
 
 <div class="site-section">
   <div class="container">
