@@ -5,8 +5,8 @@ $game_id = $_GET['game_id'];
 $query = mysqli_query($conn, "DELETE FROM `game_data` WHERE game_id = '$game_id'");
 if ($query) {
     Notifications("success", "Deleted", "Successfully!");
-    echo "<meta http-equiv=\"refresh\" content=\"2; url=./game_management.php\">";
+    echo "<meta http-equiv=\"refresh\" content=\"0; url=./game_management.php\">";
 } else {
     Notifications("danger", "Error", "Inserting Record!");
-    echo "<meta http-equiv=\"refresh\" content=\"2; url=./game_management.php\">";
+    echo "<meta http-equiv=\"refresh\" content=\"0; url=./game_management.php\">";
 }

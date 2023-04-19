@@ -34,7 +34,7 @@ function Login($conn, $email, $pwd)
     }
 }
 
-function Register($user_type, $username, $password, $r_pswd, $conn, $email, $date)
+function Register($user_type, $username, $mobile, $password, $r_pswd, $conn, $email, $profile_picture, $date)
 {
     if ($username && $password && $r_pswd && $user_type) {
         $user_check2 = "SELECT email from user_data WHERE email='$email'";
@@ -46,10 +46,22 @@ function Register($user_type, $username, $password, $r_pswd, $conn, $email, $dat
                     if (preg_match("/[A-Z]/", $password)) {
                         if (preg_match("/[a-z]/", $password)) {
                             if (preg_match("/\W/", $password)) {
+                                // Looping all files
+                                $length = 10;
+                                $random = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
+                                $folder = mkdir("./demo/profile_picture/$random");
+                                $target_dir = "./demo/profile_picture/$random/";
+
+                                $profile_picture = $_FILES['profile_picture']['name'];
+                                // Upload file
+                                $array_content =  move_uploaded_file(@$_FILES['profile_picture']['tmp_name'], $target_dir . $profile_picture);
+
+                                $path = $target_dir . $profile_picture;
+
                                 $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
-                                mysqli_query($conn, "INSERT INTO `user_data`(`id`, `username`, `email`, `password`, `user_type`, `profile_picture`, `created_at`) VALUES 
-                                (NULL,'$username','$email','$hashedPwd','$user_type','','$date')");
-                                echo "<meta http-equiv=\"refresh\" content=\"0; url=login.php?status=1\">";
+                                mysqli_query($conn, "INSERT INTO `user_data`(`id`, `username`, `email`, `phone`, `password`, `user_type`, `profile_picture`, `created_at`) VALUES 
+                                (NULL,'$username','$email', '$mobile','$hashedPwd','$user_type','$path','$date')");
+                                echo "<meta http-equiv=\"refresh\" content=\"0; url=user_management.php?status=1\">";
                             } else {
                                 echo "<div class='error-styler'><center>
                                         <p style='padding: 10px; margin: 10px; font-size: 14px; color: #fff; font-weight: 600; border-radius: 8px; text-align: center; background: #ff7474;'>Password should contain at least one special character!</p>;

@@ -67,7 +67,6 @@
                                             <th>
                                                 Collage
                                             </th>
-                                            <th>Description</th>
                                             <th class="text-right">Action</th>
                                         </tr>
                                     </thead>
@@ -78,7 +77,6 @@
                                             $collage_id = $row['collage_id'];
                                             $collage_short = $row['collage_short'];
                                             $collage_name = $row['collage_name'];
-                                            $collage_description = $row['collage_description'];
                                             $collage_logo = $row['collage_logo'];
                                             echo '<tr>
                                             <td>
@@ -90,7 +88,6 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-truncate" style="max-width: 150px;">' . $collage_description . '</td>
                                             <td class="text-right">
                                             <button onclick="deleteCollage(' . $collage_id . ')" class="btn badge badge-light-danger">Delete</button>
                                             </td>
@@ -146,7 +143,6 @@
                             if (@$_POST['inser_collage_record']) {
                                 $collage_short = $_POST['collage_short'];
                                 $collage_name = $_POST['collage_name'];
-                                $collage_description = $_POST['collage_description'];
                                 $created_at = date('Y-m-d H:i:s');
 
                                 // Looping all files
@@ -161,7 +157,7 @@
 
                                 $path = $target_dir . $collage_logo;
 
-                                $insert_collage_record = mysqli_query($conn, "INSERT INTO `collage_data`(`collage_id`, `collage_short`, `collage_name`, `collage_description`, `collage_logo`, `created_at`) VALUES (NULL,'$collage_short','$collage_name','$collage_description','$path','$created_at')");
+                                $insert_collage_record = mysqli_query($conn, "INSERT INTO `collage_data`(`collage_id`, `collage_short`, `collage_name`, `collage_logo`, `created_at`) VALUES (NULL,'$collage_short','$collage_name','$path','$created_at')");
                                 if ($insert_collage_record) {
                                     Notifications("success", "Successfully", "Inserted!");
                                     echo "<meta http-equiv=\"refresh\" content=\"2; url=./collage_management.php\">";
@@ -182,12 +178,6 @@
                                         </div><br>
                                         <div class="input-group mb-4">
                                             <input type="text" class="form-control" placeholder="Collage's Full Name" name="collage_name" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div><br>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text">Collage's Description</span>
-                                            </div>
-                                            <textarea class="form-control" name="collage_description" aria-label="With textarea"></textarea>
                                         </div><br>
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
