@@ -46,13 +46,13 @@
           <div class="row align-items-center">
             <div class="col-6 col-md-3">
               <a href="#" class="text-secondary px-2 pl-0"><span class="icon-facebook"></span></a>
-              <a href="#" class="text-secondary px-2"><span class="icon-instagram"></span></a>
-              <a href="#" class="text-secondary px-2"><span class="icon-twitter"></span></a>
-              <a href="#" class="text-secondary px-2"><span class="icon-linkedin"></span></a>
+              <a href="https://www.instagram.com/nimsuniversity/?igshid=YmMyMTA2M2Y%3D" class="text-secondary px-2"><span class="icon-instagram"></span></a>
+              <a href="https://twitter.com/NimsUniversity?t=m61OJSrpheni_hQzFGJ7MA&s=09" class="text-secondary px-2"><span class="icon-twitter"></span></a>
+              <a href="https://www.youtube.com/@NIMSUniversityJaipur" class="text-secondary px-2"><span class="icon-youtube"></span></a>
             </div>
             <div class="col-6 col-md-9 text-right">
-              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-envelope mr-3"></span> <span class="d-none d-md-block">nims@nims.com</span></a></div>
-              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-phone mr-0 mr-md-3"></span> <span class="d-none d-md-block">+1 234 567</span></a></div>
+              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-envelope mr-3"></span> <span class="d-none d-md-block">Spardha@nimsuniversity.org</span></a></div>
+              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-phone mr-0 mr-md-3"></span> <span class="d-none d-md-block">18001201020</span></a></div>
             </div>
           </div>
         </div>

@@ -369,19 +369,11 @@
         <p class="lead text-justify">
           To all the participants, I want to remind you that winning isn't everything. It's the spirit of the game that counts, and the joy of participating and pushing yourself beyond limits. So, go out there and give it your all. Play fair, respect your opponents, and most importantly, have fun!
           So, let’s come together, enjoy each other’s company, and make this Sports fest a huge success! I wish all the teams best of luck.
-<<<<<<< HEAD
         </p>
 
-        <h5 class="text-black font-weight-bold">Prof. Dr. balvir S. Tomar</h5>
-        <h5 class="text-black font-weight-bold">Chairperson and Chancellor</h5>
-        <h5 class="text-black font-weight-bold">NIMS University Rajasthan, Jaipur</h5>
-=======
-        </p>  
-        
         <h5 class="text-black font-weight-bold" style="text-align:end;">-Prof. Dr. balvir S. Tomar</h5>
         <h5 class="text-black font-weight-bold" style="text-align:end;">Chairperson and Chancellor</h5>
         <h5 class="text-black font-weight-bold" style="text-align:end;">NIMS University Rajasthan, Jaipur</h5>
->>>>>>> c60107fa7e774fd67d480c4aab4b0160eb63896b
       </div>
     </div>
   </div>
