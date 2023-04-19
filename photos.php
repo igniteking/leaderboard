@@ -47,6 +47,13 @@
                 <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/Gallery/019.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/Gallery/019.jpg"></a></div>
                 
             </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/Gallery/020.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/Gallery/020.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/Gallery/021.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/Gallery/021.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/Gallery/022.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/Gallery/022.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/Gallery/023.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/Gallery/023.jpg"></a></div>
+                
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
