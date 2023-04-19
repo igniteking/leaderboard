@@ -1,16 +1,7 @@
 <?php include('./components/header.php'); ?>
 
 
-<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/banner-3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-  <div class="container">
-    <div class="row align-items-center justify-content-start">
-      <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
-        <h1 class="bg-text-line">About NIMS</h1>
-        <p class="mt-4 text-justify">Nims University Rajasthan, Jaipur, One of the Leading Universities in India and a Largest self-financed university in Rajasthan, is structured as a composite model university. </p>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="site-blocks-cover" style="background-image: url(./assets/images/banner-3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5"></div>
 
 <div class="site-section" data-aos="fade-up">
   <div class="container">
@@ -28,38 +19,6 @@
   </div>
 </div>
 
-<div class="site-section" data-aos="fade-up">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-2">
-        <img src="./assets/images/about/our_mission.jpg" alt="Image" class="img-fluid">
-      </div>
-      <div class="col-md-6 pr-md-5">
-        <h2 class="text-black">Our Vision</h2>
-        <p class="lead text-justify">To Provide Outstanding Learning Experience for Excellence in Education, Healthcare and have a transformative impact on Society through continual innovation in Education, Research and Entrepreneurship.  </p>
-         
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="site-section" data-aos="fade-up">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="./assets/images/about/our_mission.jpg" alt="Image" class="img-fluid">
-      </div>
-      <div class="col-md-6 pl-md-5">
-        <h2 class="text-black">Our Mission</h2>
-        <p class="lead text-justify">To provide affordable education to the society in all walks of life.</p>
-        <p class="lead text-justify">To provide modern technical, medical and other Professional courses with emphasis on developing value based ethical career orientation.</p>
-        <p class="lead text-justify">To carry out cutting-edge research and development for the benefit of society.</p>
-        <p class="lead text-justify">To produce skilled and competent manpower with commitment to societal needs.</p>
-        <p class="lead text-justify">To develop employability and entrepreneurship of stakeholders.</p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="slide-one-item owl-carousel">
   <div class="bg-image center overlay" style="background-image: url('./assets/images/game.jpg'); "></div>
