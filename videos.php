@@ -14,6 +14,7 @@
 </div>
 
 
+
 <div class="site-section" data-aos="fade-up">
   <div class="container">
     <div class="row align-items-center">
@@ -29,5 +30,14 @@
     </div>
   </div>
 </div>
+<div class="video " >
+
+<center>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/47YWJyGgD08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </center>
+</div>
+
 
 <?php include('./components/footer.php') ?>
