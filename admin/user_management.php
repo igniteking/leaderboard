@@ -59,54 +59,60 @@
                             </div>
                         </div>
                         <div class="card-body p-0">
+                            <div id="notification"></div>
                             <div class="table-responsive">
                                 <table class="table table-hover mb-0">
                                     <thead>
                                         <tr>
-                                            <th>
-                                                <div class="chk-option">
-                                                    <label class="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
-                                                        <input type="checkbox" class="custom-control-input">
-                                                        <span class="custom-control-label"></span>
-                                                    </label>
-                                                </div>
-                                                Assigned
-                                            </th>
                                             <th>Name</th>
-                                            <th>Due Date</th>
-                                            <th class="text-right">Priority</th>
+                                            <th>Phone</th>
+                                            <th class="text-right">Action(s)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
                                         $fetch_user = mysqli_query($conn, "SELECT * FROM `user_data`");
                                         while ($row = mysqli_fetch_array($fetch_user)) {
+                                            $user_id = $row['id'];
                                             $username = $row['username'];
-                                            $user_email = $row['user_email'];
+                                            $email = $row['email'];
+                                            $phone = $row['phone'];
+                                            $profile_picture = $row['profile_picture'];
                                             echo '<tr>
                                             <td>
-                                                <div class="chk-option">
-                                                    <label class="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
-                                                        <input type="checkbox" class="custom-control-input">
-                                                        <span class="custom-control-label"></span>
-                                                    </label>
-                                                </div>
                                                 <div class="d-inline-block align-middle">
-                                                    <img src="assets/images/user/avatar-4.jpg" alt="user image" class="img-radius wid-40 align-top m-r-15">
+                                                    <img src="./' . $profile_picture . '" alt="user image" class="img-radius wid-40 align-top m-r-15">
                                                     <div class="d-inline-block">
-                                                        <h6>Zaidan khan</h6>
-                                                        <p class="text-muted m-b-0">Graphics Designer</p>
+                                                        <h6>' . $username . '</h6>
+                                                        <p class="text-muted m-b-0">' . $email . '</p>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>Able Pro</td>
-                                            <td>Jun, 26</td>
-                                            <td class="text-right"><label class="badge badge-light-danger">Low</label></td>
+                                            <td><p class="text-muted m-b-0">' . $phone . '</p></td>
+                                            <td class="text-right">
+                                            <button onclick="deleteUser(' . $user_id . ')" class="btn badge badge-light-danger">Delete</button>
+                                            </td>
                                         </tr>';
                                         }
                                         ?>
-
                                     </tbody>
+                                    <script>
+                                        function deleteUser(id) {
+                                            if (id.length == 0) {
+                                                document.getElementById("notification").innerHTML = "";
+                                                return;
+                                            } else {
+                                                var xmlhttp = new XMLHttpRequest();
+                                                xmlhttp.onreadystatechange = function() {
+                                                    if (this.readyState == 4 && this.status == 200) {
+                                                        document.getElementById("notification").innerHTML = this.responseText;
+                                                    }
+                                                };
+                                                xmlhttp.open("GET", "./helpers/delete_user.php?user_id=" + id);
+                                                xmlhttp.send();
+                                            }
+                                        }
+                                    </script>
                                 </table>
                             </div>
                         </div>
@@ -121,7 +127,24 @@
                             <h5>Add User</h5>
                         </div>
                         <div class="card-body">
-                            <form action="./user_management.php" method="post">
+                            <?php
+                            if (@$_POST['register']) {
+                                $user_username = $_POST['username'];
+                                $user_email = $_POST['email'];
+                                $user_mobile = $_POST['mobile'];
+                                $user_password = $_POST['password'];
+                                $r_pswd = @$_POST['r_pswd'];
+                                $email = @$_POST['email'];
+                                $profile_picture = $_POST['profile_picture'];
+                                $date = date("Y-m-d H:i:s");
+                                Register("admin", $user_username, $user_mobile, $user_password, $r_pswd, $conn, $user_email, $profile_picture, $date);
+                                if (@$_GET['status'] == 1) {
+                                    Notifications("success", "Successfully", "Inserted!");
+                                    echo "<meta http-equiv=\"refresh\" content=\"2; url=./user_management.php\">";
+                                }
+                            }
+                            ?>
+                            <form action="./user_management.php" method="post" enctype="multipart/form-data">
                                 <div class="">
                                     <div class="card-body m-3">
                                         <div class="input-group mb-4">
@@ -140,7 +163,26 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">+91</span>
                                             </div>
-                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                            <input type="text" class="form-control" name="mobile" aria-label="Amount (to the nearest dollar)">
+                                        </div><br>
+                                        <div class="input-group mb-4">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">*</span>
+                                            </div>
+                                            <input type="text" class="form-control col-md-6" placeholder="Admin's Passwrod" name="password" aria-label="Username" aria-describedby="basic-addon1">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">*</span>
+                                            </div>
+                                            <input type="passwrod" class="form-control col-md-6" placeholder="Re-Type Admin's Passwrod" name="r_pswd" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div><br>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">User's Profile Picture</span>
+                                            </div>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" name="profile_picture" id="inputGroupFile01">
+                                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                            </div>
                                         </div><br>
                                         <div class="input-group">
                                             <input type="submit" value="Insert Record" name="register" class="btn btn-primary col-md-12">
