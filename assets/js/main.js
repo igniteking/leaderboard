@@ -240,7 +240,7 @@ jQuery(document).ready(function ($) {
         )
       );
     });
-    $("#date-countdown1").countdown("2020/10/10", function (event) {
+    $("#date-countdown1").countdown("2023/10/10", function (event) {
       var $this = $(this).html(
         event.strftime(
           "" +
