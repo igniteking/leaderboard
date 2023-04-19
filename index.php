@@ -1,4 +1,5 @@
 <!-- Header Starts -->
+<?php include('./connections/connection.php'); ?>
 
 <?php include('./components/header.php'); ?>
 <!-- Header Ends -->
@@ -6,7 +7,7 @@
 <!-- Header Starts -->
 <?php include('./components/carousel.php'); ?>
 <!-- Header Ends -->
-
+<br><br>
 <?php include('./components/trio.php'); ?>
 
 
@@ -31,10 +32,9 @@
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-football" role="tabpanel" aria-labelledby="pills-football">
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Football
-                  <div id="date-countdown"></div>
+                  <div id="demo"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -143,7 +143,7 @@
 
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Basketball
-                  <div id="date-countdown1"></div>
+                  <div id="demo2"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -252,7 +252,7 @@
 
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Badminton
-                  <div id="date-countdown2"></div>
+                  <div id="demo3"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -266,15 +266,10 @@
                     </div>
                   </div>
                 </div>
-
-
               </div>
-
               <div class="bg-image overlay-success rounded mb-5" style="background-image: url('assets/images/game3.jpg');" data-stellar-background-ratio="0.5">
-
                 <div class="row align-items-center">
                   <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
-
                     <div class="text-center text-lg-left">
                       <div class="d-block d-lg-flex align-items-center">
                         <div class="image mx-auto mb-3 mb-lg-0 mr-lg-3">
@@ -286,7 +281,6 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
                   <div class="col-md-12 col-lg-4 text-center mb-4 mb-lg-0">
                     <div class="d-inline-block">
@@ -295,7 +289,6 @@
                       <p class="mb-0"><small class="text-uppercase text-black font-weight-bold">10 September / 7:30 AM</small></p>
                     </div>
                   </div>
-
                   <div class="col-md-12 col-lg-4 text-center text-lg-right">
                     <div class="">
                       <div class="d-block d-lg-flex align-items-center">
@@ -383,7 +376,7 @@
   </div>
 </div>
 
-
+<!-- More About Teams -->
 <div class="site-section block-13 bg-primary fixed overlay-primary bg-image" style="background-image: url('assets/images/game4.jpg');" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row mb-5">
@@ -423,6 +416,56 @@
   </div>
 
 </div>
+
+
+
+<script>
+  var deadline_football = new Date("Apr 19, 2023 16:37:25:59").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_football - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("demo").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+  var deadline_basketball = new Date("Apr 20, 2023 16:37:25:59").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_basketball - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("demo2").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("demo2").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+    var deadline_badminton = new Date("Apr 21, 2023 19:37:25:59").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_badminton - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("demo3").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("demo3").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+</script>
 <!-- Footer -->
 <?php include('./components/footer.php') ?>
 
