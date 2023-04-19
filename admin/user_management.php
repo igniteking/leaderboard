@@ -78,7 +78,12 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <?php
+                                        $fetch_user = mysqli_query($conn, "SELECT * FROM `user_data`");
+                                        while ($row = mysqli_fetch_array($fetch_user)) {
+                                            $username = $row['username'];
+                                            $user_email = $row['user_email'];
+                                            echo '<tr>
                                             <td>
                                                 <div class="chk-option">
                                                     <label class="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
@@ -97,67 +102,10 @@
                                             <td>Able Pro</td>
                                             <td>Jun, 26</td>
                                             <td class="text-right"><label class="badge badge-light-danger">Low</label></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="chk-option">
-                                                    <label class="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
-                                                        <input type="checkbox" class="custom-control-input">
-                                                        <span class="custom-control-label"></span>
-                                                    </label>
-                                                </div>
-                                                <div class="d-inline-block align-middle">
-                                                    <img src="assets/images/user/avatar-2.jpg" alt="user image" class="img-radius wid-40 align-top m-r-15">
-                                                    <div class="d-inline-block">
-                                                        <h6>Zaidan Khan</h6>
-                                                        <p class="text-muted m-b-0">Web Designer</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Mashable</td>
-                                            <td>March, 31</td>
-                                            <td class="text-right"><label class="badge badge-light-primary">high</label></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="chk-option">
-                                                    <label class="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
-                                                        <input type="checkbox" class="custom-control-input">
-                                                        <span class="custom-control-label"></span>
-                                                    </label>
-                                                </div>
-                                                <div class="d-inline-block align-middle">
-                                                    <img src="assets/images/user/avatar-3.jpg" alt="user image" class="img-radius wid-40 align-top m-r-15">
-                                                    <div class="d-inline-block">
-                                                        <h6>Zaidan Khan</h6>
-                                                        <p class="text-muted m-b-0">Developer</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Flatable</td>
-                                            <td>Aug, 02</td>
-                                            <td class="text-right"><label class="badge badge-light-success">medium</label></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="chk-option">
-                                                    <label class="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
-                                                        <input type="checkbox" class="custom-control-input">
-                                                        <span class="custom-control-label"></span>
-                                                    </label>
-                                                </div>
-                                                <div class="d-inline-block align-middle">
-                                                    <img src="assets/images/user/avatar-2.jpg" alt="user image" class="img-radius wid-40 align-top m-r-15">
-                                                    <div class="d-inline-block">
-                                                        <h6>Zaidan Khan</h6>
-                                                        <p class="text-muted m-b-0">Developer</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Guruable</td>
-                                            <td>Sep, 22</td>
-                                            <td class="text-right"><label class="badge badge-light-primary">high</label></td>
-                                        </tr>
+                                        </tr>';
+                                        }
+                                        ?>
+
                                     </tbody>
                                 </table>
                             </div>
