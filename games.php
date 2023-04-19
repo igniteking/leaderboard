@@ -1,23 +1,7 @@
 <?php include('./components/header.php'); ?>
 
-<<<<<<< HEAD
+
 <div class="site-blocks-cover" style="background-image: url(./assets/images/banner-6.jpg);" data-aos="fade" data-stellar-background-ratio="0.5"></div>
-=======
-<<<<<<< HEAD
-<div class="site-blocks-cover" style="background-image: url(./assets/images/banner-6.jpg);" data-aos="fade" data-stellar-background-ratio="0.5"></div>
-=======
-<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/gallery/010.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-  <div class="container">
-    <div class="row align-items-center justify-content-start">
-      <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
-        <h1 class="bg-text-line">Our Games</h1>
-        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime velit nostrum praesentium voluptatem. Mollitia perferendis dolore dolores.</p>
-      </div>
-    </div>
-  </div>
-</div>
->>>>>>> 9347e1ec06d2f4a49218b3f29783a4e8d2bb8f1b
->>>>>>> f4c773abd7db61188473ecb6b13891df2b3a7490
 
 <div class="site-section">
   <div class="container">
@@ -47,13 +31,8 @@
   <div class="site-section feature-blocks-1 no-margin-top">
     <div class="container">
       <div class="row mb-4">
-        <div class="col-md-12 text-center">
-          <h2 class="text-black">Match Highlights</h2>
-        </div>
+        <?php include('./components/trio.php'); ?>
       </div>
-      <br><br>
-      <?php include('./components/trio.php'); ?>
-
     </div>
   </div>
 
