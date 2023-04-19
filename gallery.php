@@ -25,7 +25,7 @@
             <div class="row photos">
                 <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/Gallery/005.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/Gallery/005.jpg"></a></div>
                 <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/Gallery/006.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/Gallery/006.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/Gallery/007.jpg data-lightbox="photos"><img class="img-fluid" src="assets/images/Gallery/007.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/Gallery/007.jpg data-lightbox=" photos"><img class="img-fluid" src="assets/images/Gallery/007.jpg"></a></div>
                 <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/Gallery/008.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/images/Gallery/008.jpg"></a></div>
             </div>
             <div class="row photos">
