@@ -19,7 +19,7 @@
               <li><a href="games.php">Games</a></li>
               <li><a href="nims.php">About Us</a></li>
               <li><a href="team.php">Team</a></li>
-              <li><a href="#">Committee</a></li>
+              <li><a href="./assets/media/Committee Constituted for Spardha-2023 (1).pdf">Committee</a></li>
             </ul>
           </div>
           <div class="col-md-6 col-lg-6">
