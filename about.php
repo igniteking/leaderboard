@@ -51,7 +51,7 @@
       <div class="col-md-6 pl-md-5">
         <h2 class="text-black">About Organisers</h2>
         <p class="lead text-justify">Organising Content </p>
-        <button class="btn btn-primary">View More</button>
+        <button onclick="location.href='assets/media/Committee Constituted for Spardha-2023 (1).pdf'" class="btn btn-primary">View More <a href="./assets/media/Committee Constituted for Spardha-2023 (1).pdf"></a></button>
     </div>
   </div>
 </div>
