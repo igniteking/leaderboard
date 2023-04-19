@@ -391,7 +391,6 @@
         $fetch_collage = mysqli_query($conn, "SELECT * FROM `collage_data`");
         while ($row = mysqli_fetch_array($fetch_collage)) {
           $collage_name = $row['collage_name'];
-          $collage_description = $row['collage_description'];
           $collage_logo = $row['collage_logo'];
           echo '<div class="item">
             <!-- uses .block-12 -->
@@ -403,7 +402,6 @@
                 <span class="meta">May 20th 2018</span>
                 <div class="text-inner">
                   <h2 class="heading mb-3"><a href="#" class="text-black">' . $collage_name . '</a></h2>
-                  <p>' . $collage_description . '</p>
                 </div>
               </div>
             </div>
