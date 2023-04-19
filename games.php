@@ -1,5 +1,6 @@
 <?php include('./components/header.php'); ?>
 
+<<<<<<< HEAD
 <div class="site-blocks-cover overlay" style="background-image: url(./assets/images/gallery/010.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row align-items-center justify-content-start">
@@ -10,6 +11,9 @@
     </div>
   </div>
 </div>
+=======
+<div class="site-blocks-cover" style="background-image: url(./assets/images/banner-6.jpg);" data-aos="fade" data-stellar-background-ratio="0.5"></div>
+>>>>>>> 418b1ea8cf2a9067850c7633aaa0b65419180fa9
 
 <div class="site-section">
   <div class="container">
