@@ -12,7 +12,15 @@
     </div>
   </div>
 </div>
-
+<div class="site-section" data-aos="fade-up">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12 order-2">
+        <iframe href="https://www.youtube.com/watch?v=Y94dltOb9xs&feature=youtu.be" alt="" class=""></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="site-section" data-aos="fade-up">
   <div class="container">
@@ -24,7 +32,7 @@
           </div>
         </div>
 
-        <p class="text-center justify-content">NIMS University Rajasthan, Jaipur has announced SPARDHA 2023 with a bang. The students are back with new energy and improved stamina to fight on the field. <br>And this time, we have something special in store for the SPARDHA participants and audience – The Stalls from Different Colleges/Institutes </p>
+        <p class="text-center justify-content"></p>
       </div>
     </div>
   </div>
