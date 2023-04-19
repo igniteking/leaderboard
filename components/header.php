@@ -57,28 +57,30 @@
           </div>
         </div>
       </div>
-      <nav class="site-navigation position-relative text-right bg-black text-md-right" role="navigation">
-        <div class="container position-relative">
-          <div class="site-logo">
-            <style>
-              .main_logo {
-                margin-top: 35px;
-                margin-right: 180px;
-                width: 50%;
-                margin-left: -450px;
+      <style>
+        .main_logo {
+          margin-top: 35px;
+          margin-right: 180px;
+          width: 50%;
+          margin-left: -450px;
 
-                @media only screen and (min-width: 600px) {
-                  margin-right: 180px;
-                  width: 50%;
-                  margin-top: 35px;
-                }
-              }
-            </style>
+          @media only screen and (min-width: 600px) {
+            margin-right: 180px;
+            width: 50%;
+            margin-top: 35px;
+          }
+        }
+      </style>
+      <nav class="site-navigation position-relative text-right bg-black text-md-right" role="navigation">
+        <div class="container" style="margin-right: 0px;">
+          <div class="site-logo">
             <a href="index.php"><img class="main_logo" src="assets/images/logo-1.png" alt=""></a>
           </div>
-          <div class="d-inline-block d-md-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          <div class="d-inline-block d-md-none ml-md-0 mr-auto py-3">
+            <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a>
+          </div>
           <ul class="site-menu js-clone-nav d-none d-md-block">
-            <li class="active">
+            <li class="">
               <a href="index.php">Home</a>
             </li>
             <li class="has-children">
@@ -87,7 +89,7 @@
                 <li><a href="about.php">About Spardha</a></li>
                 <li><a href="nims.php">About NIMS</a></li>
                 <li><a href="spardha2023.php">Spardha 2023</a></li>
-                
+
                 <li><a href="./assets/media/Committee Constituted for Spardha-2023 (1).pdf" target="_blank"> Organising Committee</a></li>
               </ul>
             </li>
@@ -100,7 +102,7 @@
                 <li><a href="photos.php">Photos</a></li>
                 <li><a href="videos.php">Videos</a></li>
               </ul>
-              <!-- <li><a href="contact.php">Contact</a></li> -->
+            <li><a href="contact.php">Contact</a></li>
           </ul>
 
         </div>
