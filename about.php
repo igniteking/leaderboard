@@ -34,9 +34,9 @@
         <img src="./assets/images/about_2.jpg" alt="Image" class="img-fluid">
       </div>
       <div class="col-md-6 pr-md-5">
-        <h2 class="text-black">Dedicated Team</h2>
-        <p class="lead text-justify">Spardha is an annual inter-college sports tournament of NIMS University Rajasthan, Jaipur. Every year, the students get an opportunity to showcase their sportsmanship and invest all their energy to ensure a win. This event, at the same time, teaches them to cope with the situations where they try their best, yet lose. </p>
-        <p>Spardha, for NIMSians, is not about winning or losing, but competing with all spirit. </p>
+        <h2 class="text-black">Celebrating Sportsmanship With SPARDHA</h2>
+        <p class="lead text-justify">NIMS SPARDHA is an annual sports event that the NIMSians wait for throughout the year. NIMS University Rajasthan, Jaipur has not only been a statute of excellence in academics, but also in other fields that determine the overall growth and development of an individual. Spardha is the event that the youngsters are most excited for. </p>
+        <p>NIMS University Rajasthan, Jaipur celebrates this sports event whole-heartedly every year and keeps alive the sportsman spirit in students in every way. SPARDHA, for NIMS, denotes Sportsmanship, Passion, Action, Radiance, Determination, and Hard work of the participants that finally lead to their Achievement. </p>
       </div>
     </div>
   </div>
