@@ -47,6 +47,9 @@ if (isset($_SESSION['email'])) {
 				<li class="nav-item">
 					<a href="./match_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Match Management</span></a>
 				</li>
+				<li class="nav-item">
+					<a href="./match_list.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Match List</span></a>
+				</li>
 				<li class="nav-item pcoded-menu-caption">
 					<label>Settings</label>
 				</li>
