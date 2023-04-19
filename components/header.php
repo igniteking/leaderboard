@@ -96,8 +96,8 @@
             <li class="has-children">
               <a href="#">Our Gallery</a>
               <ul class="dropdown">
-                <li><a href="about.php">Photos</a></li>
-                <li><a href="nims.php">Videos</a></li>
+                <li><a href="photos.php">Photos</a></li>
+                <li><a href="videos.php">Videos</a></li>
               </ul>
             <li><a href="contact.php">Contact</a></li>
           </ul>
