@@ -1286,3 +1286,16 @@ a:hover {
 .photo-gallery .item {
   padding-bottom:30px;
 }
+
+
+@media screen and (max-width: 780px) {
+  #slide1 {
+     display: none;
+  }}
+
+
+@media screen and (min-width : 600px){
+  #slide2 {
+      display: none;
+  }
+}

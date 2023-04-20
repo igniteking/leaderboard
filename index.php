@@ -371,7 +371,7 @@
           So, let’s come together, enjoy each other’s company, and make this Sports fest a huge success! I wish all the teams best of luck.
         </p>
 
->>>>>>> 9d529f26d6ec6198ea8c99d4bac84c7127ccd982
+
         <h5 class="text-black font-weight-bold" style="text-align:end;">-Prof. Dr. balvir S. Tomar</h5>
         <h5 class="text-black font-weight-bold" style="text-align:end;">Chairperson and Chancellor</h5>
         <h5 class="text-black font-weight-bold" style="text-align:end;">NIMS University Rajasthan, Jaipur</h5>

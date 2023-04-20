@@ -42,7 +42,7 @@
               <a href="https://www.instagram.com/nimsuniversity/?igshid=YmMyMTA2M2Y%3D" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
               <a href="https://www.youtube.com/watch?v=Y94dltOb9xs&feature=youtu.be" class="pl-3 pr-3"><span class="icon-youtube"></span></a>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
 

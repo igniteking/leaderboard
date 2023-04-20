@@ -1,7 +1,7 @@
 <?php include('./components/header.php'); ?>
 
 
-<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/banner-3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+<div class="site-blocks-cover overlay" id="slide1" style="background-image: url(./assets/images/banner-3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
     <div class="container">
         <div class="row align-items-center justify-content-start">
             <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
@@ -11,6 +11,25 @@
         </div>
     </div>
 </div>
+
+<div class="slide-one-item home-slider owl-carousel" id="slide2">
+    
+<img src="assets/images/banner-3.jpg" alt="">
+</div>
+
+
+<style>
+  @media screen and (min-width : 600px){
+  #slide2 {
+      display: none;
+  }
+}
+  @media screen and (max-width : 600px){
+  #slide1 {
+      display: none;
+  }
+}
+</style>
 
 <div class="site-section" data-aos="fade-up">
     <div class="container">

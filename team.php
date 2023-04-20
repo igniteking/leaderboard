@@ -2,9 +2,26 @@
 <?php include('./components/header.php'); ?>
 
 
-<div class="site-blocks-cover" style="background-image: url(./assets/images/banner-5.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+<div class="site-blocks-cover" id="slide1" style="background-image: url(./assets/images/banner-5.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+</div>
+<div class="slide-one-item home-slider owl-carousel" id="slide2">
+    
+<img src="assets/images/banner-3.jpg" alt="">
 </div>
 
+
+<style>
+  @media screen and (min-width : 600px){
+  #slide2 {
+      display: none;
+  }
+}
+  @media screen and (max-width : 600px){
+  #slide1 {
+      display: none;
+  }
+}
+</style>
 <div class="site-section">
   <div class="container">
     <div class="row mb-5">
