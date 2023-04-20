@@ -10,7 +10,6 @@
 <br><br>
 <?php include('./components/trio.php'); ?>
 
-
 <!-- Score Board  -->
 <div class="site-blocks-vs site-section bg-light">
   <div class="container">
@@ -53,46 +52,7 @@
               </div>
 
               <div class="bg-image overlay-success rounded mb-5" style="background-image: url('assets/images/game4.jpg');" data-stellar-background-ratio="0.5">
-
-                <div class="row align-items-center">
-                  <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
-
-                    <div class="text-center text-lg-left">
-                      <div class="d-block d-lg-flex align-items-center">
-                        <div class="image mx-auto mb-3 mb-lg-0 mr-lg-3">
-                          <img src="assets/images/team/img 1.png" alt="Image" class="img-fluid">
-                        </div>
-                        <div class="text">
-                          <h3 class="h5 mb-0 text-black">Sea Hawks</h3>
-                          <span class="text-uppercase small country text-black">Brazil</span>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="col-md-12 col-lg-4 text-center mb-4 mb-lg-0">
-                    <div class="d-inline-block">
-                      <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">Premier League &mdash; Round 10</small></p>
-                      <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h3">3:2</span></div>
-                      <p class="mb-0"><small class="text-uppercase text-black font-weight-bold">10 September / 7:30 AM</small></p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-12 col-lg-4 text-center text-lg-right">
-                    <div class="">
-                      <div class="d-block d-lg-flex align-items-center">
-                        <div class="image mx-auto ml-lg-3 mb-3 mb-lg-0 order-2">
-                          <img src="assets/images/team/img 2.png" alt="Image" class="img-fluid">
-                        </div>
-                        <div class="text order-1">
-                          <h3 class="h5 mb-0 text-black">Law</h3>
-                          <span class="text-uppercase small country text-black">London</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
+                <div id="score_update" onload="scoreUpdate()"></div>
               </div>
               <div class="row align-items-center">
                 <?php
@@ -419,7 +379,26 @@
 </div>
 
 
+<script>
+  window.addEventListener("load", (event) => {
+    scoreUpdate();
+  });
 
+  function scoreUpdate() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("score_update").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/score_update.php");
+    xmlhttp.send();
+  }
+  const element = document.getElementById("demo");
+  setInterval(function() {
+    scoreUpdate()
+  }, 1000);
+</script>
 <script>
   var deadline_football = new Date("Apr 19, 2023 17:37:25:59").getTime();
   var x = setInterval(function() {
