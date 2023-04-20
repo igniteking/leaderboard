@@ -64,8 +64,11 @@ while ($row = mysqli_fetch_array($fetch_data)) {
                                 <div class="col m-t-15 b-r-default">
                                     <h6 class="text-muted">Score</h6>
                                     <h6><?php
-                                        @$team_name =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id='$match_id'")))[0];
-                                        if ($team_name) {
+                                        $check =  mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
+                                        if ($check > 0) {
+                                            echo $team_name =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id='$match_id'")))[0];
+                                        } else {
+                                            $team_name = ".";
                                         }
                                         ?></h6>
                                 </div>
@@ -89,7 +92,14 @@ while ($row = mysqli_fetch_array($fetch_data)) {
                             <div class="row justify-content-center m-t-10 b-t-default m-l-0 m-r-0">
                                 <div class="col m-t-15 b-r-default">
                                     <h6 class="text-muted">Score</h6>
-                                    <h6><?php echo array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0]; ?></h6>
+                                    <h6><?php
+                                        $check =  mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
+                                        if ($check > 0) {
+                                            echo $team_name =  array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
+                                        } else {
+                                            $team_name = ".";
+                                        }
+                                        ?></h6>
                                 </div>
                                 <div class="col m-t-15">
                                     <h6 class="text-muted">Game Type</h6>
@@ -129,7 +139,7 @@ while ($row = mysqli_fetch_array($fetch_data)) {
                                 $created_at = date('Y-m-d H:i:s');
                                 $check =  mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                                 if ($check > 0) {
-                                    $insert_match_record = mysqli_query($conn, "UPDATE INTO `score_data`(`score_id`, `match_id`,`team_1`, `team_2`, `created_at`) VALUES (NULL,'$match_id','$team_1','$team_2', '$created_at') WHERE score_id = '$score_id'");
+                                    $insert_match_record = mysqli_query($conn, "UPDATE `score_data` SET `team_1`='$team_1',`team_2`='$team_2' WHERE match_id = '$match_id'");
                                 } else {
                                     $insert_match_record = mysqli_query($conn, "INSERT INTO `score_data`(`score_id`, `match_id`,`team_1`, `team_2`, `created_at`) VALUES (NULL,'$match_id','$team_1','$team_2', '$created_at')");
                                 }
@@ -158,7 +168,13 @@ while ($row = mysqli_fetch_array($fetch_data)) {
                                                     <input type="number" name="team_2" class="form-control" id="collage2">
                                                 </div>
                                             </div>
-                                            <input type="hidden" name="score_id" value="<?php echo array_values(mysqli_fetch_array($conn->query("SELECT score_id FROM `score_data` WHERE match_id='$match_id'")))[0]; ?>">
+                                            <?php
+                                            $check =  mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
+                                            if ($check > 0) {
+                                                echo  '<input type="hidden" name="score_id" value="' . array_values(mysqli_fetch_array($conn->query("SELECT score_id FROM `score_data` WHERE match_id='$match_id'")))[0] . '">';
+                                            }
+                                            ?>
+
                                         </div><br>
                                         <div class="input-group">
                                             <input type="submit" value="Insert Record" name="insert_score" class="btn btn-primary col-md-12">
