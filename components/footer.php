@@ -40,7 +40,7 @@
               <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
               <a href="https://twitter.com/NimsUniversity?t=m61OJSrpheni_hQzFGJ7MA&s=09" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
               <a href="https://www.instagram.com/nimsuniversity/?igshid=YmMyMTA2M2Y%3D" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+              <a href="https://www.youtube.com/watch?v=Y94dltOb9xs&feature=youtu.be" class="pl-3 pr-3"><span class="icon-youtube"></span></a>
             </div>
           </div>
         </div>
