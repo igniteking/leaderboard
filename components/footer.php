@@ -28,7 +28,7 @@
               <li><a href="./rules.php">Rules and Regulations</a></li>
               <li><a href="contact.php">Contact Us</a></li>
               <li><a href="photos.php">Photos</a></li>
-              <li><a href="#">Videos</a></li>
+              <li><a href="videos.php">Videos</a></li>
             </ul>
           </div>
         </div>
@@ -38,8 +38,8 @@
             <h3 class="footer-heading mb-4">Follow Us</h3>
             <div>
               <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+              <a href="https://twitter.com/NimsUniversity?t=m61OJSrpheni_hQzFGJ7MA&s=09" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+              <a href="https://www.instagram.com/nimsuniversity/?igshid=YmMyMTA2M2Y%3D" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
               <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
             </div>
           </div>
