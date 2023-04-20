@@ -1,12 +1,12 @@
 <?php include('./components/header.php'); ?>
 
 
-<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/banner-new.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+<div class="site-blocks-cover overlay" style="background-image: url(./assets/images/banner-3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row align-items-center justify-content-start">
       <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
         <h1 class="bg-text-line">Contact Us</h1>
-        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime velit nostrum praesentium voluptatem. Mollitia perferendis dolore dolores.</p>
+        <p class="mt-4"></p>
       </div>
     </div>
   </div>
@@ -61,13 +61,13 @@
       <div class="col-md-5">
         <div class="p-4 border mb-3 bg-white">
           <p class="mb-0">Address</p>
-          <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+          <p class="mb-4">Jaipur Delhi Highway (NH-11C), Jaipur - 303121, Rajasthan, India</p>
 
           <p class="mb-0">Phone</p>
-          <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+          <p class="mb-4"><a href="#">18001201020</a></p>
 
           <p class="mb-0">Email Address</p>
-          <p class="mb-4"><a href="#">youremail@domain.com</a></p>
+          <p class="mb-4"><a href="#">spardha@nimsuniversity.org</a></p>
 
         </div>
 

@@ -51,7 +51,7 @@
               <a href="https://www.youtube.com/@NIMSUniversityJaipur" class="text-secondary px-2"><span class="icon-youtube"></span></a>
             </div>
             <div class="col-6 col-md-9 text-right">
-              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-envelope mr-3"></span> <span class="d-none d-md-block">Spardha@nimsuniversity.org</span></a></div>
+              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-envelope mr-3"></span> <span class="d-none d-md-block">spardha@nimsuniversity.org</span></a></div>
               <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-phone mr-0 mr-md-3"></span> <span class="d-none d-md-block">18001201020</span></a></div>
             </div>
           </div>
@@ -89,7 +89,6 @@
                 <li><a href="about.php">About Spardha</a></li>
                 <li><a href="nims.php">About NIMS</a></li>
                 <li><a href="spardha2023.php">Spardha 2023</a></li>
-
                 <li><a href="./assets/media/Committee Constituted for Spardha-2023 (1).pdf" target="_blank"> Organising Committee</a></li>
               </ul>
             </li>
