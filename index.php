@@ -1199,14 +1199,19 @@
     var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("demo").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    document.getElementById("football").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
     if (t < 0) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
+      document.getElementById("football").innerHTML = "EXPIRED";
     }
   }, 1000);
 
-  var deadline_basketball = new Date("Apr 20, 2023 16:37:25:59").getTime();
+  
+  var deadline_baskeball = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%baskeball%'")))[0];
+                                    $start_date = substr("$assignment_start_time", 0, 10);
+                                    $start_time = substr("$assignment_start_time", 11, 6);
+                                    $start = $start_date . ' ' . $start_time;
+                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
   var x = setInterval(function() {
     var now = new Date().getTime();
     var t = deadline_basketball - now;
@@ -1214,14 +1219,140 @@
     var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("demo2").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    document.getElementById("basketball").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
     if (t < 0) {
       clearInterval(x);
-      document.getElementById("demo2").innerHTML = "EXPIRED";
+      document.getElementById("basketball").innerHTML = "EXPIRED";
     }
   }, 1000);
 
-  var deadline_badminton = new Date("Apr 21, 2023 19:37:25:59").getTime();
+  
+  var deadline_cricket = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%cricket%'")))[0];
+                                    $start_date = substr("$assignment_start_time", 0, 10);
+                                    $start_time = substr("$assignment_start_time", 11, 6);
+                                    $start = $start_date . ' ' . $start_time;
+                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_cricket - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("cricket").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("cricket").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+
+  
+  var deadline_kabaddi = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%kabaddi%'")))[0];
+                                    $start_date = substr("$assignment_start_time", 0, 10);
+                                    $start_time = substr("$assignment_start_time", 11, 6);
+                                    $start = $start_date . ' ' . $start_time;
+                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_kabaddi - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("kabaddi").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("kabaddi").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+  
+  var deadline_volleyball = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%volleyball%'")))[0];
+                                    $start_date = substr("$assignment_start_time", 0, 10);
+                                    $start_time = substr("$assignment_start_time", 11, 6);
+                                    $start = $start_date . ' ' . $start_time;
+                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_volleyball - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("volleyball").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("volleyball").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+  
+  var deadline_khokho = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%khokho%'")))[0];
+                                    $start_date = substr("$assignment_start_time", 0, 10);
+                                    $start_time = substr("$assignment_start_time", 11, 6);
+                                    $start = $start_date . ' ' . $start_time;
+                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_khokho - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("khokho").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("khokho").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+  
+  var deadline_tabletennis = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%tabletennis%'")))[0];
+                                    $start_date = substr("$assignment_start_time", 0, 10);
+                                    $start_time = substr("$assignment_start_time", 11, 6);
+                                    $start = $start_date . ' ' . $start_time;
+                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_tabletennis - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("tabletennis").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("tabletennis").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+  
+  var deadline_athletics = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%athletics%'")))[0];
+                                    $start_date = substr("$assignment_start_time", 0, 10);
+                                    $start_time = substr("$assignment_start_time", 11, 6);
+                                    $start = $start_date . ' ' . $start_time;
+                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_athletics - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("athletics").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("athletics").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+
+  var deadline_badminton = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%badminton%'")))[0];
+                                    $start_date = substr("$assignment_start_time", 0, 10);
+                                    $start_time = substr("$assignment_start_time", 11, 6);
+                                    $start = $start_date . ' ' . $start_time;
+                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
   var x = setInterval(function() {
     var now = new Date().getTime();
     var t = deadline_badminton - now;
@@ -1229,12 +1360,52 @@
     var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("demo3").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    document.getElementById("badminton").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
     if (t < 0) {
       clearInterval(x);
-      document.getElementById("demo3").innerHTML = "EXPIRED";
+      document.getElementById("badminton").innerHTML = "EXPIRED";
     }
   }, 1000);
+
+  var deadline_carrom = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%carrom%'")))[0];
+                                    $start_date = substr("$assignment_start_time", 0, 10);
+                                    $start_time = substr("$assignment_start_time", 11, 6);
+                                    $start = $start_date . ' ' . $start_time;
+                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_carrom - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("carrom").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("carrom").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+
+  var deadline_longjump = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%longjump%'")))[0];
+                                    $start_date = substr("$assignment_start_time", 0, 10);
+                                    $start_time = substr("$assignment_start_time", 11, 6);
+                                    $start = $start_date . ' ' . $start_time;
+                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline_longjump - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("longjump").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("longjump").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  
 </script>
 <!-- Footer -->
 <?php include('./components/footer.php') ?>
