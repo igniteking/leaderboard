@@ -18,7 +18,7 @@
         <h2 class="h6 text-uppercase text-black font-weight-bold mb-3">Latest Matches</h2>
         <div class="site-block-tab">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <?php
+            <?php
             // $fetch = mysqli_query($conn, "SELECT * FROM game_data");
             // while ($row = mysqli_fetch_array($fetch)) {
             //   $game_name = $row['game_name'];
@@ -30,6 +30,30 @@
             ?>
             <li class="nav-item">
               <a class="nav-link active" id="pills-football-tab" data-toggle="pill" href="#pills-football" role="tab" aria-controls="pills-football" aria-selected="true">Football</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
@@ -119,6 +143,7 @@
 
               </div>
             </div>
+            
           </div>
         </div>
       </div>
