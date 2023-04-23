@@ -1,5 +1,9 @@
 <?php include('./components/header.php'); ?>
 <div class="site-section site-blocks-vs">
+
+<div class="container">
+  <center><h1 style="margin-bottom: 20px;">Matches</h1></center>
+</div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
