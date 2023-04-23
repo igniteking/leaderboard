@@ -1,67 +1,127 @@
 <?php include('./connections/connection.php'); ?>
 <?php include('./components/header.php'); ?>
 
-<div class="site-blocks-cover" id="slide1" style="background-image: url(./assets/images/banner-6.jpg);" data-aos="fade" data-stellar-background-ratio="0.5"></div>
+
+
 <div class="site-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center mb-5">
-        <h2 class="text-black">Games</h2>
-      </div>
-    </div>
-
-    <div class="slide-one-item home-slider owl-carousel" id="slide2">
-
-      <img src="assets/images/banner-3.jpg" alt="">
-    </div>
-
-
-    <style>
-      @media screen and (min-width : 600px) {
-        #slide2 {
-          display: none;
-        }
-      }
-
-      @media screen and (max-width : 600px) {
-        #slide1 {
-          display: none;
-        }
-      }
-    </style>
-
-    <div class="row">
-      <?php
-      $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `game_data`");
-      while ($row = mysqli_fetch_array($fetch_all_Games)) {
-        $game_id = $row['game_id'];
-        $game_name = $row['game_name'];
-        $game_description = $row['game_description'];
-        $game_type = $row['game_type'];
-        $game_logo = $row['game_logo'];
-        echo '
-        <div class="mb-4 mb-lg-0 col-6 col-md-4 col-lg-2 text-center">
-        <a href="./matches.php" style="all: unset;">
-    <div class="player mb-5">
-      <span class="team-number"></span>
-      <img src="./admin/' . $game_logo . '" alt="Image" class="img-fluid image rounded-circle">
-      <h2>' . $game_name . '</h2>
-      <span class="position">' . $game_type . '</span>
-      </div>
-      </a>
-      </div>
-      ';
-      } ?>
-    </div>
-  </div>
-
-  <div class="site-section feature-blocks-1 no-margin-top">
     <div class="container">
-      <div class="row mb-4">
-        <?php include('./components/trio.php'); ?>
-      </div>
+        <div class="row">
+            <div class="col-md-12 text-center mb-5">
+                <h2 class="text-black">Games</h2>
+            </div>
+
+            <div class="section">
+                <div class="row mb-4">
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=Discuss Throw"><img src="./assets/images/games/img 1.png" alt=""></a>
+                        
+                        <h4>Discuss Throw</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=Javelin Throw"><img src="./assets/images/games/img 2.png" alt=""></a>
+                        
+                        <h4>Javelin Throw</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=kho-kho"> <img src="./assets/images/games/img 3.png" alt=""></a>
+                       
+                        <h4>kho-kho</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=Long jump"><img src="./assets/images/games/img 4.png" alt=""></a>
+                        
+                        <h4>Long jump</h4>
+
+                    </div>
+                </div>
+                <div class="row mb-4 ">
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=badminton"> <img src="./assets/images/games/img 5.png" alt=""></a>
+                       
+                        <h4>Badminton</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=kabaddi"><img src="./assets/images/games/img 6.png" alt=""></a>
+                        
+                        <h4>Kabaddi</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=Table Tennis"><img src="./assets/images/games/img 7.png" alt=""></a>
+                        
+                        <h4>Table Tennis</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=cricket"><img src="./assets/images/games/img 8.png" alt=""></a>
+                        
+                        <h4>Cricket</h4>
+
+                    </div>
+                </div>
+                <div class="row mb-4  text-center ">
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=football"><img src="./assets/images/games/img 9.png" alt=""></a>
+                        
+                        <h4>Football</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=volleyball"><img src="./assets/images/games/img 11.png" alt=""></a>
+                        
+                        <h4>Volleyball</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=chess"><img src="./assets/images/games/img 12.png" alt=""></a>
+                        
+                        <h4>Chess</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=carrom"> <img src="./assets/images/games/img 13.png" alt=""></a>
+                       
+                        <h4>Carrom</h4>
+
+                    </div>
+                </div>
+                <div class="row mb-4 ">
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=Atheletics"> <img src="./assets/images/games/img 14.png" alt=""></a>
+                       
+                        <h4>Athletics</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=Shot Put"> <img src="./assets/images/games/img 15.png" alt=""></a>
+                       
+                        <h4>Shot Put</h4>
+
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="./matches.php?game_name=basketball"> <img src="./assets/images/games/img 16.png" alt=""></a>
+                       
+                        <h4>Basketball</h4>
+
+                    </div>
+
+                </div>
+
+                <div class="site-section feature-blocks-1 no-margin-top">
+                    <div class="container">
+                        <div class="row mb-4">
+                            <?php include('./components/trio.php'); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+
 
 <?php include('./components/footer.php') ?>

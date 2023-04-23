@@ -62,7 +62,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Football
-                  <div id="demo"></div>
+                  <div id="football"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -146,7 +146,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Basketball
-                  <div id="demo"></div>
+                  <div id="basketball"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -230,7 +230,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of cricket
-                  <div id="demo"></div>
+                  <div id="cricket"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -314,7 +314,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Kabaddi
-                  <div id="demo"></div>
+                  <div id="kabaddi"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -398,7 +398,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of volleyball
-                  <div id="demo"></div>
+                  <div id="volleyball"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -482,7 +482,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Kho-Kho
-                  <div id="demo"></div>
+                  <div id="khokho"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -567,7 +567,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Table Tennis
-                  <div id="demo"></div>
+                  <div id="tabletennis"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -651,7 +651,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Athletics
-                  <div id="demo"></div>
+                  <div id="athletics"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -736,7 +736,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Badminton
-                  <div id="demo"></div>
+                  <div id="badminton"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -821,7 +821,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Carrom
-                  <div id="demo"></div>
+                  <div id="carrom"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -905,7 +905,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Long Jump
-                  <div id="demo"></div>
+                  <div id="longjump"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -1207,7 +1207,7 @@
   }, 1000);
 
   
-  var deadline_baskeball = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%baskeball%'")))[0];
+  var deadline_basketball = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%basketball%'")))[0];
                                     $start_date = substr("$assignment_start_time", 0, 10);
                                     $start_time = substr("$assignment_start_time", 11, 6);
                                     $start = $start_date . ' ' . $start_time;
