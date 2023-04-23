@@ -2,28 +2,15 @@
 <?php include('./components/header.php'); ?>
 
 
-<div class="site-blocks-cover" id="slide1" style="background-image: url(./assets/images/banner-5.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-</div>
-<div class="slide-one-item home-slider owl-carousel" id="slide2">
-    
-<img src="assets/images/banner-3.jpg" alt="">
-</div>
-
-
-<style>
-  @media screen and (min-width : 600px){
-  #slide2 {
-      display: none;
-  }
-}
-  @media screen and (max-width : 600px){
-  #slide1 {
-      display: none;
-  }
-}
-</style>
 <div class="site-section">
-  <div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mb-5">
+                <h2 class="text-black">Teams</h2>
+            </div>
+        </div>
+   
+
     <div class="row mb-5">
       <?php
       $fetch_collage = mysqli_query($conn, "SELECT * FROM `collage_data`");
@@ -47,5 +34,6 @@
     </div>
   </div>
 </div>
-
+</div>
+</div>
 <?php include('./components/footer.php') ?>
