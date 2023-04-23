@@ -983,7 +983,6 @@
               </div>
             </div>
 
-
           </div>
         </div>
       </div>
@@ -1136,7 +1135,6 @@
     xmlhttp.send();
   }
 
-
   function athletics() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -1147,7 +1145,6 @@
     xmlhttp.open("GET", "./helpers/athletics.php", true);
     xmlhttp.send();
   }
-
 
   function badminton() {
     var xmlhttp = new XMLHttpRequest();
@@ -1182,9 +1179,6 @@
     xmlhttp.send();
   }
 
-
-
-
   setInterval(function() {
     football(), basketball(), cricket(), kabaddi(), volleyball(), khokho(), tabletennis(), athletics(), badminton(), carrom(), longjump()
 
@@ -1193,7 +1187,7 @@
 
 <!-- SCORE TIME -->
 <script>
-  var deadline_football = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending'")))[0];
+  var deadline_football = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%FOOTBALL%'")))[0];
                                     $start_date = substr("$assignment_start_time", 0, 10);
                                     $start_time = substr("$assignment_start_time", 11, 6);
                                     $start = $start_date . ' ' . $start_time;
