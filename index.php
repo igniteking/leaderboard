@@ -18,16 +18,6 @@
         <h2 class="h6 text-uppercase text-black font-weight-bold mb-3">Latest Matches</h2>
         <div class="site-block-tab">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <?php
-            // $fetch = mysqli_query($conn, "SELECT * FROM game_data");
-            // while ($row = mysqli_fetch_array($fetch)) {
-            //   $game_name = $row['game_name'];
-            //   $game_type = $row['game_type'];
-            //   echo '<li class="nav-item">
-            //     <a class="nav-link" id="pills-' . $game_name . '(' . $game_type . ')' . '-tab" data-toggle="pill" href="#pills-' . $game_name . '(' . $game_type . ')' . '" role="tab" aria-controls="pills-' . $game_name . ' (' . $game_type . ')' . '" aria-selected="true">' . $game_name . '(' . $game_type . ')' . '</a>
-            //   </li>';
-            // }
-            ?>
             <li class="nav-item">
               <a class="nav-link active" id="pills-football-tab" data-toggle="pill" href="#pills-football" role="tab" aria-controls="pills-football" aria-selected="true">Football</a>
             </li>
@@ -61,34 +51,11 @@
             <li class="nav-item">
               <a class="nav-link" id="pills-longjump-tab" data-toggle="pill" href="#pills-longjump" role="tab" aria-controls="pills-longjump" aria-selected="false">Long Jump </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
           </ul>
 
           
           <div class="tab-content" id="pills-tabContent">
+
             <!-- football -->
             <div class="tab-pane fade show active" id="pills-football" role="tabpanel" aria-labelledby="pills-football">
               <!-- Next Match -->
@@ -117,7 +84,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%Football%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%football%' LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -172,9 +139,6 @@
 
               </div>
             </div>
-<<<<<<< HEAD
-            
-=======
 
             <!-- Basketball -->
             <div class="tab-pane fade" id="pills-basketball" role="tabpanel" aria-labelledby="pills-basketball">
@@ -204,7 +168,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%Basketball%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%basketball%' LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -372,7 +336,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%Kabaddi%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%kabaddi%' LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -427,9 +391,7 @@
 
               </div>
             </div>
-<<<<<<< HEAD
             
-
             <!-- volleyball -->
             <div class="tab-pane fade" id="pills-volleyball" role="tabpanel" aria-labelledby="pills-volleyball">
               <!-- Next Match -->
@@ -458,7 +420,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%Volleyball%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%volleyball%' LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -513,7 +475,6 @@
 
               </div>
             </div>
-
 
             <!-- khokho -->
             <div class="tab-pane fade" id="pills-khokho" role="tabpanel" aria-labelledby="pills-khokho">
@@ -1023,12 +984,6 @@
             </div>
 
 
-
-
-            
-=======
->>>>>>> 72a0a940805f0124687e48eaace03f5ba75ee7e2
->>>>>>> 694fbd16cfd7e02a0c88668d19565437d89f1c99
           </div>
         </div>
       </div>
@@ -1098,25 +1053,152 @@
 
 </div>
 
-
+<!--  -->
 <script>
   window.addEventListener("load", (event) => {
-    scoreUpdate();
+    football(),basketball(),cricket(),kabaddi(),volleyball(),khokho(),tabletennis(),athletics(),badminton(),carrom(),longjump()
   });
 
-  function scoreUpdate() {
+  function football()
+ {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("score_update").innerHTML = this.responseText;
+        document.getElementById("football").innerHTML = this.responseText;
       }
     };
-    xmlhttp.open("GET", "./helpers/score_update.php", true);
+    xmlhttp.open("GET", "./helpers/football.php", true);
     xmlhttp.send();
   }
-  const element = document.getElementById("score_update");
+
+  function basketball()
+ {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("basketball").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/basketball.php", true);
+    xmlhttp.send();
+  }
+
+  function cricket()
+ {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("cricket").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/cricket.php", true);
+    xmlhttp.send();
+  }
+
+  function kabaddi()
+ {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("kabaddi").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/kabaddi.php", true);
+    xmlhttp.send();
+  }
+
+  function volleyball()
+ {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("volleyball").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/volleyball.php", true);
+    xmlhttp.send();
+  }
+
+  function khokho()
+ {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("khokho").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/khokho.php", true);
+    xmlhttp.send();
+  }
+
+  function tabletennis()
+ {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("tabletennis").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/tabletennis.php", true);
+    xmlhttp.send();
+  }
+
+
+  function athletics()
+ {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("athletics").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/athletics.php", true);
+    xmlhttp.send();
+  }
+
+
+  function badminton()
+ {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("badminton").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/badminton.php", true);
+    xmlhttp.send();
+  }
+
+  function carrom()
+ {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("carrom").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/carrom.php", true);
+    xmlhttp.send();
+  }
+
+  function longjump()
+ {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("longjump").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "./helpers/longjump.php", true);
+    xmlhttp.send();
+  }
+
+
+
+
   setInterval(function() {
-    scoreUpdate()
+    football(),basketball(),cricket(),kabaddi(),volleyball(),khokho(),tabletennis(),athletics(),badminton(),carrom(),longjump()
+
   }, 1000);
 </script>
 
