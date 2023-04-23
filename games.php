@@ -11,22 +11,23 @@
     </div>
 
     <div class="slide-one-item home-slider owl-carousel" id="slide2">
-    
-    <img src="assets/images/banner-3.jpg" alt="">
+
+      <img src="assets/images/banner-3.jpg" alt="">
     </div>
-    
-    
+
+
     <style>
-      @media screen and (min-width : 600px){
-      #slide2 {
+      @media screen and (min-width : 600px) {
+        #slide2 {
           display: none;
+        }
       }
-    }
-      @media screen and (max-width : 600px){
-      #slide1 {
+
+      @media screen and (max-width : 600px) {
+        #slide1 {
           display: none;
+        }
       }
-    }
     </style>
 
     <div class="row">

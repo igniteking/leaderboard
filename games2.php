@@ -14,7 +14,7 @@
                 <div class="row mb-4">
                     <div class="col-md-3 text-center">
                         <img src="./assets/images/games/img 1.png" alt="">
-                        <h4>Discus Throw</h4>
+                        <h4>Discuss Throw</h4>
 
                     </div>
                     <div class="col-md-3 text-center">
