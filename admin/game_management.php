@@ -190,13 +190,13 @@
                                                 <option value="Group">Group</option>
                                                 <option value="Solo">Solo</option>
                                                 <option value="Doubles">Doubles</option>
-                                                <option value="Mix Doubles">Mix Doubles</option>
                                             </select>
                                         </div><br>
                                         <div class="input-group">
                                             <select class="form-control" name="game_type" id="game_type">
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
+                                                <option value="mix">Mix Doubles</option>
                                             </select>
                                         </div><br>
                                         <div class="input-group mb-3">
