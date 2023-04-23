@@ -168,7 +168,7 @@
                                 $date_time = $_POST['date_time'];
                                 $created_at = date('Y-m-d H:i:s');
 
-                                $insert_match_record = mysqli_query($conn, "INSERT INTO `match_data`(`match_id`, `team_1`, `team_2`, `game_type`,`date_time`, `created_at`) VALUES (NULL,'$collage1','$collage2','$game', '$date_time', '$created_at')");
+                                $insert_match_record = mysqli_query($conn, "INSERT INTO `match_data`(`match_id`, `team_1`, `team_2`, `game_type`, `game_status`,`date_time`, `created_at`) VALUES (NULL,'$collage1','$collage2','$game', 'pending','$date_time', '$created_at')");
                                 if ($insert_match_record) {
                                     Notifications("success", "Successfully", "Inserted!");
                                     echo "<meta http-equiv=\"refresh\" content=\"2; url=./match_management.php\">";

@@ -190,6 +190,7 @@
                                                 <option value="Group">Group</option>
                                                 <option value="Solo">Solo</option>
                                                 <option value="Doubles">Doubles</option>
+                                                <option value="Mix Doubles">Mix Doubles</option>
                                             </select>
                                         </div><br>
                                         <div class="input-group">

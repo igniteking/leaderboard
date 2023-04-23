@@ -31,7 +31,7 @@
 
 
           <div class="tab-content" id="pills-tabContent">
-            
+
             <div class="tab-pane fade show active" id="pills-football" role="tabpanel" aria-labelledby="pills-football">
 
 
@@ -353,13 +353,7 @@
 
 <!-- SCORE TIME -->
 <script>
-  var deadline_football = new Date("<?php
-            $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE match_id='1'")))[0];
-            $start_date = substr("$assignment_start_time", 0, 10);
-            $start_time = substr("$assignment_start_time", 11, 6);
-            $start = $start_date . ' ' . $start_time;
-            echo $newDate = date("d M Y h:i A", strtotime($start));
-            ?>'").getTime();
+  var deadline_football = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending'")))[0]; $start_date = substr("$assignment_start_time", 0, 10); $start_time = substr("$assignment_start_time", 11, 6); $start = $start_date . ' ' . $start_time; echo $newDate = date("d M Y h:i A", strtotime($start));?>'").getTime();
   var x = setInterval(function() {
     var now = new Date().getTime();
     var t = deadline_football - now;
