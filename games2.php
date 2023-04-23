@@ -65,7 +65,7 @@
                 </div>
                 <div class="row mb-4  text-center ">
                     <div class="col-md-3 text-center">
-                        <a href="#"><img src="./assets/images/games/img 9.png" alt=""></a>
+                        <a href="./matches.php?game_name=football"><img src="./assets/images/games/img 9.png" alt=""></a>
                         
                         <h4>Football</h4>
 

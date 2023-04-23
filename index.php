@@ -61,30 +61,6 @@
             <li class="nav-item">
               <a class="nav-link" id="pills-longjump-tab" data-toggle="pill" href="#pills-longjump" role="tab" aria-controls="pills-longjump" aria-selected="false">Long Jump </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-football-tab" data-toggle="pill" href="#pills-basketball" role="tab" aria-controls="pills-basketball" aria-selected="false">Basketball</a>
-            </li>
           </ul>
 
           <div class="tab-content" id="pills-tabContent">
@@ -109,8 +85,8 @@
                 </div>
               </div>
 
-              <div id="" onload="scoreUpdate()"></div>
-              <div class="" id="score_update"></div>
+              <div id="" onload="football()"></div>
+              <div class="" id="football"></div>
 
               <!-- Previous Matches -->
               <div class="row align-items-center">
@@ -170,9 +146,6 @@
 
               </div>
             </div>
-<<<<<<< HEAD
-            
-=======
 
             <!-- Basketball -->
             <div class="tab-pane fade" id="pills-basketball" role="tabpanel" aria-labelledby="pills-basketball">
@@ -196,13 +169,13 @@
                 </div>
               </div>
 
-              <div id="" onload="scoreUpdate()"></div>
-              <div class="" id="score_update"></div>
+              <div id="" onload="basketball()"></div>
+              <div class="" id="basketball"></div>
 
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%Football%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%Basketball%' LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -422,7 +395,6 @@
 
               </div>
             </div>
->>>>>>> 72a0a940805f0124687e48eaace03f5ba75ee7e2
           </div>
         </div>
       </div>
