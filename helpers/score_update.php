@@ -15,7 +15,10 @@ while ($row = mysqli_fetch_array($fetch_data)) {
     $match_id = $row['match_id'];
     $team_1 = $row['team_1'];
     $team_2 = $row['team_2'];
-    echo '<div class="row align-items-center">
+    echo '
+    
+    <div class="bg-image overlay-success rounded mb-5" style="background-image: url("assets/images/game4.jpg");" data-stellar-background-ratio="0.5">
+    <div class="row align-items-center">
     <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
         <div class="text-center text-lg-left">
             <div class="d-block d-lg-flex align-items-center">
@@ -46,6 +49,7 @@ while ($row = mysqli_fetch_array($fetch_data)) {
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </div>';
 }

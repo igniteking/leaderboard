@@ -160,7 +160,7 @@ while ($row = mysqli_fetch_array($fetch_data)) {
                                                 <div class="col-sm-6 justify-content-left">
                                                     <div class="form-group">
                                                         <label for="browser">Team 1</label>
-                                                        <input type="number" value="<?= $check1 =  mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
+                                                        <input type="number" value="<?php $check1 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                                                                                     if ($check1 > 0) {
                                                                                         echo $score1 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id='$match_id'")))[0];
                                                                                     } else {
@@ -171,32 +171,12 @@ while ($row = mysqli_fetch_array($fetch_data)) {
                                                 <div class="col-sm-6 justify-content-left">
                                                     <div class="form-group">
                                                         <label for="browser">Team 2</label>
-                                                        <input type="number" value="<?php $check2 =  mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
+                                                        <input type="number" value="<?php $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                                                                                     if ($check2 > 0) {
                                                                                         echo $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                                                                                     } else {
                                                                                         echo $score2 = "0";
                                                                                     } ?>" name="team_2" class="form-control" id="collage2">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12 justify-content-left">
-                                                    <div class="form-group">
-                                                        <select class="form-control" name="game_type" id="game_type">
-                                                            <option value="<?php $check2 =  mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
-                                                                            if ($check2 > 0) {
-                                                                                echo $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT game_status FROM `match_data` WHERE match_id='$match_id'")))[0];
-                                                                            } else {
-                                                                                echo $score2 = "0";
-                                                                            } ?>"><?php $check2 =  mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
-                                                                                    if ($check2 > 0) {
-                                                                                        echo $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT game_status FROM `match_data` WHERE match_id='$match_id'")))[0];
-                                                                                    } else {
-                                                                                        echo $score2 = "0";
-                                                                                    } ?></option>
-                                                            <option value="ongoing">ongoing</option>
-                                                            <option value="Doubles">Doubles</option>
-                                                            <option value="Mix Doubles">Mix Doubles</option>
-                                                        </select>
                                                     </div>
                                                 </div>
                                                 <?php
@@ -256,6 +236,7 @@ while ($row = mysqli_fetch_array($fetch_data)) {
                                             <div class="row">
                                                 <div class="col-sm-12 justify-content-left">
                                                     <div class="form-group">
+                                                    <label for="browser">Game Status</label>
                                                         <select class="form-control" name="status" id="game_type">
                                                             <option value="<?php echo $stats =  array_values(mysqli_fetch_array($conn->query("SELECT game_status FROM `match_data` WHERE match_id='$match_id'")))[0]; ?>"><?php echo $stats =  array_values(mysqli_fetch_array($conn->query("SELECT game_status FROM `match_data` WHERE match_id='$match_id'")))[0]; ?></option>
                                                             <option value="ongoing">Ongoing</option>
@@ -274,7 +255,7 @@ while ($row = mysqli_fetch_array($fetch_data)) {
 
                                             </div><br>
                                             <div class="input-group">
-                                                <input type="submit" value="Update Record" name="update_status" class="btn btn-primary col-md-12">
+                                                <input type="submit" value="Update  Record" name="update_status" class="btn btn-primary col-md-12">
                                             </div>
                                         </div>
                                     </div>
