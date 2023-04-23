@@ -18,6 +18,16 @@
         <h2 class="h6 text-uppercase text-black font-weight-bold mb-3">Latest Matches</h2>
         <div class="site-block-tab">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <?php
+            // $fetch = mysqli_query($conn, "SELECT * FROM game_data");
+            // while ($row = mysqli_fetch_array($fetch)) {
+            //   $game_name = $row['game_name'];
+            //   $game_type = $row['game_type'];
+            //   echo '<li class="nav-item">
+            //     <a class="nav-link" id="pills-' . $game_name . '(' . $game_type . ')' . '-tab" data-toggle="pill" href="#pills-' . $game_name . '(' . $game_type . ')' . '" role="tab" aria-controls="pills-' . $game_name . ' (' . $game_type . ')' . '" aria-selected="true">' . $game_name . '(' . $game_type . ')' . '</a>
+            //   </li>';
+            // }
+            ?>
             <li class="nav-item">
               <a class="nav-link active" id="pills-football-tab" data-toggle="pill" href="#pills-football" role="tab" aria-controls="pills-football" aria-selected="true">Football</a>
             </li>
@@ -48,12 +58,13 @@
                 </div>
               </div>
 
-              <div id="score_update" onload="scoreUpdate()"></div>
+              <div id="" onload="scoreUpdate()"></div>
+              <div class="" id="score_update"></div>
 
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%Football%'");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%Football%' LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -79,7 +90,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id='1'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -190,10 +201,10 @@
         document.getElementById("score_update").innerHTML = this.responseText;
       }
     };
-    xmlhttp.open("GET", "./helpers/score_update.php");
+    xmlhttp.open("GET", "./helpers/score_update.php", true);
     xmlhttp.send();
   }
-  const element = document.getElementById("demo");
+  const element = document.getElementById("score_update");
   setInterval(function() {
     scoreUpdate()
   }, 1000);
