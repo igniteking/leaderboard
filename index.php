@@ -56,35 +56,7 @@
             <!-- football -->
             <div class="tab-pane fade show active" id="pills-football" role="tabpanel" aria-labelledby="pills-football">
               <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of Football
-                  <div id="football_score">
-                    <?php $basketball_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%FOOTBALL%'")))[0];
-                    $start_date1 = substr("$basketball_start_time", 0, 10);
-                    $start_time1 = substr("$basketball_start_time", 11, 6);
-                    $start1 = $start_date1 . ' ' . $start_time1;
-                    echo $newDate2 = date("d M Y h:i A", strtotime($start1)); ?>
-                  </div>
-                </div>
 
-                <?php
-                $team_1 = array_values(mysqli_fetch_array($conn->query(" SELECT team_1 FROM `match_data` WHERE game_type LIKE '%FOOTBALL%'")))[0];
-                $team_2 = array_values(mysqli_fetch_array($conn->query(" SELECT team_2 FROM `match_data` WHERE game_type LIKE '%FOOTBALL%'")))[0];
-                echo '<div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="admin/' . array_values(mysqli_fetch_array($conn->query(" SELECT collage_logo FROM `collage_data` WHERE collage_name = '$team_1'")))[0] . '" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">' . array_values(mysqli_fetch_array($conn->query("SELECT collage_short FROM `collage_data` WHERE collage_name LIKE '%$team_1%'")))[0]  . '</span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="admin/' . array_values(mysqli_fetch_array($conn->query(" SELECT collage_logo FROM `collage_data` WHERE collage_name='$team_2'")))[0] . '" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">' . array_values(mysqli_fetch_array($conn->query("SELECT collage_short FROM `collage_data` WHERE collage_name LIKE '%$team_2%'")))[0]  . '</span>
-                    </div>
-                  </div>
-                </div>';
-                ?>
-
-              </div>
 
               <div id="" onload="football()"></div>
               <div class="" id="football"></div>
@@ -151,25 +123,7 @@
             <!-- Basketball -->
             <div class="tab-pane fade" id="pills-basketball" role="tabpanel" aria-labelledby="pills-basketball">
               <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of Basketball
-                  <div id="basketball_score">
-                  </div>
-                </div>
-
-                <div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
 
               <div id="" onload="basketball()"></div>
               <div class="" id="basketball"></div>
@@ -236,24 +190,7 @@
             <!-- Cricket -->
             <div class="tab-pane fade" id="pills-cricket" role="tabpanel" aria-labelledby="pills-cricket">
               <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of cricket
-                  <div id="cricket_score"></div>
-                </div>
-
-                <div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
 
               <div id="" onload="cricket()"></div>
               <div class="" id="cricket"></div>
@@ -320,24 +257,7 @@
             <!-- Kabaddi -->
             <div class="tab-pane fade" id="pills-kabaddi" role="tabpanel" aria-labelledby="pills-kabaddi">
               <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of Kabaddi
-                  <div id="kabaddi_score"></div>
-                </div>
-
-                <div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
 
               <div id="" onload="kabaddi()"></div>
               <div class="" id="kabaddi"></div>
@@ -404,24 +324,7 @@
             <!-- volleyball -->
             <div class="tab-pane fade" id="pills-volleyball" role="tabpanel" aria-labelledby="pills-volleyball">
               <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of volleyball
-                  <div id="volleyball_score"></div>
-                </div>
-
-                <div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
 
               <div id="" onload="volleyball()"></div>
               <div class="" id="volleyball"></div>
@@ -488,24 +391,6 @@
             <!-- khokho -->
             <div class="tab-pane fade" id="pills-khokho" role="tabpanel" aria-labelledby="pills-khokho">
               <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of Kho-Kho
-                  <div id="khokho_score"></div>
-                </div>
-
-                <div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <div id="" onload="khokho()"></div>
               <div class="" id="khokho"></div>
@@ -573,24 +458,6 @@
 
             <div class="tab-pane fade" id="pills-tabletennis" role="tabpanel" aria-labelledby="pills-tabletennis">
               <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of Table Tennis
-                  <div id="tabletennis_score"></div>
-                </div>
-
-                <div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <div id="" onload="tabletennis()"></div>
               <div class="" id="tabletennis"></div>
@@ -658,31 +525,6 @@
 
             <div class="tab-pane fade" id="pills-badminton" role="tabpanel" aria-labelledby="pills-badminton">
               <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of Badminton
-                  <div id="badminton_score">
-                    <?php
-                    $football_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%FOOTBALL%'")))[0];
-                    $start_date = substr("$football_start_time", 0, 10);
-                    $start_time = substr("$football_start_time", 11, 6);
-                    $start = $start_date . ' ' . $start_time;
-                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'
-                  </div>
-                </div>
-
-                <div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <div id="" onload="badminton()"></div>
               <div class="" id="badminton"></div>
@@ -750,24 +592,6 @@
 
             <div class="tab-pane fade" id="pills-carrom" role="tabpanel" aria-labelledby="pills-carrom">
               <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of Carrom
-                  <div id="carrom_score"></div>
-                </div>
-
-                <div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <div id="" onload="carrom()"></div>
               <div class="" id="carrom"></div>
@@ -834,24 +658,6 @@
             <!-- longjump -->
             <div class="tab-pane fade" id="pills-longjump" role="tabpanel" aria-labelledby="pills-longjump">
               <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of Long Jump
-                  <div id="longjump_score"></div>
-                </div>
-
-                <div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <div id="" onload="longjump()"></div>
               <div class="" id="longjump"></div>
