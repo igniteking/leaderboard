@@ -26,21 +26,19 @@ if (isset($_SESSION['email'])) {
 			</div>
 
 			<ul class="nav pcoded-inner-navbar ">
-				<li class="nav-item pcoded-menu-caption">
-					<label>Main</label>
-				</li>
-				<li class="nav-item">
-					<a href="./index.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
-				</li>
-				<li class="nav-item">
-					<a href="./user_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">User Management</span></a>
-				</li>
-				<li class="nav-item">
-					<a href="./game_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Game Management</span></a>
-				</li>
-				<li class="nav-item">
-					<a href="./collage_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Collage Management</span></a>
-				</li>
+				<?php
+				if ($user_type == 'superadmin') {
+				?>
+					<li class="nav-item">
+						<a href="./user_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">User Management</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="./game_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Game Management</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="./collage_management.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Collage Management</span></a>
+					</li>
+				<?php } ?>
 				<li class="nav-item pcoded-menu-caption">
 					<label>Match Management</label>
 				</li>

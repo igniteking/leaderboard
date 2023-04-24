@@ -108,11 +108,14 @@
                                                         <h6 class="text-truncate" style="max-width: 250px;">' . $date_time . '</h6>
                                                     </div>
                                                 </div>
-                                            </td>
-                                            <td class="text-right">
-                                            <button onclick="deleteGame(' . $match_id . ')" class="btn badge badge-light-danger">Delete</button>
-                                            </td>
-                                        </tr>';
+                                            </td>';
+                                            if ($user_type == 'superadmin') {
+                                                echo '
+                                                <td class="text-right">
+                                                <button onclick="deleteGame(' . $match_id . ')" class="btn badge badge-light-danger">Delete</button>
+                                                </td>
+                                                </tr>';
+                                            }
                                         }
                                         ?>
                                     </tbody>
@@ -128,7 +131,7 @@
                                                         document.getElementById("notification").innerHTML = this.responseText;
                                                     }
                                                 };
-                                                xmlhttp.open("GET", "./helpers/delete_game.php?game_id=" + id);
+                                                xmlhttp.open("GET", "./helpers/delete_match.php?match_id=" + id);
                                                 xmlhttp.send();
                                             }
                                         }

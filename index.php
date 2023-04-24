@@ -40,9 +40,6 @@
               <a class="nav-link" id="pills-tabletennis-tab" data-toggle="pill" href="#pills-tabletennis" role="tab" aria-controls="pills-tabletennis" aria-selected="false">Table Tennis</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="pills-athletics-tab" data-toggle="pill" href="#pills-athletics" role="tab" aria-controls="pills-athletics" aria-selected="false">Athletics</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" id="pills-badminton-tab" data-toggle="pill" href="#pills-badminton" role="tab" aria-controls="pills-badminton" aria-selected="false">Badminton</a>
             </li>
             <li class="nav-item">
@@ -62,20 +59,31 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Football
-                  <div id="football"></div>
+                  <div id="football_score">
+                    <?php $basketball_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%FOOTBALL%'")))[0];
+                    $start_date1 = substr("$basketball_start_time", 0, 10);
+                    $start_time1 = substr("$basketball_start_time", 11, 6);
+                    $start1 = $start_date1 . ' ' . $start_time1;
+                    echo $newDate2 = date("d M Y h:i A", strtotime($start1)); ?>
+                  </div>
                 </div>
 
-                <div class="ml-auto pr-4 order-md-2">
+                <?php
+                $team_1 = array_values(mysqli_fetch_array($conn->query(" SELECT team_1 FROM `match_data` WHERE game_type LIKE '%FOOTBALL%'")))[0];
+                $team_2 = array_values(mysqli_fetch_array($conn->query(" SELECT team_2 FROM `match_data` WHERE game_type LIKE '%FOOTBALL%'")))[0];
+                echo '<div class="ml-auto pr-4 order-md-2">
                   <div class="h5 text-black text-uppercase text-center text-lg-left">
                     <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
+                      <img src="admin/' . array_values(mysqli_fetch_array($conn->query(" SELECT collage_logo FROM `collage_data` WHERE collage_name = '$team_1'")))[0] . '" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">' . array_values(mysqli_fetch_array($conn->query("SELECT collage_short FROM `collage_data` WHERE collage_name LIKE '%$team_1%'")))[0]  . '</span>
                     </div>
                     <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
                     <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
+                      <img src="admin/' . array_values(mysqli_fetch_array($conn->query(" SELECT collage_logo FROM `collage_data` WHERE collage_name='$team_2'")))[0] . '" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">' . array_values(mysqli_fetch_array($conn->query("SELECT collage_short FROM `collage_data` WHERE collage_name LIKE '%$team_2%'")))[0]  . '</span>
                     </div>
                   </div>
-                </div>
+                </div>';
+                ?>
+
               </div>
 
               <div id="" onload="football()"></div>
@@ -146,7 +154,8 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Basketball
-                  <div id="basketball"></div>
+                  <div id="basketball_score">
+                  </div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -230,7 +239,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of cricket
-                  <div id="cricket"></div>
+                  <div id="cricket_score"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -314,7 +323,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Kabaddi
-                  <div id="kabaddi"></div>
+                  <div id="kabaddi_score"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -398,7 +407,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of volleyball
-                  <div id="volleyball"></div>
+                  <div id="volleyball_score"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -482,7 +491,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Kho-Kho
-                  <div id="khokho"></div>
+                  <div id="khokho_score"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -504,7 +513,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%khokho%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%KHO-KHO%' LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -567,7 +576,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Table Tennis
-                  <div id="tabletennis"></div>
+                  <div id="tabletennis_score"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -645,90 +654,6 @@
               </div>
             </div>
 
-            <!-- athletics -->
-            <div class="tab-pane fade" id="pills-athletics" role="tabpanel" aria-labelledby="pills-athletics">
-              <!-- Next Match -->
-              <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                  Next match of Athletics
-                  <div id="athletics"></div>
-                </div>
-
-                <div class="ml-auto pr-4 order-md-2">
-                  <div class="h5 text-black text-uppercase text-center text-lg-left">
-                    <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                      <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                    </div>
-                    <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                    <div class="d-block d-md-inline-block">
-                      <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="" onload="athletics()"></div>
-              <div class="" id="athletics"></div>
-
-              <!-- Previous Matches -->
-              <div class="row align-items-center">
-                <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%athletics%' LIMIT 5");
-                while ($row = mysqli_fetch_array($fetch_all_Games)) {
-                  $match_id = $row['match_id'];
-                  $team_1 = $row['team_1'];
-                  $team_2 = $row['team_2'];
-                  $game_type = $row['game_type'];
-                  $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
-                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
-                      <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
-                        <div class="text-center text-lg-left">
-                          <div class="d-block d-lg-flex align-items-center">
-                            <div class="image image-small text-center mb-3 mb-lg-0 mr-lg-3">
-                              <img src="admin/' . array_values(mysqli_fetch_array($conn->query("SELECT collage_logo FROM `collage_data` WHERE collage_name='$team_1'")))[0] . '" alt="Image" class="img-fluid">
-                            </div>
-                            <div class="text">
-                              <h3 class="h5 mb-0 text-black">' . $team_1 . '</h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
-                        <div class="d-inline-block">
-                          <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
-                  $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
-                  if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
-                  } else {
-                    $score2 = "0:0";
-                  }
-                  echo $score2;
-                  echo '</span>
-                  </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-lg-4 text-center text-lg-right">
-                        <div class="">
-                          <div class="d-block d-lg-flex align-items-center">
-                            <div class="image image-small ml-lg-3 mb-3 mb-lg-0 order-2">
-                              <img src="admin/' . array_values(mysqli_fetch_array($conn->query("SELECT collage_logo FROM `collage_data` WHERE collage_name='$team_2'")))[0] . '" alt="Image" class="img-fluid">
-                            </div>
-                            <div class="text order-1 w-100">
-                              <h3 class="h5 mb-0 text-black">' . $team_2 . '</h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>';
-                }
-                ?>
-                <!-- END row -->
-
-              </div>
-            </div>
-
             <!-- badminton -->
 
             <div class="tab-pane fade" id="pills-badminton" role="tabpanel" aria-labelledby="pills-badminton">
@@ -736,7 +661,14 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Badminton
-                  <div id="badminton"></div>
+                  <div id="badminton_score">
+                    <?php
+                    $football_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%FOOTBALL%'")))[0];
+                    $start_date = substr("$football_start_time", 0, 10);
+                    $start_time = substr("$football_start_time", 11, 6);
+                    $start = $start_date . ' ' . $start_time;
+                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'
+                  </div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -821,7 +753,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Carrom
-                  <div id="carrom"></div>
+                  <div id="carrom_score"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -905,7 +837,7 @@
               <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
                 <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
                   Next match of Long Jump
-                  <div id="longjump"></div>
+                  <div id="longjump_score"></div>
                 </div>
 
                 <div class="ml-auto pr-4 order-md-2">
@@ -1055,7 +987,7 @@
 <!--  -->
 <script>
   window.addEventListener("load", (event) => {
-    football(), basketball(), cricket(), kabaddi(), volleyball(), khokho(), tabletennis(), athletics(), badminton(), carrom(), longjump()
+    football(), basketball(), cricket(), kabaddi(), volleyball(), khokho(), tabletennis(), badminton(), carrom(), longjump()
   });
 
   function football() {
@@ -1135,17 +1067,6 @@
     xmlhttp.send();
   }
 
-  function athletics() {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("athletics").innerHTML = this.responseText;
-      }
-    };
-    xmlhttp.open("GET", "./helpers/athletics.php", true);
-    xmlhttp.send();
-  }
-
   function badminton() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -1180,233 +1101,14 @@
   }
 
   setInterval(function() {
-    football(), basketball(), cricket(), kabaddi(), volleyball(), khokho(), tabletennis(), athletics(), badminton(), carrom(), longjump()
+    football(), basketball(), cricket(), kabaddi(), volleyball(), khokho(), tabletennis(), badminton(), carrom(), longjump()
 
   }, 1000);
 </script>
 
 <!-- SCORE TIME -->
-<script>
-  var deadline_football = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%FOOTBALL%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_football - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("football").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("football").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-  
-  var deadline_basketball = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%basketball%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_basketball - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("basketball").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("basketball").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-  
-  var deadline_cricket = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%cricket%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_cricket - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("cricket").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("cricket").innerHTML = "EXPIRED";
-    }
-  }, 1000);
 
 
-  
-  var deadline_kabaddi = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%kabaddi%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_kabaddi - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("kabaddi").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("kabaddi").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-  
-  var deadline_volleyball = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%volleyball%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_volleyball - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("volleyball").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("volleyball").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-  
-  var deadline_khokho = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%khokho%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_khokho - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("khokho").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("khokho").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-  
-  var deadline_tabletennis = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%tabletennis%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_tabletennis - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("tabletennis").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("tabletennis").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-  
-  var deadline_athletics = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%athletics%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_athletics - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("athletics").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("athletics").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-
-  var deadline_badminton = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%badminton%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_badminton - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("badminton").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("badminton").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-  var deadline_carrom = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%carrom%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_carrom - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("carrom").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("carrom").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-
-  var deadline_longjump = new Date("<?php $assignment_start_time = array_values(mysqli_fetch_array($conn->query("SELECT date_time FROM `match_data` WHERE game_status='pending' AND game_type LIKE '%longjump%'")))[0];
-                                    $start_date = substr("$assignment_start_time", 0, 10);
-                                    $start_time = substr("$assignment_start_time", 11, 6);
-                                    $start = $start_date . ' ' . $start_time;
-                                    echo $newDate = date("d M Y h:i A", strtotime($start)); ?>'").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline_longjump - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("longjump").innerHTML = '<span class="countdown-block"><span class="label">0' + days + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Days </z></span>' + '<span class="countdown-block"><span class="label">0' + hours + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Hours </z></span>' + '<span class="countdown-block"><span class="label">' + minutes + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Minutes </z></span>' + '<span class="countdown-block"><span class="label">' + seconds + '</span><z style="all: initial; color: #b3b3b3; font-size: 24px; font-family: Roboto;"> Seconds </z></span>';
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById("longjump").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-  
-</script>
 <!-- Footer -->
 <?php include('./components/footer.php') ?>
 
