@@ -41,7 +41,7 @@
     </div>
 
     <header class="site-navbar absolute transparent" role="banner">
-      <div class="py-3">
+      <!-- <div class="py-3">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-6 col-md-3">
@@ -56,7 +56,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <style>
         .main_logo {
           margin-top: 35px;
@@ -64,12 +64,20 @@
           width: 50%;
           margin-left: -450px;
 
-          @media only screen and (min-width: 600px) {
+          /* @media only screen and (min-width: 600px) {
             margin-right: 180px;
             width: 50%;
             margin-top: 35px;
-          }
+
+          } */
+
         }
+/* .site-navbar .site-logo{
+  @media only screen and (max-width: 600px){
+    margin-bottom: -60px;
+    position : fixed; 
+  }
+} */
       </style>
       <nav class="site-navigation position-relative text-right bg-black text-md-right" role="navigation">
         <div class="container" style="margin-right: 0px;">
@@ -80,7 +88,7 @@
             <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a>
           </div>
           <ul class="site-menu js-clone-nav d-none d-md-block">
-            <li class="">
+            <li class="has-children active">
               <a href="index.php">Home</a>
             </li>
             <li class="has-children">
