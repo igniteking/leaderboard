@@ -11,12 +11,11 @@ while ($row = mysqli_fetch_array($fetch_all_Games)) {
     $collage_2 = $row['team_2'];
     $game_type = $row['game_type'];
     $date_time = $row['date_time'];
-}
-@$fetch_data = mysqli_query($conn, "SELECT * FROM `score_data` WHERE match_id = '$match_id'");
-while ($row = mysqli_fetch_array($fetch_data)) {
-    $team_1 = $row['team_1'];
-    $team_2 = $row['team_2'];
-    echo '
+    @$fetch_data = mysqli_query($conn, "SELECT * FROM `score_data` WHERE match_id = '$match_id'");
+    while ($row = mysqli_fetch_array($fetch_data)) {
+        $team_1 = $row['team_1'];
+        $team_2 = $row['team_2'];
+        echo '
     <div class="bg-image overlay-success rounded mb-5" style="background-image: url("assets/images/game4.jpg");" data-stellar-background-ratio="0.5">
     <div class="row align-items-center">
     <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
@@ -52,6 +51,5 @@ while ($row = mysqli_fetch_array($fetch_data)) {
         </div>
     </div>
 </div>';
-
+    }
 }
-

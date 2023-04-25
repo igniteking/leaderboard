@@ -83,3 +83,4 @@
 <script src="./assets/js/jquery.countdown.min.js"></script>
 <script src="./assets/js/jquery.magnific-popup.min.js"></script>
 <script src="./assets/js/aos.js"></script>
+<script src="./assets/js/main.js"></script>
