@@ -183,7 +183,6 @@
                 }
                 ?>
                 <!-- END row -->
-
               </div>
             </div>
 
@@ -728,14 +727,28 @@
   </div>
 </div>
 
-<!-- Chairperson’s Message  -->
+
+<!-- Carousel -->
 <div class="site-section" data-aos="fade-up">
+    <div class="slide-one-item owl-carousel">
+        <div class="bg-image center" style="background-image: url('./assets/images/Slider/1.jpg'); "></div>
+        <div class="bg-image center" style="background-image: url('./assets/images/Slider/2.jpg'); "></div>
+        <div class="bg-image center" style="background-image: url('./assets/images/Slider/3.jpg'); "></div>
+        <div class="bg-image center" style="background-image: url('./assets/images/Slider/4.jpg'); "></div>
+    </div>
+</div>
+
+
+
+
+<!-- Chairperson’s Message  -->
+<div class="site-section" data-aos="fade-up" style="margin-bottom:-108px;">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center" >
       <div class="col-md-6 ">
-        <img src="./assets/images/main.png" alt="Image" class="img-fluid">
+        <img src="./assets/images/main.png" alt="Image" class="img-fluid" style="margin-bottom:20px;">
       </div>
-      <div class="col-md-6 pr-md-5 order-2">
+      <div class="col-md-6 pr-md-5 order-2" style="margin-bottom:70px;">
         <h2 class="text-black">Chancellor’s Message</h2>
         <h5><b>“The will to win is important, but the will to prepare is essential” - Prof. (Dr.) Balvir S. Tomar</b></h5>
         <p class="lead text-justify">
@@ -750,6 +763,8 @@
     </div>
   </div>
 </div>
+
+
 
 <!-- More About Teams -->
 <div class="site-section block-13 bg-primary fixed overlay-primary bg-image" style="background-image: url('assets/images/game4.jpg');" data-stellar-background-ratio="0.5">

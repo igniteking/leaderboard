@@ -41,7 +41,7 @@
     </div>
 
     <header class="site-navbar absolute transparent" role="banner">
-      <div class="py-3">
+      <!-- <div class="py-3">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-6 col-md-3">
@@ -56,7 +56,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <style>
         .main_logo {
           margin-top: 35px;
@@ -69,7 +69,9 @@
             margin-right: 180px;
             width: 50%;
             margin-top: 35px;
+
           }
+
         }
       </style>
       <nav class="site-navigation text-right bg-black text-md-right" id="site-navigation123" style="position: relative;" role="navigation">
@@ -81,7 +83,7 @@
             <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a>
           </div>
           <ul class="site-menu js-clone-nav d-none d-md-block">
-            <li class="">
+            <li class="has-children active">
               <a href="index.php">Home</a>
             </li>
             <li class="has-children">
