@@ -64,6 +64,7 @@
           width: 50%;
           margin-left: -450px;
 
+
           @media only screen and (min-width: 600px) {
             margin-right: 180px;
             width: 50%;
@@ -71,8 +72,8 @@
           }
         }
       </style>
-      <nav class="site-navigation position-relative text-right bg-black text-md-right" role="navigation">
-        <div class="container" style="margin-right: 0px;">
+      <nav class="site-navigation text-right bg-black text-md-right" id="site-navigation123" style="position: relative;" role="navigation">
+        <div class="container">
           <div class="site-logo">
             <a href="index.php"><img class="main_logo" src="assets/images/logo-1.png" alt=""></a>
           </div>
@@ -106,5 +107,11 @@
 
         </div>
       </nav>
-
+      <script>
+        var styling = document.getElementById('site-navigation123').style;
+        console.log(screen.width);
+        if (screen.width < 600) {
+          styling.style = "position: none;";
+        }
+      </script>
     </header>
