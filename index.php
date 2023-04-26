@@ -6,8 +6,8 @@
 
 <!-- Header Starts -->
 <?php include('./components/carousel.php'); ?>
-<!-- Header Ends -->
 <br><br>
+<!-- Header Ends -->
 <?php include('./components/trio.php'); ?>
 
 <!-- Score Board  -->

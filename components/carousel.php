@@ -20,18 +20,9 @@
     </div>
 </div>
 <div class="slide-one-item home-slider owl-carousel" >
-    <div class="pic">
-    <img src="assets/images/banner-3.jpg" id="slide2" alt="">
-
-    </div>
-    <div class="pc">
-    <img src="assets/images/Slider/1a.jpg"   id="slide2" alt="">
-
-    </div>
-    <div class="pc">
-    <img src="assets/images/Slider/3a.jpg"   id="slide2" alt="">
-
-    </div>
+<img src="assets/images/banner-3.jpg" id="slide2" alt="">
+<img src="assets/images/Slider/banner-5.jpg" id="slide2" alt="">
+<img src="assets/images/Slider/banner-6.jpg" id="slide2" alt="">
 
 </div>
 

@@ -30,9 +30,9 @@
                   <tr>
                     <th scope="col">S.no.</th>
                     <th scope="col">Colleges</th>
-                    <th scope="col">Gold</th>
-                    <th scope="col">Silver</th>
-                    <th scope="col">Bronze</th>
+                    <th scope="col">Gold <img src="assets/images/games/gold-medal.png" style="width:30px; height: 30px;"  alt=""></th>
+                    <th scope="col">Silver <img src="assets/images/games/silver-medal.png" style="width:30px; height: 30px;" alt=""></th>
+                    <th scope="col">Bronze <img src="assets/images/games/medal.png" style="width:30px; height: 30px;" alt=""></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -43,35 +43,35 @@
                     <td>-</td>
                     <td>-</td>
                   </tr>
-                <tr class="table-primary">
+                <tr class="table-info">
                     <th scope="row">2</th>
                     <td>Management College</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
-                  <tr class="table-info">
+                  <tr class="table-success">
                   <th scope="row">3</th>
                     <td>Nursing College</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
-                  <tr class="table-info">
+                  <tr class="table-primary">
                   <th scope="row">4</th>
                     <td>Physiotherapy College</td>
                     <td>1</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
-                  <tr class="table-primary">
+                  <tr class="table-warning">
                     <th scope="row">5</th>
                     <td>Pharmacy College</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
-                  <tr class="table-primary">
+                  <tr class="table-success">
                     <th scope="row">6</th>
                     <td>Humanities College</td>
                     <td>1</td>
@@ -85,7 +85,7 @@
                     <td>-</td>
                     <td>1</td>
                   </tr>
-                  <tr class="table-info">
+                  <tr class="table-warning">
                   <th scope="row">8</th>
                     <td>Paramedical College</td>
                     <td>-</td>
@@ -98,6 +98,20 @@
                     <td>1</td>
                     <td>-</td>
                     <td>1</td>
+                  </tr>
+                  <tr class="table-warning">
+                  <th scope="row">10</th>
+                    <td>HMFT College</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>1</td>
+                  </tr>
+                  <tr class="table-success">
+                  <th scope="row">10</th>
+                    <td>Dental College</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
                   
                 </tbody>
