@@ -1299,3 +1299,7 @@ a:hover {
       display: none;
   }
 }
+td{
+  justify-content: center;
+  align-items: center;
+}
