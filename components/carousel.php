@@ -19,9 +19,20 @@
         </div>
     </div>
 </div>
-<div class="slide-one-item home-slider owl-carousel" id="slide2">
-    
-<img src="assets/images/banner-3.jpg" alt="">
+<div class="slide-one-item home-slider owl-carousel" >
+    <div class="pic">
+    <img src="assets/images/banner-3.jpg" id="slide2" alt="">
+
+    </div>
+    <div class="pc">
+    <img src="assets/images/Slider/1a.jpg"   id="slide2" alt="">
+
+    </div>
+    <div class="pc">
+    <img src="assets/images/Slider/3a.jpg"   id="slide2" alt="">
+
+    </div>
+
 </div>
 
 

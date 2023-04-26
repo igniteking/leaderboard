@@ -295,6 +295,7 @@
                     $score2 = "0:0";
                   }
                   echo $score2;
+                  echo $date_time;
                   echo '</span>
                   </div>
                         </div>
@@ -730,12 +731,12 @@
 
 <!-- Carousel -->
 <div class="site-section" data-aos="fade-up">
-    <div class="slide-one-item owl-carousel">
-        <div class="bg-image center" style="background-image: url('./assets/images/Slider/1.jpg'); "></div>
-        <div class="bg-image center" style="background-image: url('./assets/images/Slider/2.jpg'); "></div>
-        <div class="bg-image center" style="background-image: url('./assets/images/Slider/3.jpg'); "></div>
-        <div class="bg-image center" style="background-image: url('./assets/images/Slider/4.jpg'); "></div>
-    </div>
+  <div class="slide-one-item owl-carousel">
+    <div class="bg-image center" style="background-image: url('./assets/images/Slider/1.jpg'); "></div>
+    <div class="bg-image center" style="background-image: url('./assets/images/Slider/2.jpg'); "></div>
+    <div class="bg-image center" style="background-image: url('./assets/images/Slider/3.jpg'); "></div>
+    <div class="bg-image center" style="background-image: url('./assets/images/Slider/4.jpg'); "></div>
+  </div>
 </div>
 
 
@@ -744,7 +745,7 @@
 <!-- Chairperson’s Message  -->
 <div class="site-section" data-aos="fade-up" style="margin-bottom:-108px;">
   <div class="container">
-    <div class="row align-items-center" >
+    <div class="row align-items-center">
       <div class="col-md-6 ">
         <img src="./assets/images/main.png" alt="Image" class="img-fluid" style="margin-bottom:20px;">
       </div>
