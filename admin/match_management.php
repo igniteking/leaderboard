@@ -194,7 +194,8 @@
                                                         $fetch_all_teams = mysqli_query($conn, "SELECT * FROM `collage_data`");
                                                         while ($row = mysqli_fetch_array($fetch_all_teams)) {
                                                             $collage_name = $row['collage_name'];
-                                                            echo '<option value="' . $collage_name . '">' . $collage_name . '</option>';
+                                                            $collage_short = $row['collage_short'];
+                                                            echo '<option value="' . $collage_name . '">' . $collage_short . '</option>';
                                                         }
                                                         ?>
                                                     </datalist>
@@ -209,7 +210,8 @@
                                                         $fetch_all_teams = mysqli_query($conn, "SELECT * FROM `collage_data`");
                                                         while ($row = mysqli_fetch_array($fetch_all_teams)) {
                                                             $collage_name = $row['collage_name'];
-                                                            echo '<option value="' . $collage_name . '">' . $collage_name . '</option>';
+                                                            $collage_short = $row['collage_short'];
+                                                            echo '<option value="' . $collage_name . '">' . $collage_short . '</option>';
                                                         }
                                                         ?>
                                                     </datalist>

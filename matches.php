@@ -21,13 +21,14 @@
               while ($row = mysqli_fetch_array($fetch)) {
                 $game_name = $row['game_name'];
                 $game_type = $row['game_type'];
+                $game_description = $row['game_description'];
                 @++$z;
                 echo '<li class="nav-item">
                   <a class="nav-link';
                 if ($z == 1) {
                   echo ' active';
                 }
-                echo '" id="pills-' . $game_type . '-tab" data-toggle="pill" href="#pills-' . $game_type . '" role="tab" aria-controls="pills-' . $game_type . '" aria-selected="true">' . $game_name . '(' . $game_type . ')' . '</a>
+                echo '" id="pills-' . $game_type . '-tab" data-toggle="pill" href="#pills-' . $game_type . '" role="tab" aria-controls="pills-' . $game_type . '" aria-selected="true">' . $game_name . ' / ' . $game_description . ' / ' . $game_type . '</a>
                 </li>';
               }
               ?>
@@ -40,6 +41,7 @@
               while ($row = mysqli_fetch_array($fetch)) {
                 $game_name = $row['game_name'];
                 $game_type = $row['game_type'];
+                $game_description = $row['game_description'];
                 @++$y;
                 echo '
                 <div class="tab-pane fade';
@@ -49,7 +51,7 @@
                 echo '" id="pills-' . $game_type . '" role="tabpanel" aria-labelledby="pills-' . $game_type . '">
                   <!-- Previous Matches -->
                   <div class="row align-items-center">';
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type = '$game_name / $game_type'");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%$game_name / $game_type%'");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
