@@ -78,7 +78,7 @@
         <div class="container">
           <div class="site-logo">
             <a href="index.php">
-              <img class="main_logo" style="margin-right: 100px;" src="assets/images/logo-1.png">
+              <img class="main_logo" style="margin-right: 50px;" src="assets/images/logo-1.png">
             </a>
           </div>
           <div class="d-inline-block d-md-none ml-md-0 mr-auto py-3">

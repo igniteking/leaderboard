@@ -107,7 +107,7 @@
                     <td>1</td>
                   </tr>
                   <tr class="table-success">
-                  <th scope="row">10</th>
+                  <th scope="row">11</th>
                     <td>Dental College</td>
                     <td>-</td>
                     <td>-</td>
