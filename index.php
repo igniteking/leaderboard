@@ -464,7 +464,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%tabletennis%' ORDER BY 'match_id' DESC LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%TABLE TENNIS%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -531,7 +531,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%badminton%' ORDER BY 'match_id' DESC LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%BADMINTON%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -598,7 +598,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%carrom%' ORDER BY 'match_id' DESC LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%CARROM%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -664,7 +664,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%longjump%' ORDER BY 'match_id' DESC LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%LONG JUMP%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -768,7 +768,7 @@
   <div class="container">
     <div class="row mb-5">
       <div class="col-md-12 text-center">
-        <h2 class="text-white">More About Our Teams</h2>
+        <h2 class="text-white">About Teams</h2>
       </div>
     </div>
 
