@@ -48,6 +48,9 @@
             <li class="nav-item">
               <a class="nav-link" id="pills-longjump-tab" data-toggle="pill" href="#pills-longjump" role="tab" aria-controls="pills-longjump" aria-selected="false">Long Jump </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-athletics-tab"  href="atheletics.php" role="tab" aria-controls="pills-athletics" aria-selected="false">Athletics </a>
+            </li>
           </ul>
 
 

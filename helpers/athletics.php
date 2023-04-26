@@ -1,5 +1,6 @@
 <?php
 include('../connections/connection.php');
+include('../components/header.php');
 // $match_id = @$_GET['match_id'];
 // $match_id = 1;
 // $checkGames = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM `match_data` WHERE `match_id` = '$match_id'"));

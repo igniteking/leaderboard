@@ -91,7 +91,7 @@
                 </div>
                 <div class="row mb-4 ">
                     <div class="col-md-3 text-center">
-                        <a href="./matches.php?game_name=Atheletics"> <img src="./assets/images/games/img 14.png" alt=""></a>
+                        <a href="atheletics.php"> <img src="./assets/images/games/img 14.png" alt=""></a>
                        
                         <h4>Athletics</h4>
 

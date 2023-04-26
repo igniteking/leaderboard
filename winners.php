@@ -19,7 +19,7 @@
       <div class="previous-about">
         <div class="">
           <div class="intro">
-            <h1 class="text-center">Current Year Analysis</h1>
+            <h1 class="text-center">Medal Tally</h1>
             <p class="text-center justify-content">Spardha is an annual inter-college sports tournament of NIMS University Rajasthan, Jaipur. Every year, the students get an opportunity to showcase their sportsmanship and invest all their energy to ensure a win. This event, at the same time, teaches them to cope with the situations where they try their best, yet lose. </p>
           </div>
           <div class="previous-analysis">
