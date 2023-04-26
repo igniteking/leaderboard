@@ -51,8 +51,8 @@
               <a href="https://www.youtube.com/@NIMSUniversityJaipur" class="text-secondary px-2"><span class="icon-youtube"></span></a>
             </div>
             <div class="col-6 col-md-9 text-right">
-              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-envelope mr-3"></span> <span class="d-none d-md-block">spardha@nimsuniversity.org</span></a></div>
-              <div class="d-inline-block"><a href="#" class="text-secondary p-2 d-flex align-items-center"><span class="icon-phone mr-0 mr-md-3"></span> <span class="d-none d-md-block">18001201020</span></a></div>
+              <div class="d-inline-block"><a href="mailto:spardha@nimsuniversity.org" class="text-secondary p-2 d-flex align-items-center"><span class="icon-envelope mr-3"></span> <span class="d-none d-md-block">spardha@nimsuniversity.org</span></a></div>
+              <div class="d-inline-block"><a href="tel:+18001201020" class="text-secondary p-2 d-flex align-items-center"><span class="icon-phone mr-0 mr-md-3"></span> <span class="d-none d-md-block">18001201020</span></a></div>
             </div>
           </div>
         </div>
@@ -78,11 +78,11 @@
         <div class="container">
           <div class="site-logo">
             <a href="index.php">
-              <img class="main_logo" style="margin-right: 90px;" src="assets/images/logo-1.png">
+              <img class="main_logo" style="margin-right: 100px;" src="assets/images/logo-1.png">
             </a>
           </div>
           <div class="d-inline-block d-md-none ml-md-0 mr-auto py-3">
-            <a href="#" class="site-menu-toggle js-menu-toggle text-white" style="z-index: 5000;"><span class="icon-menu h3"></span></a>
+            <a href="#" class="site-menu-toggle js-menu-toggle text-white" style="margin-left: 150px;"><span class="icon-menu h3"></span></a>
           </div>
           <ul class="site-menu js-clone-nav d-none d-md-block">
             <li><a href="index.php">Home</a></li>

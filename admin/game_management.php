@@ -180,13 +180,7 @@
                                             <input type="text" class="form-control" placeholder="Game's Name" name="game_name" aria-label="Username" aria-describedby="basic-addon1">
                                         </div><br>
                                         <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text">Game's Description</span>
-                                            </div>
-                                            <textarea class="form-control" name="game_description" aria-label="With textarea"></textarea>
-                                        </div><br>
-                                        <div class="input-group">
-                                            <select class="form-control" name="game_type" id="game_type">
+                                            <select class="form-control" name="game_description" id="game_type">
                                                 <option value="Group">Group</option>
                                                 <option value="Solo">Solo</option>
                                                 <option value="Doubles">Doubles</option>

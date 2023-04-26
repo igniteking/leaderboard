@@ -226,7 +226,8 @@
                                                     while ($row = mysqli_fetch_array($fetch_all_games)) {
                                                         $game_name = $row['game_name'];
                                                         $game_type = $row['game_type'];
-                                                        echo '<option value="' . $game_name . ' / ' . $game_type . '">' . $game_name . ' / ' . $game_type . '</option>';
+                                                        $game_description = $row['game_description'];
+                                                        echo '<option value="' . $game_name . ' / ' . $game_type . '">' . $game_name . ' / ' . $game_type . ' / ' . $game_description . '</option>';
                                                     }
                                                     ?>
                                                 </datalist>
