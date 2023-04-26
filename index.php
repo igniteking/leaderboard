@@ -90,6 +90,7 @@
                       </div>
                       <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
                         <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
@@ -100,11 +101,12 @@
                   echo $score2;
                   echo '</span>
                   </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-lg-4 text-center text-lg-right">
-                        <div class="">
-                          <div class="d-block d-lg-flex align-items-center">
+                  <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">Spardha &mdash; Round 01</small></p>
+                  </div>
+                  </div>
+                  <div class="col-md-4 col-lg-4 text-center text-lg-right">
+                  <div class="">
+                  <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small ml-lg-3 mb-3 mb-lg-0 order-2">
                               <img src="admin/' . array_values(mysqli_fetch_array($conn->query("SELECT collage_logo FROM `collage_data` WHERE collage_name='$team_2'")))[0] . '" alt="Image" class="img-fluid">
                             </div>
