@@ -64,7 +64,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%football%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%football%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -90,7 +90,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -131,7 +131,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%basketball%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%basketball%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -157,7 +157,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -197,7 +197,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%Cricket%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%Cricket%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -223,7 +223,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -264,7 +264,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%kabaddi%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%kabaddi%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -290,7 +290,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -332,7 +332,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%volleyball%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%volleyball%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -358,7 +358,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -398,7 +398,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%KHO-KHO%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%KHO-KHO%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -424,7 +424,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -465,7 +465,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%tabletennis%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%tabletennis%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -491,7 +491,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -532,7 +532,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%badminton%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%badminton%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -558,7 +558,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -599,7 +599,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%carrom%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%carrom%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -625,7 +625,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -665,7 +665,7 @@
               <!-- Previous Matches -->
               <div class="row align-items-center">
                 <?php
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%longjump%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%longjump%' ORDER BY 'match_id' DESC LIMIT 5");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -691,7 +691,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }
@@ -739,9 +739,6 @@
   </div>
 </div>
 
-
-
-
 <!-- Chairperson’s Message  -->
 <div class="site-section" data-aos="fade-up" style="margin-bottom:-108px;">
   <div class="container">
@@ -764,12 +761,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
 
 
 
@@ -931,7 +922,7 @@
   setInterval(function() {
     football(), basketball(), cricket(), kabaddi(), volleyball(), khokho(), tabletennis(), badminton(), carrom(), longjump()
 
-  }, 1000);
+  }, 3000);
 </script>
 
 <!-- SCORE TIME -->

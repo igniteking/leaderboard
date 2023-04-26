@@ -160,7 +160,7 @@ while ($row = mysqli_fetch_array($fetch_data)) {
                                                 <div class="col-sm-6 justify-content-left">
                                                     <div class="form-group">
                                                         <label for="browser">Team 1</label>
-                                                        <input type="number" value="<?php $check1 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
+                                                        <input type="text" value="<?php $check1 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                                                                                     if ($check1 > 0) {
                                                                                         echo $score1 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id='$match_id'")))[0];
                                                                                     } else {
@@ -171,7 +171,7 @@ while ($row = mysqli_fetch_array($fetch_data)) {
                                                 <div class="col-sm-6 justify-content-left">
                                                     <div class="form-group">
                                                         <label for="browser">Team 2</label>
-                                                        <input type="number" value="<?php $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
+                                                        <input type="text" value="<?php $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                                                                                     if ($check2 > 0) {
                                                                                         echo $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                                                                                     } else {

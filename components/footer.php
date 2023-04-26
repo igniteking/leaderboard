@@ -42,7 +42,7 @@
               <a href="https://www.instagram.com/nimsuniversity/?igshid=YmMyMTA2M2Y%3D" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
               <a href="https://www.youtube.com/watch?v=Y94dltOb9xs&feature=youtu.be" class="pl-3 pr-3"><span class="icon-youtube"></span></a>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
 
@@ -73,22 +73,14 @@
   </div>
 </footer>
 </div>
-
-
-
-
-
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="assets/js/jquery-ui.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/jquery.stellar.min.js"></script>
-  <script src="assets/js/jquery.countdown.min.js"></script>
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script src="assets/js/aos.js"></script>
-
-  <script src="assets/js/main.js"></script>
-
-  
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="./assets/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="./assets/js/jquery-ui.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/jquery.stellar.min.js"></script>
+<script src="./assets/js/jquery.countdown.min.js"></script>
+<script src="./assets/js/jquery.magnific-popup.min.js"></script>
+<script src="./assets/js/aos.js"></script>
+<script src="./assets/js/main.js"></script>
