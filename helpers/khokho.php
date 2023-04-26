@@ -4,7 +4,7 @@ include('../connections/connection.php');
 // $match_id = 1;
 // $checkGames = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM `match_data` WHERE `match_id` = '$match_id'"));
 // if ($checkGames > 0) {
-$fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE `game_status` = 'ongoing' AND `game_type` LIKE '%khokho%'");
+$fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE `game_status` = 'ongoing' AND `game_type` LIKE '%KHO-KHO%'");
 while ($row = mysqli_fetch_array($fetch_all_Games)) {
     $match_id = $row['match_id'];
     $collage_1 = $row['team_1'];

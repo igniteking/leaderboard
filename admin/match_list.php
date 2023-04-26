@@ -58,26 +58,36 @@
                                 </div>
                             </div>
                         </div>
+                        <form action="./match_list.php" method="get">
+                            <input type="text" name="game_name" id="" class="form-control" onblur="this.form.submit()" placeholder="Search Game Type">
+                        </form>
                         <div class="card-body p-0">
                             <div id="notification"></div>
                             <div class="table-responsive">
                                 <table class="table table-hover mb-0">
                                     <thead>
                                         <tr>
-                                            <th>Match</th>
                                             <th>Team 1</th>
                                             <th>Team 2</th>
+                                            <th>Status</th>
+                                            <th>Game</th>
                                             <th>Date Time</th>
                                             <th class="text-right">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data`");
+                                        $game_name = @$_GET['game_name'];
+                                        if ($game_name) {
+                                            $fetch_all_Games = mysqli_query($conn, "SELECT * FROM match_data WHERE game_type LIKE '%$game_name%'");
+                                        } else {
+                                            $fetch_all_Games = mysqli_query($conn, "SELECT * FROM match_data ORDER BY match_id DESC");
+                                        }
                                         while ($row = mysqli_fetch_array($fetch_all_Games)) {
                                             $match_id = $row['match_id'];
                                             $team_1 = $row['team_1'];
                                             $team_2 = $row['team_2'];
+                                            $game_status = $row['game_status'];
                                             $game_type = $row['game_type'];
                                             $date_time = $row['date_time'];
                                             echo '<tr>
@@ -92,6 +102,13 @@
                                                 <div class="d-inline-block align-middle">
                                                     <div class="d-inline-block">
                                                         <h6 class="text-truncate" style="max-width: 250px;">' . $team_2 . '</h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-block align-middle">
+                                                    <div class="d-inline-block">
+                                                        <h6 class="text-truncate" style="max-width: 250px;">' . $game_status . '</h6>
                                                     </div>
                                                 </div>
                                             </td>

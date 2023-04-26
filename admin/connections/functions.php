@@ -24,7 +24,7 @@ function Login($conn, $email, $pwd)
                     $_SESSION['id'] = $id_login;
                     $_SESSION['email'] = $email_login;
                     $_SESSION['password'] = $password_login;
-                    echo "<meta http-equiv=\"refresh\" content=\"0; url=index.php\">";
+                    echo "<meta http-equiv=\"refresh\" content=\"0; url=match_list.php\">";
                     exit();
                 }
             } else {

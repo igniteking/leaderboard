@@ -15,7 +15,7 @@
                     <div class="text">
                         <h2 class="h5 text-white">Previous Years Analysis</h2>
                         <p>Every year, the students get an opportunity to showcase their sportsmanship and invest all their energy to ensure a win. </p>
-                        <p class="mb-0"><a href="./spardha2022.php" class="btn btn-primary btn-sm px-4 py-2 rounded-0">Read More</a></p>
+                        <p class="mb-0"><a href="./previous.php" class="btn btn-primary btn-sm px-4 py-2 rounded-0">Read More</a></p>
                     </div>
                 </div>
             </div>

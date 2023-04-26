@@ -36,44 +36,20 @@
             <div class="tab-content" id="pills-tabContent">
               <?php
               $game_name = $_GET['game_name'];
-              $fetch = mysqli_query($conn, "SELECT * FROM game_data WHERE game_name LIKE '%$game_name_get%'");
+              $fetch = mysqli_query($conn, "SELECT * FROM game_data WHERE game_name LIKE '%$game_name%'");
               while ($row = mysqli_fetch_array($fetch)) {
                 $game_name = $row['game_name'];
-                $game_name = $row['game_type'];
+                $game_type = $row['game_type'];
                 @++$y;
                 echo '
                 <div class="tab-pane fade';
                 if ($y == 1) {
                   echo ' show active';
                 }
-                echo '" id="pills-' . $game_name . '" role="tabpanel" aria-labelledby="pills-' . $game_name . '">
-                  <!-- Next Match -->
-                  <div class="border mb-3 rounded d-block d-lg-flex align-items-center p-3 next-match">
-                    <div class="mr-auto order-md-1 w-60 text-center text-lg-left mb-3 mb-lg-0">
-                      Next match of Football
-                      <div id="demo"></div>
-                    </div>
-
-                    <div class="ml-auto pr-4 order-md-2">
-                      <div class="h5 text-black text-uppercase text-center text-lg-left">
-                        <div class="d-block d-md-inline-block mb-3 mb-lg-0">
-                          <img src="assets/images/team/img 5.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Engineering </span>
-                        </div>
-                        <span class="text-muted mx-3 text-normal mb-3 mb-lg-0 d-block d-md-inline ">vs</span>
-                        <div class="d-block d-md-inline-block">
-                          <img src="assets/images/team/img 6.png" alt="Image" class="mr-3 image"><span class="d-block d-md-inline-block ml-0 ml-md-3 ml-lg-0">Management</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="" onload="football()"></div>
-                  <div class="" id="football"></div>
-
+                echo '" id="pills-' . $game_type . '" role="tabpanel" aria-labelledby="pills-' . $game_type . '">
                   <!-- Previous Matches -->
                   <div class="row align-items-center">';
-
-                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%$game_name_get%' LIMIT 5");
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type = '$game_name / $game_type'");
                 while ($row = mysqli_fetch_array($fetch_all_Games)) {
                   $match_id = $row['match_id'];
                   $team_1 = $row['team_1'];
@@ -99,7 +75,7 @@
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
-                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='1'")))[0];
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
                   } else {
                     $score2 = "0:0";
                   }

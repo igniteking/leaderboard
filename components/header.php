@@ -64,25 +64,28 @@
           width: 50%;
           margin-left: -450px;
 
+
           @media only screen and (min-width: 600px) {
             margin-right: 180px;
             width: 50%;
             margin-top: 35px;
+
           }
+
         }
       </style>
-      <nav class="site-navigation position-relative text-right bg-black text-md-right" role="navigation">
-        <div class="container" style="margin-right: 0px;">
+      <nav class="site-navigation text-right bg-black text-md-right" id="site-navigation123" style="position: relative;" role="navigation">
+        <div class="container">
           <div class="site-logo">
-            <a href="index.php"><img class="main_logo" src="assets/images/logo-1.png" alt=""></a>
+            <a href="index.php">
+              <img class="main_logo" style="margin-right: 90px;" src="assets/images/logo-1.png">
+            </a>
           </div>
           <div class="d-inline-block d-md-none ml-md-0 mr-auto py-3">
-            <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a>
+            <a href="#" class="site-menu-toggle js-menu-toggle text-white" style="z-index: 5000;"><span class="icon-menu h3"></span></a>
           </div>
           <ul class="site-menu js-clone-nav d-none d-md-block">
-            <li class="">
-              <a href="index.php">Home</a>
-            </li>
+            <li><a href="index.php">Home</a></li>
             <li class="has-children">
               <a href="#">About</a>
               <ul class="dropdown">
@@ -106,5 +109,4 @@
 
         </div>
       </nav>
-
     </header>
