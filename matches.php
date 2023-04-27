@@ -84,6 +84,8 @@
                   echo $score2;
                   echo '</span>
                   </div>
+                  <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $date_time . '</small></p>
+
                         </div>
                       </div>
                       <div class="col-md-4 col-lg-4 text-center text-lg-right">

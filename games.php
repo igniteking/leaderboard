@@ -71,19 +71,19 @@
 
                     </div>
                     <div class="col-md-3 text-center">
-                        <a href="./matches.php?game_name=volleyball"><img src="./assets/images/games/img 11.png" alt=""></a>
+                        <a href="./matches.php?game_name=volleyball"><img src="./assets/images/games/img 10.png" alt=""></a>
                         
                         <h4>Volleyball</h4>
 
                     </div>
                     <div class="col-md-3 text-center">
-                        <a href="./matches.php?game_name=chess"><img src="./assets/images/games/img 12.png" alt=""></a>
+                        <a href="./matches.php?game_name=chess"><img src="./assets/images/games/img 11.png" alt=""></a>
                         
                         <h4>Chess</h4>
 
                     </div>
                     <div class="col-md-3 text-center">
-                        <a href="./matches.php?game_name=carrom"> <img src="./assets/images/games/img 13.png" alt=""></a>
+                        <a href="./matches.php?game_name=carrom"> <img src="./assets/images/games/img 12.png" alt=""></a>
                        
                         <h4>Carrom</h4>
 
