@@ -74,7 +74,9 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<a href="./matches.php?game_name=football"><div class="col-md-12">
+                  echo '
+                  <a href="./matches.php?game_name=football">
+                  <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -118,8 +120,7 @@
                       </div>
                     </div>
                     </a>
-                    </div>
-                    ';
+                    </div>';
                 }
                 ?>
                 <!-- END row -->
@@ -145,7 +146,8 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
+                  echo ' <a href="./matches.php?game_name=basketball">  
+                  <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -188,7 +190,9 @@
                         </div>
                       </div>
                     </div>
+                    </a>
                     </div>';
+                    
                 }
                 ?>
                 <!-- END row -->
@@ -213,7 +217,7 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
+                  echo '<a href="./matches.php?game_name=Cricket">  <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -257,6 +261,7 @@
                         </div>
                       </div>
                     </div>
+                    </a>
                     </div>';
                 }
                 ?>
@@ -283,7 +288,7 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
+                  echo '<a href="./matches.php?game_name=kabaddi">  <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -327,6 +332,7 @@
                         </div>
                       </div>
                     </div>
+                    </a>
                     </div>';
                 }
                 ?>
@@ -353,7 +359,7 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
+                  echo '<a href="./matches.php?game_name=volleyball">  <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -396,6 +402,7 @@
                         </div>
                       </div>
                     </div>
+                    </a>
                     </div>';
                 }
                 ?>
@@ -421,7 +428,7 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
+                  echo '<a href="./matches.php?game_name=KHO-KHO">  <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -464,6 +471,7 @@
                         </div>
                       </div>
                     </div>
+                    </a>
                     </div>';
                 }
                 ?>
@@ -490,7 +498,7 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
+                  echo '<a href="./matches.php?game_name=TABLE TENNIS">  <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -533,6 +541,7 @@
                         </div>
                       </div>
                     </div>
+                    </a>
                     </div>';
                 }
                 ?>
@@ -559,7 +568,7 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
+                  echo '<a href="./matches.php?game_name=BADMINTON">   <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -602,6 +611,7 @@
                         </div>
                       </div>
                     </div>
+                    </a>
                     </div>';
                 }
                 ?>
@@ -628,7 +638,7 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
+                  echo '<a href="./matches.php?game_name=CARROM">  <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -671,6 +681,7 @@
                         </div>
                       </div>
                     </div>
+                    </a>
                     </div>';
                 }
                 ?>
@@ -696,7 +707,7 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
+                  echo '<a href="./matches.php?game_name=LONG JUMP">  <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -739,6 +750,7 @@
                         </div>
                       </div>
                     </div>
+                    </a>
                     </div>';
                 }
                 ?>
