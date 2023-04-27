@@ -52,6 +52,4 @@ while ($row = mysqli_fetch_array($fetch_data)) {
         </div>
     </div>
 </div>';
-
 }
-

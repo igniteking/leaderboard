@@ -95,12 +95,12 @@
                 <li><a href="./assets/media/Committee Constituted for Spardha-2023 (1).pdf" target="_blank"> Organising Committee</a></li>
               </ul>
             </li>
-            <li ><a href="games.php">Games</a>
-            <!-- <ul class="dropdown">
+            <li class="has-children" ><a href="games.php">Games</a>
+            <ul class="dropdown">
               <li><a href="games.php">Games</a></li>
                 <li><a href="winners.php">Winners</a></li>
 
-              </ul> -->
+              </ul>
           </li>
             <li><a href="team.php">Team</a></li>
             <li><a href="previous.php">Previous Events</a></li>
