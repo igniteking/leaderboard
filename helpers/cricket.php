@@ -33,7 +33,7 @@ while ($row = mysqli_fetch_array($fetch_data)) {
     </div>
     <div class="col-md-12 col-lg-4 text-center mb-4 mb-lg-0">
         <div class="d-inline-block">
-            <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">Spardha &mdash; Round 01</small></p>
+            <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">Spardha &mdash; 1st Inning</small></p>
             <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h3">' . $team_1 . ':' . $team_2 . '</span></div>
             <p class="mb-0"><small class="text-uppercase text-black font-weight-bold">' . $date_time . '</small></p>
             </div>

@@ -159,6 +159,8 @@
                       </div>
                       <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
                         <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
+
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
@@ -225,7 +227,10 @@
                       </div>
                       <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
                         <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
+
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
+                          
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
                     $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
@@ -253,7 +258,7 @@
                     </div>';
                 }
                 ?>
-                <!-- END row -->
+                <!-- END row -->  
 
               </div>
             </div>
@@ -292,6 +297,8 @@
                       </div>
                       <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
                         <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
+
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
@@ -360,6 +367,8 @@
                       </div>
                       <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
                         <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
+
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
@@ -426,6 +435,8 @@
                       </div>
                       <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
                         <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
+
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
@@ -493,6 +504,8 @@
                       </div>
                       <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
                         <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
+
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
@@ -560,6 +573,8 @@
                       </div>
                       <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
                         <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
+
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
@@ -627,6 +642,8 @@
                       </div>
                       <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
                         <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
+
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
@@ -693,6 +710,8 @@
                       </div>
                       <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
                         <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
+
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
