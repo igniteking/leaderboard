@@ -74,7 +74,7 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<div class="col-md-12">
+                  echo '<a href="./matches.php?game_name=football"><div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
@@ -117,7 +117,9 @@
                         </div>
                       </div>
                     </div>
-                    </div>';
+                    </a>
+                    </div>
+                    ';
                 }
                 ?>
                 <!-- END row -->
@@ -300,7 +302,7 @@
                     $score2 = "0:0";
                   }
                   echo $score2;
-                  
+
                   echo '</span>
                   </div>
                         </div>
