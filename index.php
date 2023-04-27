@@ -49,7 +49,7 @@
               <a class="nav-link" id="pills-longjump-tab" data-toggle="pill" href="#pills-longjump" role="tab" aria-controls="pills-longjump" aria-selected="false">Long Jump </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="pills-athletics-tab"  href="atheletics.php" role="tab" aria-controls="pills-athletics" aria-selected="false">Athletics </a>
+              <a class="nav-link" id="pills-athletics-tab" href="atheletics.php" role="tab" aria-controls="pills-athletics" aria-selected="false">Athletics </a>
             </li>
           </ul>
 
@@ -101,7 +101,7 @@
                   echo $score2;
                   echo '</span>
                   </div>
-                  <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">Spardha &mdash; Round 01</small></p>
+                  <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $date_time . '</small></p>
                   </div>
                   </div>
                   <div class="col-md-4 col-lg-4 text-center text-lg-right">
