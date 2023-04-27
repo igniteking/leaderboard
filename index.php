@@ -300,7 +300,7 @@
                     $score2 = "0:0";
                   }
                   echo $score2;
-                  echo $date_time;
+                  
                   echo '</span>
                   </div>
                         </div>
