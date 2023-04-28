@@ -74,18 +74,14 @@
                
 
 
-                <div class="row mb-4  text-center ">
-
-                    
-                    
-                </div>
+  
 
 
 
                 <div class="row mb-4 ">
               
                     <div class="col-md-3 text-center">
-                        <a href="./matches.php?game_name=Javelin Throw"><img src="./assets/images/games/img 2.png" alt=""></a>
+                        <a href="javelin.php"><img src="./assets/images/games/img 2.png" alt=""></a>
 
                         <h4>Javelin Throw</h4>
 
