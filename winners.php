@@ -46,51 +46,51 @@
                 <tr class="table-info font-weight-bold">
                     <th scope="row">2</th>
                     <td>Management College</td>
+                    <td>2</td>
                     <td>1</td>
-                    <td>-</td>
-                    <td>1</td>
+                    <td>3</td>
                   </tr>
                   <tr class="table-success font-weight-bold">
                   <th scope="row">3</th>
                     <td>Nursing College</td>
                     <td>-</td>
+                    <td>2</td>
                     <td>1</td>
-                    <td>-</td>
                   </tr>
                   <tr class="table-primary font-weight-bold">
                   <th scope="row">4</th>
                     <td>Physiotherapy College</td>
                     <td>1</td>
-                    <td>1</td>
-                    <td>-</td>
+                    <td>2</td>
+                    <td>2</td>
                   </tr>
                   <tr class="table-warning font-weight-bold">
                     <th scope="row">5</th>
                     <td>Pharmacy College</td>
-                    <td>2</td>
-                    <td>-</td>
-                    <td>2</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>6</td>
                   </tr>
                   <tr class="table-success font-weight-bold">
                     <th scope="row">6</th>
                     <td>Humanities College</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>1</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>3</td>
                   </tr>
                   <tr class="table-primary font-weight-bold">
                     <th scope="row">7</th>
                     <td>NIET College</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>2</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>7</td>
                   </tr>
                   <tr class="table-warning font-weight-bold">
                   <th scope="row">8</th>
                     <td>Paramedical College</td>
+                    <td>3</td>
+                    <td>4</td>
                     <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
                   </tr>
                   <tr class="table-info font-weight-bold">
                   <th scope="row">9</th>
@@ -109,9 +109,9 @@
                   <tr class="table-success font-weight-bold">
                   <th scope="row">11</th>
                     <td>Dental College</td>
-                    <td>-</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
                   </tr>
                   
                 </tbody>
