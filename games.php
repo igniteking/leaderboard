@@ -57,7 +57,7 @@
 
                     </div>
                     <div class="col-md-3 text-center">
-                        <a href="./matches.php?game_name=Discuss Throw"><img src="./assets/images/games/img 1.png" alt=""></a>
+                        <a href="discuss.php"><img src="./assets/images/games/img 1.png" alt=""></a>
 
                         <h4>Discuss Throw</h4>
 
@@ -99,7 +99,7 @@
 
                     </div>
                     <div class="col-md-3 text-center">
-                        <a href="./matches.php?game_name=Long jump"><img src="./assets/images/games/img 4.png" alt=""></a>
+                        <a href="longjump.php"><img src="./assets/images/games/img 4.png" alt=""></a>
 
                         <h4>Long jump</h4>
 
@@ -109,7 +109,7 @@
                 <div class="row mb-4 ">
                 
                     <div class="col-md-3 text-center">
-                        <a href="./matches.php?game_name=Shot Put"> <img src="./assets/images/games/img 15.png" alt=""></a>
+                        <a href="shotput.php"> <img src="./assets/images/games/img 15.png" alt=""></a>
 
                         <h4>Shot Put</h4>
 
