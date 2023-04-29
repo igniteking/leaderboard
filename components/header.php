@@ -98,7 +98,7 @@
             <li class="has-children" ><a href="games.php">Games</a>
             <ul class="dropdown">
               <li><a href="games.php">Games</a></li>
-                <li><a href="winners.php">Winners</a></li>
+                <!-- <li><a href="winners.php">Rank</a></li> -->
 
               </ul>
           </li>

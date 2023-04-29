@@ -66,7 +66,14 @@
     </div>
     <div class="row pt-5 mt-5 text-center">
       <div class="col-md-12">
-
+        <p>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+          <script>
+            document.write(new Date().getFullYear());
+          </script> All rights reserved | This is made by Team <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://laaemal.com" target="_blank">La'aemal</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
       </div>
 
     </div>
