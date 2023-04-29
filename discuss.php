@@ -8,62 +8,97 @@
 include('./components/header.php') ?>
 
 <style>
+
     .cards{
+        margin-top: 20px;
         transition: transform .2s;
     }
-    .cards:hover{
-        transform: scale(1.2);
+    .cards:hover {
+        transform: scale(1.05);
     }
+ 
 </style>
 
-
 <div class="site-section">
-    <div class="container">
+    <div class="container" style="max-width: 1300px; ">
         <center>
-            <h1>WINNERS</h1>
-        <div class="row ">
-            <div class="cards " style="width: 22rem; margin-top:60px;">
-                <img src="assets/images/trophy/sil.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <center>
+            <h1> BOYS LEADERBOARD</h1>
+            </center>
 
-
-                        <h3 class="card-title">1st </h3>
-
-
-                    </center>
+            <div class="row  " style="background-color:#11031c; border-radius:25px;   justify-content:center;">
+                <div class="cards " style="width: 22rem; margin-right: 40px;">
+                    <img src="assets/images/TEAM/img 3.png" class="card-img-top card-img-top rounded-circle border border-dark" alt="...">
+                    <div class="card-body">
+                        <center>
+                            <h3 class="card-title rounded-circle  bg-warning" style=" border:3px solid black; width:40px; height:40px; margin-top:-20px;">2</h3>
+                        </center>
+                    </div>
                 </div>
-            </div>
-            <div class="cards " style="width: 22rem; margin-top:30px;">
-                <img src="assets/images/trophy/gol.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <center>
-
-
-                        <h3 class="card-title">2nd</h3>
-
-
-                    </center>
+                <div class="cards " style="width: 22rem; margin-right:40px;">
+                    <img src="assets/images/team/img 8.png" class="card-img-top card-img-top rounded-circle border border-dark" alt="...">
+                    <div class="card-body">
+                        <center>
+                            <h3 class="card-title rounded-circle bg-warning" style="border:3px solid black; width:40px; height:40px; margin-top:-20px;">1</h3>
+                        </center>
+                    </div>
                 </div>
-            </div>
-            <div class=" cards" style="width: 22rem; margin-top:60px;">
-                <img src="assets/images/trophy/bronze.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <center>
-
-
-                        <h3 class="card-title">3rd</h3>
-
-
-                    </center>
+                <div class="cards " style="width: 22rem;">
+                    <img src="assets/images/team/img 4.png" class="card-img-top card-img-top rounded-circle border border-dark" alt="...">
+                    <div class="card-body">
+                        <center>
+                            <h3 class="card-title rounded-circle bg-warning" style="border:3px solid black; width:40px; height:40px; margin-top:-20px;">3</h3>
+                        </center>
+                    </div>
                 </div>
+
             </div>
-        </div>
-        </center>
     </div>
 </div>
+<div class="site-content mb-5">
+    <div class="container" style="max-width:1300px;">
+        <center>
+            <h1> GIRLS LEADERBOARD</h1>
+            </center>
+            <div class="row " style="background-color:#11031c; border-radius:25px;  justify-content:center;">
+                <div class="cards " style="width: 22rem; margin-right: 40px;">
+                    <img src="assets/images/TEAM/img 1.png" class="card-img-top card-img-top rounded-circle border border-dark" alt="...">
+                    <div class="card-body">
+                        <center>
+                            <h3 class="card-title rounded-circle  bg-warning" style=" border:3px solid black; width:40px; height:40px; margin-top:-20px;">2</h3>
+                        </center>
+                    </div>
+                </div>
+                <div class="cards " style="width: 22rem; margin-right:40px;">
+                    <img src="assets/images/trophy/gol.png" class="card-img-top card-img-top rounded-circle border border-dark" alt="...">
+                    <div class="card-body">
+                        <center>
+                            <h3 class="card-title rounded-circle bg-warning" style="border:3px solid black; width:40px; height:40px; margin-top:-20px;">1</h3>
+                        </center>
+                    </div>
+                </div>
+                <div class="cards " style="width: 22rem;">
+                    <img src="assets/images/trophy/gol.png" class="card-img-top card-img-top rounded-circle border border-dark" alt="...">
+                    <div class="card-body">
+                        <center>
+                            <h3 class="card-title rounded-circle bg-warning" style="border:3px solid black; width:40px; height:40px; margin-top:-20px;">3</h3>
+                        </center>
+                    </div>
+                </div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 <!--  -->
 
 <?php include('./components/footer.php') ?>
-
