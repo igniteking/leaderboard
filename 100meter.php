@@ -22,7 +22,7 @@ include('./components/header.php') ?>
         <center>
             <h1>WINNERS</h1>
         <div class="row ">
-            <div class="cards " style="width: 22rem; margin-top:60px;">
+            <div class="cards rounded-circle border border-dark " style="width: 22rem; margin-top:60px;">
                 <img src="assets/images/trophy/sil.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <center>
@@ -34,7 +34,7 @@ include('./components/header.php') ?>
                     </center>
                 </div>
             </div>
-            <div class="cards " style="width: 22rem; margin-top:30px;">
+            <!-- <div class="cards " style="width: 22rem; margin-top:30px;">
                 <img src="assets/images/trophy/gol.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <center>
@@ -57,7 +57,7 @@ include('./components/header.php') ?>
 
                     </center>
                 </div>
-            </div>
+            </div> -->
         </div>
         </center>
     </div>
