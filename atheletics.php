@@ -15,7 +15,8 @@
         <div class="site-block-tab">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="pills-football-tab"  href="matches.php?game_name=100%20METER%20RACE" role="tab" aria-controls="pills-football" aria-selected="true">100 METER RACE </a>
+              <a class="nav-link active" id="pills-football-tab"  href="matches.php?game_name=100%20METER%20RACE" role="tab" aria-controls="pills-football" aria-selected="true"><a href="100meter.php
+              ">100 METER RACE </a></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="pills-basketball-tab" href="matches.php?game_name=200%20METER%20RACE" role="tab" aria-controls="pills-basketball" aria-selected="false">200 METER RACE</a>
