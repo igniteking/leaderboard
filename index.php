@@ -152,9 +152,15 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
+                  $total = fmod($i, 2);
+                  if ($total == 0) {
+                    $color = '#ced4da;';
+                  } else {
+                    $color = '#fff;';
+                  }
                   echo ' <a href="./matches.php?game_name=basketball">  
                   <div class="col-md-12">
-                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
+                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry" style="background-color: ' . $color . '">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
@@ -224,9 +230,15 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
+                  $total = fmod($i, 2);
+                  if ($total == 0) {
+                    $color = '#ced4da;';
+                  } else {
+                    $color = '#fff;';
+                  }
                   echo '<a href="./matches.php?game_name=Cricket">  <div class="col-md-12">
                     <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
-                      <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
+                      <div class="col-md-4 col-lg-4 mb-4 mb-lg-0" style="background-color: ' . $color . '">
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small text-center mb-3 mb-lg-0 mr-lg-3">
@@ -297,8 +309,17 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
-                  echo '<a href="./matches.php?game_name=kabaddi">  <div class="col-md-12">
-                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
+                  @++$j;
+
+                  $total = fmod($j, 2);
+                  if ($total == 0) {
+                    $color = '#ced4da;';
+                  } else {
+                    $color = '#fff;';
+                  }
+                  echo '<a href="./matches.php?game_name=kabaddi"> 
+                   <div class="col-md-12">
+                    <div class="row align-items-center ml-0 mr-0 py-4 match-entry" style="background-color: ' . $color . '">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
@@ -370,8 +391,17 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
+                  $total = fmod($i, 2);
+                  @++$j;
+
+                  $total = fmod($j, 2);
+                  if ($total == 0) {
+                    $color = '#ced4da;';
+                  } else {
+                    $color = '#fff;';
+                  }
                   echo '<a href="./matches.php?game_name=volleyball">  <div class="col-md-12">
-                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
+                    <div class="row align-items-center ml-0 mr-0 py-4 match-entry" style="background-color: ' . $color . '">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
@@ -441,9 +471,17 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
+                  @++$j;
+
+                  $total = fmod($j, 2);
+                  if ($total == 0) {
+                    $color = '#ced4da;';
+                  } else {
+                    $color = '#fff;';
+                  }
                   echo '<a href="./matches.php?game_name=KHO-KHO">  <div class="col-md-12">
-                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
-                      <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
+                    <div class="row align-items-center ml-0 mr-0 py-4 match-entry" style="background-color: ' . $color . '">
+                      <div class="col-md-4 col-lg-4 mb-4 mb-lg-0" >
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small text-center mb-3 mb-lg-0 mr-lg-3">
@@ -513,9 +551,17 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
+                  @++$j;
+
+                  $total = fmod($j, 2);
+                  if ($total == 0) {
+                    $color = '#ced4da;';
+                  } else {
+                    $color = '#fff;';
+                  }
                   echo '<a href="./matches.php?game_name=TABLE TENNIS">  <div class="col-md-12">
-                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
-                      <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
+                    <div class="row align-items-center ml-0 mr-0 py-4 match-entry" style="background-color: ' . $color . '">
+                      <div class="col-md-4 col-lg-4 mb-4 mb-lg-0" >
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small text-center mb-3 mb-lg-0 mr-lg-3">
@@ -585,9 +631,17 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
+                  @++$j;
+
+                  $total = fmod($j, 2);
+                  if ($total == 0) {
+                    $color = '#ced4da;';
+                  } else {
+                    $color = '#fff;';
+                  }
                   echo '<a href="./matches.php?game_name=BADMINTON">   <div class="col-md-12">
-                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
-                      <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
+                    <div class="row align-items-center ml-0 mr-0 py-4 match-entry" style="background-color: ' . $color . '">
+                      <div class="col-md-4 col-lg-4 mb-4 mb-lg-0" >
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
                             <div class="image image-small text-center mb-3 mb-lg-0 mr-lg-3">
@@ -657,8 +711,16 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
+                  @++$j;
+
+                  $total = fmod($j, 2);
+                  if ($total == 0) {
+                    $color = '#ced4da;';
+                  } else {
+                    $color = '#fff;';
+                  }
                   echo '<a href="./matches.php?game_name=CARROM">  <div class="col-md-12">
-                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
+                    <div class="row align-items-center ml-0 mr-0 py-4 match-entry"  style="background-color: ' . $color . '">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
@@ -711,10 +773,8 @@
               </div>
             </div>
 
-            <!-- longjump -->
-            <div class="tab-pane fade" href="longjump.php" id="pills-longjump" role="tabpanel" aria-labelledby="pills-longjump">
-              <!-- Next Match -->
 
+<<<<<<< HEAD
               <!-- <div id="" onload="longjump()"></div>
               <div class="" id="longjump"></div> -->
 
@@ -781,6 +841,8 @@
               </div> -->
 
             </div>
+=======
+>>>>>>> f282eaf119c5a421968e68e7b244733538090590
           </div>
         </div>
       </div>
