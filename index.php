@@ -11,7 +11,7 @@
 <?php include('./components/trio.php'); ?>
 
 <!-- Score Board  -->
-<div class="site-blocks-vs site-section bg-light">
+<div class="site-blocks-vs site-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -74,10 +74,18 @@
                   $team_2 = $row['team_2'];
                   $game_type = $row['game_type'];
                   $date_time = $row['date_time'];
+                  @++$i;
+
+                  $total = fmod($i, 2);
+                  if ($total == 0) {
+                    $color = '#ced4da;';
+                  } else {
+                    $color = '#fff;';
+                  }
                   echo '
                   <a href="./matches.php?game_name=football">
-                  <div class="col-md-12">
-                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
+                  <div class="col-md-12 mb-4">
+                    <div class="row align-items-center ml-0 mr-0 py-4 match-entry" style="background-color: ' . $color . '">
                       <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
                         <div class="text-center text-lg-left">
                           <div class="d-block d-lg-flex align-items-center">
@@ -194,7 +202,6 @@
                     </div>
                     </a>
                     </div>';
-                    
                 }
                 ?>
                 <!-- END row -->
@@ -238,7 +245,7 @@
                         <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
 
                           <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
-                          
+
                   $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
                   if ($check2 > 0) {
                     $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ':' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
@@ -269,7 +276,7 @@
                     </div>';
                 }
                 ?>
-                <!-- END row -->  
+                <!-- END row -->
 
               </div>
             </div>
