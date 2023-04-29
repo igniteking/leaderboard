@@ -45,7 +45,7 @@
             <li class="nav-item">
               <a class="nav-link" id="pills-carrom-tab" data-toggle="pill" href="#pills-carrom" role="tab" aria-controls="pills-carrom" aria-selected="false">Carrom</a>
             </li>
-            
+
             <li class="nav-item">
               <a class="nav-link" id="pills-athletics-tab" href="atheletics.php" role="tab" aria-controls="pills-athletics" aria-selected="false">Athletics </a>
             </li>
@@ -345,7 +345,7 @@
                     $score2 = "0  :  0";
                   }
                   echo $score2;
-                  
+
                   echo '</span>
                   </div>
                   <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $date_time . '</small></p>
@@ -779,6 +779,75 @@
             </div>
 
 
+<<<<<<< HEAD
+              <!-- <div id="" onload="longjump()"></div>
+              <div class="" id="longjump"></div> -->
+
+              <!-- Previous Matches -->
+              <!-- <div class="row align-items-center">
+                <?php
+                $fetch_all_Games = mysqli_query($conn, "SELECT * FROM `match_data` WHERE game_type LIKE '%LONG JUMP%' ORDER BY 'match_id' DESC LIMIT 5");
+                while ($row = mysqli_fetch_array($fetch_all_Games)) {
+                  $match_id = $row['match_id'];
+                  $team_1 = $row['team_1'];
+                  $team_2 = $row['team_2'];
+                  $game_type = $row['game_type'];
+                  $date_time = $row['date_time'];
+                  echo '<a href="./matches.php?game_name=LONG JUMP">  <div class="col-md-12">
+                    <div class="row bg-white align-items-center ml-0 mr-0 py-4 match-entry">
+                      <div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
+                        <div class="text-center text-lg-left">
+                          <div class="d-block d-lg-flex align-items-center">
+                            <div class="image image-small text-center mb-3 mb-lg-0 mr-lg-3">
+                              <img src="admin/' . array_values(mysqli_fetch_array($conn->query("SELECT collage_logo FROM `collage_data` WHERE collage_name='$team_1'")))[0] . '" alt="Image" class="img-fluid">
+                            </div>
+                            <div class="text">
+                              <h3 class="h5 mb-0 text-black">' . $team_1 . '</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-lg-4 text-center mb-4 mb-lg-0">
+                        <div class="d-inline-block">
+                        <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $game_type . '</small></p>
+                          <div class="bg-black py-2 px-4 mb-2 text-white d-inline-block rounded"><span class="h5">';
+                  $check2 = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM score_data WHERE match_id = '$match_id'"));
+                  if ($check2 > 0) {
+                    $score2 =  array_values(mysqli_fetch_array($conn->query("SELECT team_1 FROM `score_data` WHERE match_id = '$match_id'")))[0] . ' : ' . array_values(mysqli_fetch_array($conn->query("SELECT team_2 FROM `score_data` WHERE match_id='$match_id'")))[0];
+                  } else {
+                    $score2 = "0  :  0";
+                  }
+                  echo $score2;
+                  echo '</span>
+                  </div>
+                  <p class="mb-2"><small class="text-uppercase text-black font-weight-bold">' . $date_time . '</small></p>
+
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-lg-4 text-center text-lg-right">
+                        <div class="">
+                          <div class="d-block d-lg-flex align-items-center">
+                            <div class="image image-small ml-lg-3 mb-3 mb-lg-0 order-2">
+                              <img src="admin/' . array_values(mysqli_fetch_array($conn->query("SELECT collage_logo FROM `collage_data` WHERE collage_name='$team_2'")))[0] . '" alt="Image" class="img-fluid">
+                            </div>
+                            <div class="text order-1 w-100">
+                              <h3 class="h5 mb-0 text-black">' . $team_2 . '</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    </div>';
+                }
+                ?>
+                
+
+              </div> -->
+
+            </div>
+=======
+>>>>>>> f282eaf119c5a421968e68e7b244733538090590
           </div>
         </div>
       </div>
